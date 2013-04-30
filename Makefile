@@ -1,7 +1,7 @@
 MFLAGS = -s
 MAKEFLAGS = ${MFLAGS}
 
-.PHONY: clean dev publish
+.PHONY: clean dev publish publish-noscaladoc
 
 default: dev
 
@@ -24,6 +24,12 @@ publish: clean gen scaladocs
 	git add scaladocs
 	git commit -m "Latest docs." || true
 	git push origin master || true
+	git checkout gh-pages
+	git merge origin/master
+	git push origin gh-pages
+	git checkout master
+
+publish-noscaladoc: clean
 	git checkout gh-pages
 	git merge origin/master
 	git push origin gh-pages
