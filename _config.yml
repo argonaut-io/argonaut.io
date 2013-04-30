@@ -1,1 +1,1 @@
-exclude: ['README.md, Makefile']
+exclude: ['README.md', 'Makefile', 'build.sbt', 'target', 'gen', 'sbt', 'project']
