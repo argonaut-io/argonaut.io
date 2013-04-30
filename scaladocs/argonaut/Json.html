@@ -1,0 +1,1240 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+        <head>
+          <title>Json - argonaut.Json</title>
+          <meta name="description" content="Json - argonaut.Json" />
+          <meta name="keywords" content="Json argonaut.Json" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../lib/jquery.js" id="jquery-js"></script>
+      <script type="text/javascript" src="../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../lib/template.js"></script>
+      <script type="text/javascript" src="../lib/tools.tooltip.js"></script>
+      
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../index.html';
+            var hash = 'argonaut.Json';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
+    
+        </head>
+        <body class="type">
+      <div id="definition">
+        <a href="Json$.html" title="Go to companion"><img src="../lib/trait_to_object_big.png" /></a>
+        <p id="owner"><a href="package.html" class="extype" name="argonaut">argonaut</a></p>
+        <h1><a href="Json$.html" title="Go to companion">Json</a></h1>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">sealed </span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Json</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4>
+      
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>A data type representing possible <a href="http://www.json.org/">JSON</a> values.
+</p></div><div class="toggleContainer block">
+          <span class="toggle">Linear Supertypes</span>
+          <div class="superTypes hiddenContent"><span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+        </div></div>
+        
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
+        <div id="order">
+              <span class="filtertype">Ordering</span>
+              <ol>
+                
+                <li class="alpha in"><span>Alphabetic</span></li>
+                <li class="inherit out"><span>By inheritance</span></li>
+              </ol>
+            </div>
+        <div id="ancestors">
+                <span class="filtertype">Inherited<br />
+                </span>
+                <ol id="linearization">
+                  <li class="in" name="argonaut.Json"><span>Json</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                </ol>
+              </div><div id="ancestors">
+            <span class="filtertype"></span>
+            <ol>
+              <li class="hideall out"><span>Hide All</span></li>
+              <li class="showall in"><span>Show all</span></li>
+            </ol>
+            <a href="http://docs.scala-lang.org/overviews/scaladoc/usage.html#members" target="_blank">Learn more about member selection</a>
+          </div>
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        
+
+        
+
+        
+
+        <div id="values" class="values members">
+              <h3>Value Members</h3>
+              <ol><li name="scala.AnyRef#!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="!=(x$1:AnyRef):Boolean"></a>
+      <a id="!=(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.Any#!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="!=(x$1:Any):Boolean"></a>
+      <a id="!=(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="scala.AnyRef###" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="##():Int"></a>
+      <a id="##():Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="argonaut.Json#--&gt;&gt;:" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="--&gt;&gt;:(k:=&gt;argonaut.Json):argonaut.Json"></a>
+      <a id="--&gt;&gt;:(⇒Json):Json"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $minus$minus$greater$greater$colon" class="name">--&gt;&gt;:</span><span class="params">(<span name="k">k: ⇒ <a href="" class="extype" name="argonaut.Json">Json</a></span>)</span><span class="result">: <a href="" class="extype" name="argonaut.Json">Json</a></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">If this is a JSON array, then prepend the given value, otherwise, return a JSON array with only the given value.</p>
+    </li><li name="argonaut.Json#--&gt;&gt;?:" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="--&gt;&gt;?:(o:=&gt;Option[argonaut.Json]):argonaut.Json"></a>
+      <a id="--&gt;&gt;?:(⇒Option[Json]):Json"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $minus$minus$greater$greater$qmark$colon" class="name">--&gt;&gt;?:</span><span class="params">(<span name="o">o: ⇒ <span class="extype" name="scala.Option">Option</span>[<a href="" class="extype" name="argonaut.Json">Json</a>]</span>)</span><span class="result">: <a href="" class="extype" name="argonaut.Json">Json</a></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">If this is a JSON array, and the element is set, then prepend the given value, otherwise, return a JSON array with only the given value.</p>
+    </li><li name="argonaut.Json#-&gt;:" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="-&gt;:(k:=&gt;(argonaut.Json.JsonField,argonaut.Json)):argonaut.Json"></a>
+      <a id="-&gt;:(⇒(Json.JsonField,Json)):Json"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $minus$greater$colon" class="name">-&gt;:</span><span class="params">(<span name="k">k: ⇒ (<a href="Json$.html#JsonField=String" class="extmbr" name="argonaut.Json.JsonField">Json.JsonField</a>, <a href="" class="extype" name="argonaut.Json">Json</a>)</span>)</span><span class="result">: <a href="" class="extype" name="argonaut.Json">Json</a></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">If this is a JSON object, then prepend the given value, otherwise, return a JSON object with only the given value.</p>
+    </li><li name="argonaut.Json#-&gt;?:" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="-&gt;?:(o:=&gt;Option[(argonaut.Json.JsonField,argonaut.Json)]):argonaut.Json"></a>
+      <a id="-&gt;?:(⇒Option[(Json.JsonField,Json)]):Json"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $minus$greater$qmark$colon" class="name">-&gt;?:</span><span class="params">(<span name="o">o: ⇒ <span class="extype" name="scala.Option">Option</span>[(<a href="Json$.html#JsonField=String" class="extmbr" name="argonaut.Json.JsonField">Json.JsonField</a>, <a href="" class="extype" name="argonaut.Json">Json</a>)]</span>)</span><span class="result">: <a href="" class="extype" name="argonaut.Json">Json</a></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">If this is a JSON object, and the association is set, then prepend the given value, otherwise, return a JSON object with only the given value.</p>
+    </li><li name="argonaut.Json#-|" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="-|(f:=&gt;argonaut.Json.JsonField):Option[argonaut.Json]"></a>
+      <a id="-|(⇒Json.JsonField):Option[Json]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $minus$bar" class="name">-|</span><span class="params">(<span name="f">f: ⇒ <a href="Json$.html#JsonField=String" class="extmbr" name="argonaut.Json.JsonField">Json.JsonField</a></span>)</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<a href="" class="extype" name="argonaut.Json">Json</a>]</span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Alias for <code>field</code>.</p>
+    </li><li name="argonaut.Json#-||" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="-||(fs:List[argonaut.Json.JsonField]):Option[argonaut.Json]"></a>
+      <a id="-||(List[Json.JsonField]):Option[Json]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $minus$bar$bar" class="name">-||</span><span class="params">(<span name="fs">fs: <span class="extype" name="scala.List">List</span>[<a href="Json$.html#JsonField=String" class="extmbr" name="argonaut.Json.JsonField">Json.JsonField</a>]</span>)</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<a href="" class="extype" name="argonaut.Json">Json</a>]</span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Returns a possible JSON value after traversing through JSON object values using the given field names.</p>
+    </li><li name="scala.AnyRef#==" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="==(x$1:AnyRef):Boolean"></a>
+      <a id="==(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.Any#==" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="==(x$1:Any):Boolean"></a>
+      <a id="==(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="argonaut.Json#acursor" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="acursor:argonaut.ACursor"></a>
+      <a id="acursor:ACursor"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">acursor</span><span class="result">: <a href="ACursor.html" class="extype" name="argonaut.ACursor">ACursor</a></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Constructor a cursor from this JSON value to track history.</p>
+    </li><li name="argonaut.Json#array" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="array:Option[argonaut.Json.JsonArray]"></a>
+      <a id="array:Option[Json.JsonArray]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">array</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<a href="Json$.html#JsonArray=List[argonaut.Json]" class="extmbr" name="argonaut.Json.JsonArray">Json.JsonArray</a>]</span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Returns the possible array of this JSON value.</p>
+    </li><li name="argonaut.Json#arrayOr" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="arrayOr(d:=&gt;argonaut.Json.JsonArray):argonaut.Json.JsonArray"></a>
+      <a id="arrayOr(⇒Json.JsonArray):Json.JsonArray"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">arrayOr</span><span class="params">(<span name="d">d: ⇒ <a href="Json$.html#JsonArray=List[argonaut.Json]" class="extmbr" name="argonaut.Json.JsonArray">Json.JsonArray</a></span>)</span><span class="result">: <a href="Json$.html#JsonArray=List[argonaut.Json]" class="extmbr" name="argonaut.Json.JsonArray">Json.JsonArray</a></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Returns the array of this JSON value, or the given default if this JSON value is not an array.</p><div class="fullcomment"><div class="comment cmt"><p>Returns the array of this JSON value, or the given default if this JSON value is not an array.
+</p></div><dl class="paramcmts block"><dt class="param">d</dt><dd class="cmt"><p>The default array if this JSON value is not an array.
+</p></dd></dl></div>
+    </li><li name="argonaut.Json#arrayOrEmpty" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="arrayOrEmpty:argonaut.Json.JsonArray"></a>
+      <a id="arrayOrEmpty:Json.JsonArray"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">arrayOrEmpty</span><span class="result">: <a href="Json$.html#JsonArray=List[argonaut.Json]" class="extmbr" name="argonaut.Json.JsonArray">Json.JsonArray</a></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Returns the array of this JSON value, or an empty array if this JSON value is not an array.</p>
+    </li><li name="argonaut.Json#arrayOrObject" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="arrayOrObject[X](or:=&gt;X,jsonArray:argonaut.Json.JsonArray=&gt;X,jsonObject:argonaut.JsonObject=&gt;X):X"></a>
+      <a id="arrayOrObject[X](⇒X,(Json.JsonArray)⇒X,(JsonObject)⇒X):X"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">arrayOrObject</span><span class="tparams">[<span name="X">X</span>]</span><span class="params">(<span name="or">or: ⇒ <span class="extype" name="argonaut.Json.arrayOrObject.X">X</span></span>, <span name="jsonArray">jsonArray: (<a href="Json$.html#JsonArray=List[argonaut.Json]" class="extmbr" name="argonaut.Json.JsonArray">Json.JsonArray</a>) ⇒ <span class="extype" name="argonaut.Json.arrayOrObject.X">X</span></span>, <span name="jsonObject">jsonObject: (<a href="JsonObject.html" class="extype" name="argonaut.JsonObject">JsonObject</a>) ⇒ <span class="extype" name="argonaut.Json.arrayOrObject.X">X</span></span>)</span><span class="result">: <span class="extype" name="argonaut.Json.arrayOrObject.X">X</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Run on an array or object or return the given default.</p>
+    </li><li name="argonaut.Json#as" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="as[A](implicite:argonaut.DecodeJson[A]):argonaut.DecodeResult[A]"></a>
+      <a id="as[A](DecodeJson[A]):DecodeResult[A]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">as</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span class="implicit">implicit </span><span name="e">e: <a href="DecodeJson.html" class="extype" name="argonaut.DecodeJson">DecodeJson</a>[<span class="extype" name="argonaut.Json.as.A">A</span>]</span>)</span><span class="result">: <a href="DecodeResult.html" class="extype" name="argonaut.DecodeResult">DecodeResult</a>[<span class="extype" name="argonaut.Json.as.A">A</span>]</span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Attempts to decode this JSON value to another data type, alias for <code>jdecode</code>.</p>
+    </li><li name="scala.Any#asInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="asInstanceOf[T0]:T0"></a>
+      <a id="asInstanceOf[T0]:T0"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Any.asInstanceOf.T0">T0</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="argonaut.Json#bool" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="bool:Option[Boolean]"></a>
+      <a id="bool:Option[Boolean]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">bool</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Boolean">Boolean</span>]</span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt"> Returns the possible boolean of this JSON value.</p>
+    </li><li name="scala.AnyRef#clone" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="clone():Object"></a>
+      <a id="clone():AnyRef"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">clone</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li name="argonaut.Json#cursor" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="cursor:argonaut.Cursor"></a>
+      <a id="cursor:Cursor"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">cursor</span><span class="result">: <a href="Cursor.html" class="extype" name="argonaut.Cursor">Cursor</a></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Constructor a cursor from this JSON value (alias for <code>unary_+</code>).</p>
+    </li><li name="argonaut.Json#deepmerge" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="deepmerge(y:argonaut.Json):argonaut.Json"></a>
+      <a id="deepmerge(Json):Json"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">deepmerge</span><span class="params">(<span name="y">y: <a href="" class="extype" name="argonaut.Json">Json</a></span>)</span><span class="result">: <a href="" class="extype" name="argonaut.Json">Json</a></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Perform a deep merge of this JSON value with another JSON value.</p><div class="fullcomment"><div class="comment cmt"><p>Perform a deep merge of this JSON value with another JSON value.</p><p>Objects are merged by key, values from the argument JSON take
+precedence over values from this JSON. Nested objects are
+recursed.</p><p>Null, Array, Boolean, String and Number are treated as values,
+and values from the argument JSON completely replace values
+from this JSON.
+</p></div></div>
+    </li><li name="scala.AnyRef#eq" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="eq(x$1:AnyRef):Boolean"></a>
+      <a id="eq(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#equals" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="equals(x$1:Any):Boolean"></a>
+      <a id="equals(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="argonaut.Json#field" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="field(f:=&gt;argonaut.Json.JsonField):Option[argonaut.Json]"></a>
+      <a id="field(⇒Json.JsonField):Option[Json]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">field</span><span class="params">(<span name="f">f: ⇒ <a href="Json$.html#JsonField=String" class="extmbr" name="argonaut.Json.JsonField">Json.JsonField</a></span>)</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<a href="" class="extype" name="argonaut.Json">Json</a>]</span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Returns the possible value for the given JSON object field.</p>
+    </li><li name="argonaut.Json#fieldOr" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="fieldOr(f:=&gt;argonaut.Json.JsonField,j:=&gt;argonaut.Json):argonaut.Json"></a>
+      <a id="fieldOr(⇒Json.JsonField,⇒Json):Json"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">fieldOr</span><span class="params">(<span name="f">f: ⇒ <a href="Json$.html#JsonField=String" class="extmbr" name="argonaut.Json.JsonField">Json.JsonField</a></span>, <span name="j">j: ⇒ <a href="" class="extype" name="argonaut.Json">Json</a></span>)</span><span class="result">: <a href="" class="extype" name="argonaut.Json">Json</a></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Returns the value for the given JSON object field if this is an object with the given field, otherwise, returns the default.</p><div class="fullcomment"><div class="comment cmt"><p>Returns the value for the given JSON object field if this is an object with the given field, otherwise, returns the default..
+</p></div></div>
+    </li><li name="argonaut.Json#fieldOrEmptyArray" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="fieldOrEmptyArray(f:=&gt;argonaut.Json.JsonField):argonaut.Json"></a>
+      <a id="fieldOrEmptyArray(⇒Json.JsonField):Json"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">fieldOrEmptyArray</span><span class="params">(<span name="f">f: ⇒ <a href="Json$.html#JsonField=String" class="extmbr" name="argonaut.Json.JsonField">Json.JsonField</a></span>)</span><span class="result">: <a href="" class="extype" name="argonaut.Json">Json</a></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Returns the value for the given JSON object field if this is an object with the given field, otherwise, returns an empty JSON array.</p>
+    </li><li name="argonaut.Json#fieldOrEmptyObject" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="fieldOrEmptyObject(f:=&gt;argonaut.Json.JsonField):argonaut.Json"></a>
+      <a id="fieldOrEmptyObject(⇒Json.JsonField):Json"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">fieldOrEmptyObject</span><span class="params">(<span name="f">f: ⇒ <a href="Json$.html#JsonField=String" class="extmbr" name="argonaut.Json.JsonField">Json.JsonField</a></span>)</span><span class="result">: <a href="" class="extype" name="argonaut.Json">Json</a></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Returns the value for the given JSON object field if this is an object with the given field, otherwise, returns an empty JSON object.</p>
+    </li><li name="argonaut.Json#fieldOrEmptyString" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="fieldOrEmptyString(f:=&gt;argonaut.Json.JsonField):argonaut.Json"></a>
+      <a id="fieldOrEmptyString(⇒Json.JsonField):Json"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">fieldOrEmptyString</span><span class="params">(<span name="f">f: ⇒ <a href="Json$.html#JsonField=String" class="extmbr" name="argonaut.Json.JsonField">Json.JsonField</a></span>)</span><span class="result">: <a href="" class="extype" name="argonaut.Json">Json</a></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Returns the value for the given JSON object field if this is an object with the given field, otherwise, returns an empty JSON.</p>
+    </li><li name="argonaut.Json#fieldOrFalse" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="fieldOrFalse(f:=&gt;argonaut.Json.JsonField):argonaut.Json"></a>
+      <a id="fieldOrFalse(⇒Json.JsonField):Json"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">fieldOrFalse</span><span class="params">(<span name="f">f: ⇒ <a href="Json$.html#JsonField=String" class="extmbr" name="argonaut.Json.JsonField">Json.JsonField</a></span>)</span><span class="result">: <a href="" class="extype" name="argonaut.Json">Json</a></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Returns the value for the given JSON object field if this is an object with the given field, otherwise, returns a JSON boolean with the value <code>false</code>.</p>
+    </li><li name="argonaut.Json#fieldOrNull" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="fieldOrNull(f:=&gt;argonaut.Json.JsonField):argonaut.Json"></a>
+      <a id="fieldOrNull(⇒Json.JsonField):Json"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">fieldOrNull</span><span class="params">(<span name="f">f: ⇒ <a href="Json$.html#JsonField=String" class="extmbr" name="argonaut.Json.JsonField">Json.JsonField</a></span>)</span><span class="result">: <a href="" class="extype" name="argonaut.Json">Json</a></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Returns the value for the given JSON object field if this is an object with the given field, otherwise, returns a JSON <code>null</code>.</p><div class="fullcomment"><div class="comment cmt"><p>Returns the value for the given JSON object field if this is an object with the given field, otherwise, returns a JSON <code>null</code>..
+</p></div></div>
+    </li><li name="argonaut.Json#fieldOrTrue" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="fieldOrTrue(f:=&gt;argonaut.Json.JsonField):argonaut.Json"></a>
+      <a id="fieldOrTrue(⇒Json.JsonField):Json"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">fieldOrTrue</span><span class="params">(<span name="f">f: ⇒ <a href="Json$.html#JsonField=String" class="extmbr" name="argonaut.Json.JsonField">Json.JsonField</a></span>)</span><span class="result">: <a href="" class="extype" name="argonaut.Json">Json</a></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Returns the value for the given JSON object field if this is an object with the given field, otherwise, returns a JSON boolean with the value <code>true</code>.</p>
+    </li><li name="argonaut.Json#fieldOrZero" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="fieldOrZero(f:=&gt;argonaut.Json.JsonField):argonaut.Json"></a>
+      <a id="fieldOrZero(⇒Json.JsonField):Json"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">fieldOrZero</span><span class="params">(<span name="f">f: ⇒ <a href="Json$.html#JsonField=String" class="extmbr" name="argonaut.Json.JsonField">Json.JsonField</a></span>)</span><span class="result">: <a href="" class="extype" name="argonaut.Json">Json</a></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Returns the value for the given JSON object field if this is an object with the given field, otherwise, returns a JSON number with the value <code>0</code>.</p>
+    </li><li name="scala.AnyRef#finalize" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="finalize():Unit"></a>
+      <a id="finalize():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li name="argonaut.Json#fold" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="fold[X](jsonNull:=&gt;X,jsonBool:Boolean=&gt;X,jsonNumber:argonaut.Json.JsonNumber=&gt;X,jsonString:String=&gt;X,jsonArray:argonaut.Json.JsonArray=&gt;X,jsonObject:argonaut.JsonObject=&gt;X):X"></a>
+      <a id="fold[X](⇒X,(Boolean)⇒X,(Json.JsonNumber)⇒X,(String)⇒X,(Json.JsonArray)⇒X,(JsonObject)⇒X):X"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">fold</span><span class="tparams">[<span name="X">X</span>]</span><span class="params">(<span name="jsonNull">jsonNull: ⇒ <span class="extype" name="argonaut.Json.fold.X">X</span></span>, <span name="jsonBool">jsonBool: (<span class="extype" name="scala.Boolean">Boolean</span>) ⇒ <span class="extype" name="argonaut.Json.fold.X">X</span></span>, <span name="jsonNumber">jsonNumber: (<a href="Json$.html#JsonNumber=Double" class="extmbr" name="argonaut.Json.JsonNumber">Json.JsonNumber</a>) ⇒ <span class="extype" name="argonaut.Json.fold.X">X</span></span>, <span name="jsonString">jsonString: (<span class="extype" name="scala.Predef.String">String</span>) ⇒ <span class="extype" name="argonaut.Json.fold.X">X</span></span>, <span name="jsonArray">jsonArray: (<a href="Json$.html#JsonArray=List[argonaut.Json]" class="extmbr" name="argonaut.Json.JsonArray">Json.JsonArray</a>) ⇒ <span class="extype" name="argonaut.Json.fold.X">X</span></span>, <span name="jsonObject">jsonObject: (<a href="JsonObject.html" class="extype" name="argonaut.JsonObject">JsonObject</a>) ⇒ <span class="extype" name="argonaut.Json.fold.X">X</span></span>)</span><span class="result">: <span class="extype" name="argonaut.Json.fold.X">X</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">The catamorphism for the JSON value data type.</p>
+    </li><li name="scala.AnyRef#getClass" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getClass():Class[_]"></a>
+      <a id="getClass():Class[_]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getClass</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.Class">Class</span>[_]</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="argonaut.Json#hasField" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="hasField(f:=&gt;argonaut.Json.JsonField):Boolean"></a>
+      <a id="hasField(⇒Json.JsonField):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">hasField</span><span class="params">(<span name="f">f: ⇒ <a href="Json$.html#JsonField=String" class="extmbr" name="argonaut.Json.JsonField">Json.JsonField</a></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Returns <code>true</code> if this is a JSON object which has the given field, <code>false</code> otherwise.</p>
+    </li><li name="scala.AnyRef#hashCode" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="hashCode():Int"></a>
+      <a id="hashCode():Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">hashCode</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="argonaut.Json#hcursor" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="hcursor:argonaut.HCursor"></a>
+      <a id="hcursor:HCursor"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">hcursor</span><span class="result">: <a href="HCursor.html" class="extype" name="argonaut.HCursor">HCursor</a></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Constructor a cursor from this JSON value to track history.</p>
+    </li><li name="argonaut.Json#isArray" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="isArray:Boolean"></a>
+      <a id="isArray:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isArray</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Return <code>true</code> if this JSON value is a array.</p>
+    </li><li name="argonaut.Json#isBool" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="isBool:Boolean"></a>
+      <a id="isBool:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isBool</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Return <code>true</code> if this JSON value is a boolean.</p>
+    </li><li name="argonaut.Json#isFalse" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="isFalse:Boolean"></a>
+      <a id="isFalse:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isFalse</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Return <code>true</code> if this JSON value is a boolean with a value of <code>false</code>, otherwise, <code>false</code>.</p>
+    </li><li name="scala.Any#isInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="isInstanceOf[T0]:Boolean"></a>
+      <a id="isInstanceOf[T0]:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="argonaut.Json#isNull" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="isNull:Boolean"></a>
+      <a id="isNull:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isNull</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Return <code>true</code> if this JSON value is <code>null</code>, otherwise, <code>false</code>.</p>
+    </li><li name="argonaut.Json#isNumber" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="isNumber:Boolean"></a>
+      <a id="isNumber:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isNumber</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Return <code>true</code> if this JSON value is a number.</p>
+    </li><li name="argonaut.Json#isObject" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="isObject:Boolean"></a>
+      <a id="isObject:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isObject</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Return <code>true</code> if this JSON value is a object.</p>
+    </li><li name="argonaut.Json#isString" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="isString:Boolean"></a>
+      <a id="isString:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isString</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Return <code>true</code> if this JSON value is a string.</p>
+    </li><li name="argonaut.Json#isTrue" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="isTrue:Boolean"></a>
+      <a id="isTrue:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isTrue</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Return <code>true</code> if this JSON value is a boolean with a value of <code>true</code>, otherwise, <code>false</code>.</p>
+    </li><li name="argonaut.Json#jdecode" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="jdecode[A](implicite:argonaut.DecodeJson[A]):argonaut.DecodeResult[A]"></a>
+      <a id="jdecode[A](DecodeJson[A]):DecodeResult[A]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">jdecode</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span class="implicit">implicit </span><span name="e">e: <a href="DecodeJson.html" class="extype" name="argonaut.DecodeJson">DecodeJson</a>[<span class="extype" name="argonaut.Json.jdecode.A">A</span>]</span>)</span><span class="result">: <a href="DecodeResult.html" class="extype" name="argonaut.DecodeResult">DecodeResult</a>[<span class="extype" name="argonaut.Json.jdecode.A">A</span>]</span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Attempts to decode this JSON value to another data type.</p>
+    </li><li name="argonaut.Json#name" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="name:String"></a>
+      <a id="name:String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">name</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">The name of the type of the JSON value.</p>
+    </li><li name="scala.AnyRef#ne" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ne(x$1:AnyRef):Boolean"></a>
+      <a id="ne(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="argonaut.Json#nospaces" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="nospaces:String"></a>
+      <a id="nospaces:String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">nospaces</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Pretty-print this JSON value to a string with no spaces.</p>
+    </li><li name="argonaut.Json#not" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="not:argonaut.Json"></a>
+      <a id="not:Json"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">not</span><span class="result">: <a href="" class="extype" name="argonaut.Json">Json</a></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">If this is a JSON boolean value, invert the <code>true</code> and <code>false</code> values, otherwise, leave unchanged.</p>
+    </li><li name="scala.AnyRef#notify" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notify():Unit"></a>
+      <a id="notify():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notify</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#notifyAll" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notifyAll():Unit"></a>
+      <a id="notifyAll():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="argonaut.Json#number" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="number:Option[argonaut.Json.JsonNumber]"></a>
+      <a id="number:Option[Json.JsonNumber]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">number</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<a href="Json$.html#JsonNumber=Double" class="extmbr" name="argonaut.Json.JsonNumber">Json.JsonNumber</a>]</span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt"> Returns the possible number of this JSON value.</p>
+    </li><li name="argonaut.Json#numberOr" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="numberOr(d:=&gt;argonaut.Json.JsonNumber):argonaut.Json.JsonNumber"></a>
+      <a id="numberOr(⇒Json.JsonNumber):Json.JsonNumber"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">numberOr</span><span class="params">(<span name="d">d: ⇒ <a href="Json$.html#JsonNumber=Double" class="extmbr" name="argonaut.Json.JsonNumber">Json.JsonNumber</a></span>)</span><span class="result">: <a href="Json$.html#JsonNumber=Double" class="extmbr" name="argonaut.Json.JsonNumber">Json.JsonNumber</a></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Returns the number of this JSON value, or the given default if this JSON value is not a number.</p><div class="fullcomment"><div class="comment cmt"><p>Returns the number of this JSON value, or the given default if this JSON value is not a number.
+</p></div><dl class="paramcmts block"><dt class="param">d</dt><dd class="cmt"><p>The default number if this JSON value is not a number.
+</p></dd></dl></div>
+    </li><li name="argonaut.Json#numberOrZero" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="numberOrZero:argonaut.Json.JsonNumber"></a>
+      <a id="numberOrZero:Json.JsonNumber"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">numberOrZero</span><span class="result">: <a href="Json$.html#JsonNumber=Double" class="extmbr" name="argonaut.Json.JsonNumber">Json.JsonNumber</a></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Returns this JSON number object or the value <code>0</code> if it is not a number.</p>
+    </li><li name="argonaut.Json#obj" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="obj:Option[argonaut.JsonObject]"></a>
+      <a id="obj:Option[JsonObject]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">obj</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<a href="JsonObject.html" class="extype" name="argonaut.JsonObject">JsonObject</a>]</span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Returns the possible object of this JSON value.</p>
+    </li><li name="argonaut.Json#objectFields" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="objectFields:Option[List[argonaut.Json.JsonField]]"></a>
+      <a id="objectFields:Option[List[Json.JsonField]]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">objectFields</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.List">List</span>[<a href="Json$.html#JsonField=String" class="extmbr" name="argonaut.Json.JsonField">Json.JsonField</a>]]</span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Return the object keys if this JSON value is an object, otherwise, return the empty list.</p>
+    </li><li name="argonaut.Json#objectFieldsOr" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="objectFieldsOr(f:=&gt;List[argonaut.Json.JsonField]):List[argonaut.Json.JsonField]"></a>
+      <a id="objectFieldsOr(⇒List[Json.JsonField]):List[Json.JsonField]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">objectFieldsOr</span><span class="params">(<span name="f">f: ⇒ <span class="extype" name="scala.List">List</span>[<a href="Json$.html#JsonField=String" class="extmbr" name="argonaut.Json.JsonField">Json.JsonField</a>]</span>)</span><span class="result">: <span class="extype" name="scala.List">List</span>[<a href="Json$.html#JsonField=String" class="extmbr" name="argonaut.Json.JsonField">Json.JsonField</a>]</span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Returns the object map keys of this JSON value, or the given default if this JSON value is not an object.</p><div class="fullcomment"><div class="comment cmt"><p>Returns the object map keys of this JSON value, or the given default if this JSON value is not an object.
+</p></div><dl class="paramcmts block"><dt class="param">f</dt><dd class="cmt"><p>The default object map keys if this JSON value is not an object.
+</p></dd></dl></div>
+    </li><li name="argonaut.Json#objectFieldsOrEmpty" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="objectFieldsOrEmpty:List[argonaut.Json.JsonField]"></a>
+      <a id="objectFieldsOrEmpty:List[Json.JsonField]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">objectFieldsOrEmpty</span><span class="result">: <span class="extype" name="scala.List">List</span>[<a href="Json$.html#JsonField=String" class="extmbr" name="argonaut.Json.JsonField">Json.JsonField</a>]</span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Returns the object map keys of this JSON value, or the empty list if this JSON value is not an object.</p>
+    </li><li name="argonaut.Json#objectOr" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="objectOr(d:=&gt;argonaut.JsonObject):argonaut.JsonObject"></a>
+      <a id="objectOr(⇒JsonObject):JsonObject"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">objectOr</span><span class="params">(<span name="d">d: ⇒ <a href="JsonObject.html" class="extype" name="argonaut.JsonObject">JsonObject</a></span>)</span><span class="result">: <a href="JsonObject.html" class="extype" name="argonaut.JsonObject">JsonObject</a></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Returns the object of this JSON value, or the given default if this JSON value is not a object.</p><div class="fullcomment"><div class="comment cmt"><p>Returns the object of this JSON value, or the given default if this JSON value is not a object.
+</p></div><dl class="paramcmts block"><dt class="param">d</dt><dd class="cmt"><p>The default object if this JSON value is not an object.
+</p></dd></dl></div>
+    </li><li name="argonaut.Json#objectOrEmpty" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="objectOrEmpty:argonaut.JsonObject"></a>
+      <a id="objectOrEmpty:JsonObject"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">objectOrEmpty</span><span class="result">: <a href="JsonObject.html" class="extype" name="argonaut.JsonObject">JsonObject</a></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Returns the object of this JSON value, or the empty object if this JSON value is not an object.</p>
+    </li><li name="argonaut.Json#objectValues" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="objectValues:Option[List[argonaut.Json]]"></a>
+      <a id="objectValues:Option[List[Json]]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">objectValues</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.List">List</span>[<a href="" class="extype" name="argonaut.Json">Json</a>]]</span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Return the object values if this JSON value is an object, otherwise, return the empty list.</p>
+    </li><li name="argonaut.Json#objectValuesOr" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="objectValuesOr(k:=&gt;List[argonaut.Json]):List[argonaut.Json]"></a>
+      <a id="objectValuesOr(⇒List[Json]):List[Json]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">objectValuesOr</span><span class="params">(<span name="k">k: ⇒ <span class="extype" name="scala.List">List</span>[<a href="" class="extype" name="argonaut.Json">Json</a>]</span>)</span><span class="result">: <span class="extype" name="scala.List">List</span>[<a href="" class="extype" name="argonaut.Json">Json</a>]</span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Returns the object map values of this JSON value, or the given default if this JSON value is not an object.</p><div class="fullcomment"><div class="comment cmt"><p>Returns the object map values of this JSON value, or the given default if this JSON value is not an object.
+</p></div><dl class="paramcmts block"><dt class="param">k</dt><dd class="cmt"><p>The default object map values if this JSON value is not an object.
+</p></dd></dl></div>
+    </li><li name="argonaut.Json#objectValuesOrEmpty" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="objectValuesOrEmpty:List[argonaut.Json]"></a>
+      <a id="objectValuesOrEmpty:List[Json]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">objectValuesOrEmpty</span><span class="result">: <span class="extype" name="scala.List">List</span>[<a href="" class="extype" name="argonaut.Json">Json</a>]</span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Returns the object map values of this JSON value, or the empty list if this JSON value is not an object.</p>
+    </li><li name="argonaut.Json#pretty" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="pretty(p:argonaut.PrettyParams):String"></a>
+      <a id="pretty(PrettyParams):String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">pretty</span><span class="params">(<span name="p">p: <a href="PrettyParams.html" class="extype" name="argonaut.PrettyParams">PrettyParams</a></span>)</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Pretty-print this JSON value to a string using the given pretty-printing parameters.</p>
+    </li><li name="argonaut.Json#spaces2" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="spaces2:String"></a>
+      <a id="spaces2:String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">spaces2</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Pretty-print this JSON value to a string indentation of two spaces.</p>
+    </li><li name="argonaut.Json#spaces4" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="spaces4:String"></a>
+      <a id="spaces4:String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">spaces4</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Pretty-print this JSON value to a string indentation of four spaces.</p>
+    </li><li name="argonaut.Json#string" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="string:Option[argonaut.Json.JsonString]"></a>
+      <a id="string:Option[Json.JsonString]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">string</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<a href="Json$.html#JsonString=String" class="extmbr" name="argonaut.Json.JsonString">Json.JsonString</a>]</span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Returns the possible string of this JSON value.</p>
+    </li><li name="argonaut.Json#stringOr" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="stringOr(d:=&gt;argonaut.Json.JsonString):argonaut.Json.JsonString"></a>
+      <a id="stringOr(⇒Json.JsonString):Json.JsonString"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">stringOr</span><span class="params">(<span name="d">d: ⇒ <a href="Json$.html#JsonString=String" class="extmbr" name="argonaut.Json.JsonString">Json.JsonString</a></span>)</span><span class="result">: <a href="Json$.html#JsonString=String" class="extmbr" name="argonaut.Json.JsonString">Json.JsonString</a></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Returns the string of this JSON value, or the given default if this JSON value is not a string.</p><div class="fullcomment"><div class="comment cmt"><p>Returns the string of this JSON value, or the given default if this JSON value is not a string.
+</p></div><dl class="paramcmts block"><dt class="param">d</dt><dd class="cmt"><p>The default string if this JSON value is not a string.
+</p></dd></dl></div>
+    </li><li name="argonaut.Json#stringOrEmpty" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="stringOrEmpty:argonaut.Json.JsonString"></a>
+      <a id="stringOrEmpty:Json.JsonString"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">stringOrEmpty</span><span class="result">: <a href="Json$.html#JsonString=String" class="extmbr" name="argonaut.Json.JsonString">Json.JsonString</a></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Returns the string of this JSON value, or an empty string if this JSON value is not a string.</p>
+    </li><li name="scala.AnyRef#synchronized" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="synchronized[T0](x$1:=&gt;T0):T0"></a>
+      <a id="synchronized[T0](⇒T0):T0"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">synchronized</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">(<span name="arg0">arg0: ⇒ <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>)</span><span class="result">: <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="argonaut.Json#toString" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="toString():String"></a>
+      <a id="toString():String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">toString</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Compute a <code>String</code> representation for this JSON value.</p><div class="fullcomment"><div class="comment cmt"><p>Compute a <code>String</code> representation for this JSON value.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="argonaut.Json">Json</a> → AnyRef → Any</dd></dl></div>
+    </li><li name="argonaut.Json#unary_+" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="unary_+:argonaut.Cursor"></a>
+      <a id="unary_+:Cursor"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: unary_$plus" class="name">unary_+</span><span class="result">: <a href="Cursor.html" class="extype" name="argonaut.Cursor">Cursor</a></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Constructor a cursor from this JSON value (alias for <code>cursor</code>).</p>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait():Unit"></a>
+      <a id="wait():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long,x$2:Int):Unit"></a>
+      <a id="wait(Long,Int):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>, <span name="arg1">arg1: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long):Unit"></a>
+      <a id="wait(Long):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li name="argonaut.Json#withArray" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="withArray(k:argonaut.Json.JsonArray=&gt;argonaut.Json.JsonArray):argonaut.Json"></a>
+      <a id="withArray((Json.JsonArray)⇒Json.JsonArray):Json"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">withArray</span><span class="params">(<span name="k">k: (<a href="Json$.html#JsonArray=List[argonaut.Json]" class="extmbr" name="argonaut.Json.JsonArray">Json.JsonArray</a>) ⇒ <a href="Json$.html#JsonArray=List[argonaut.Json]" class="extmbr" name="argonaut.Json.JsonArray">Json.JsonArray</a></span>)</span><span class="result">: <a href="" class="extype" name="argonaut.Json">Json</a></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">If this is a JSON array value, run the given function on the value, otherwise, leave unchanged.</p>
+    </li><li name="argonaut.Json#withNumber" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="withNumber(k:argonaut.Json.JsonNumber=&gt;argonaut.Json.JsonNumber):argonaut.Json"></a>
+      <a id="withNumber((Json.JsonNumber)⇒Json.JsonNumber):Json"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">withNumber</span><span class="params">(<span name="k">k: (<a href="Json$.html#JsonNumber=Double" class="extmbr" name="argonaut.Json.JsonNumber">Json.JsonNumber</a>) ⇒ <a href="Json$.html#JsonNumber=Double" class="extmbr" name="argonaut.Json.JsonNumber">Json.JsonNumber</a></span>)</span><span class="result">: <a href="" class="extype" name="argonaut.Json">Json</a></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">If this is a JSON number value, run the given function on the value, otherwise, leave unchanged.</p>
+    </li><li name="argonaut.Json#withObject" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="withObject(k:argonaut.JsonObject=&gt;argonaut.JsonObject):argonaut.Json"></a>
+      <a id="withObject((JsonObject)⇒JsonObject):Json"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">withObject</span><span class="params">(<span name="k">k: (<a href="JsonObject.html" class="extype" name="argonaut.JsonObject">JsonObject</a>) ⇒ <a href="JsonObject.html" class="extype" name="argonaut.JsonObject">JsonObject</a></span>)</span><span class="result">: <a href="" class="extype" name="argonaut.Json">Json</a></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">If this is a JSON object value, run the given function on the value, otherwise, leave unchanged.</p>
+    </li><li name="argonaut.Json#withString" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="withString(k:argonaut.Json.JsonString=&gt;argonaut.Json.JsonString):argonaut.Json"></a>
+      <a id="withString((Json.JsonString)⇒Json.JsonString):Json"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">withString</span><span class="params">(<span name="k">k: (<a href="Json$.html#JsonString=String" class="extmbr" name="argonaut.Json.JsonString">Json.JsonString</a>) ⇒ <a href="Json$.html#JsonString=String" class="extmbr" name="argonaut.Json.JsonString">Json.JsonString</a></span>)</span><span class="result">: <a href="" class="extype" name="argonaut.Json">Json</a></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">If this is a JSON string value, run the given function on the value, otherwise, leave unchanged.</p>
+    </li></ol>
+            </div>
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        <div class="parent" name="scala.AnyRef">
+              <h3>Inherited from <span class="extype" name="scala.AnyRef">AnyRef</span></h3>
+            </div><div class="parent" name="scala.Any">
+              <h3>Inherited from <span class="extype" name="scala.Any">Any</span></h3>
+            </div>
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+
+
+    </body>
+      </html>
