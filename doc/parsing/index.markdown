@@ -7,11 +7,8 @@ title: argonaut
 
   <script type="text/javascript">
     examples([
-    'ParseValidation',
-    'ParseWithSuccess',
-    'ParseWithFailure',
-    'ParseOr',
-    'ParseOption'
+    'ParseExample',
+    'DecodeExample'
     ]);
   </script>
 
@@ -19,81 +16,30 @@ title: argonaut
 
   <div id="content">
 
-    <h2>Parse</h2>
-
     <p>
-      The simplest scenario is the convertion of a string to the Json data type.
-      We provide a set of library functions that help parse and use the result.
+      There is a full suite of parsing and decoding operations. Each operation
+      can be called directly via `Parse` or via a syntax implicit on `Strings`.
+      The parse operations are also designed to be cleanly added as syntax to third-party
+      libraries in a consistent form (see <a href="/doc/integration">argonaut-unfilterd</a>
+      for an example.
     </p>
 
-    <h4><code>Parse.parse</code></h4>
 
-    <p>
-      Using <code>scalaz.Validation</code> to capture the success or failure of the operation:
-    </p>
+    <h2>Parsing</h2>
 
-    <pre class="prettyprint lang-scala linenums" id="example_ParseValidation">
+    The parse operations convert an input into a `Json` data type with
+    various error-handling mechanims.
+
+    <pre class="prettyprint lang-scala linenums" id="example_ParseExample">
     </pre>
 
-    <h4><code>Parse.parseWith</code></h4>
+    <h2>Parsing and Decoding</h2>
 
-    <p>
-      For convenience we can handle the success and failure cases directly:
-    </p>
+    The decode operations convert an input into a `Json` data type, and
+    then attempt to decode the json using a `Codec` with various error-handling mechanims.
 
-    <pre class="prettyprint lang-scala linenums" id="example_ParseWithSuccess">
+    <pre class="prettyprint lang-scala linenums" id="example_DecodeExample">
     </pre>
-
-    <pre class="prettyprint lang-scala linenums" id="example_ParseWithFailure">
-    </pre>
-
-    <h4><code>Parse.parseOr</code></h4>
-
-    <pre class="prettyprint lang-scala linenums" id="example_ParseOr">
-    </pre>
-
-    <h4><code>Parse.parseOption</code></h4>
-
-    <p>
-      If you are not concerned with errors, you can parse directly to an option.
-    </p>
-
-    <pre class="prettyprint lang-scala linenums" id="example_ParseOption">
-    </pre>
-
-
-    <h2>Decode</h2>
-
-    <p>
-      A more likely scenario then parsing directly to json
-      is you want to parse and then decode. The following
-      is a set of functions
-    </p>
-
-    <h4><code>Parse.decode</code></h4>
-
-
-    <h4><code>Parse.decodeWith</code></h4>
-
-    <h4><code>Parse.decodeWithEither</code></h4>
-
-    <h4><code>Parse.decodeWithNel</code></h4>
-
-    <h4><code>Parse.decodeOr</code></h4>
-
-    <h4><code>Parse.decodeOption</code></h4>
-
-    <p>
-    </p>
-
-
-    <h2>String Implicits</h2>
-
-    <p>
-    </p>
 
   </div>
-
-
-
 </div>
