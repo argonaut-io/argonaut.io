@@ -16,7 +16,7 @@ title: argonaut
     </p>
     <pre>
       libraryDependencies ++= Seq(
-      "io.argonaut" %% "argonaut-unfiltered" % "6.0-M5"
+      "io.argonaut" %% "argonaut-unfiltered" % "6.0-M6"
       )</pre>
 
     <p>

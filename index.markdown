@@ -20,33 +20,21 @@ title: argonaut
         <div class="title">Getting Started</div>
         <div class="details">
           <p>
-            The current published version of argonaut is 6.0-M5 and is
+            The current published version of argonaut is 6.0-M6 and is
             available on <a href="https://oss.sonatype.org">https://oss.sonatype.org</a>.
           </p>
           <p>Depending on argonaut with sbt, stable:</p>
-          <pre>
-            "io.argonaut" %% "argonaut" % "6.0-M5"     </pre>
+          <pre>"io.argonaut" %% "argonaut" % "6.0-M6"     </pre>
           <p>Depending on argonaut with sbt, latest:</p>
-          <pre>
-            "io.argonaut" %% "argonaut" % "6.0-SNAPSHOT" changing()      </pre>
+          <pre>"io.argonaut" %% "argonaut" % "6.0-SNAPSHOT" changing()      </pre>
 
           <p>
-            We are still building out our documention. In the meantime,
-            please checkout the <a href="https://github.com/markhibberd/argonaut/tree/master/src/test/scala/argonaut/example">example code from the repository</a> and the
-            <a href="scaladocs/">scaladocs</a>.
+            Then checkout the <a href="/doc/quickstart">quickstart</a>,
+            <a href="/doc">the detailed documention and examples</a>, and
+            the <a href="scaladocs/">scaladocs</a>.
           </p>
         </div>
       </div>
-      <!--
-          <div id="examples" class="section">
-            <div class="title">Examples</div>
-            <div class="details">
-              <p>
-                TODO: Publish these, maybe include something inline.
-              </p>
-            </div>
-          </div>
-          -->
       <div id="help" class="section">
         <div class="title">Getting Help</div>
         <div class="details">

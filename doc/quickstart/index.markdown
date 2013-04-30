@@ -7,7 +7,7 @@ title: argonaut
 
   <script type="text/javascript">
     examples([
-    'TweetExample',
+    'QuickStartExample',
     'RequestResponse'
     ]);
   </script>
@@ -19,11 +19,9 @@ title: argonaut
     <h2>Using Argonaut with SBT</h2>
 
     <p>Depending on argonaut with sbt, stable:</p>
-    <pre>
-      "io.argonaut" %% "argonaut" % "6.0-M5" </pre>
+    <pre>"io.argonaut" %% "argonaut" % "6.0-M6" </pre>
     <p>Depending on argonaut with sbt, latest:</p>
-    <pre>
-      "io.argonaut" %% "argonaut" % "6.0-SNAPSHOT" changing()  </pre>
+    <pre>"io.argonaut" %% "argonaut" % "6.0-SNAPSHOT" changing()  </pre>
 
     <h2>What your code will look like?</h2>
 
