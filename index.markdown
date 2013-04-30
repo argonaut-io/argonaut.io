@@ -64,6 +64,11 @@ title: argonaut
             <a href="https://twitter.com/seanparsons">@seanparsons</a>
 
           </p>
+          <p>
+            Mailing list: <br/>
+            <a href="https://groups.google.com/forum/?fromgroups#!forum/argonaut-json">argonaut-json</a> on google groups.
+          </p>
+
         </div>
       </div>
 
