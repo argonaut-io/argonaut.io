@@ -34,25 +34,13 @@ title: argonaut
             the <a href="scaladocs/">scaladocs</a>.
           </p>
 
-          <p>Release Notes</p>
-          <ul>
-            <li>
-            <a href="https://github.com/markhibberd/argonaut/blob/master/notes/6.0-M6.markdown">6.0-M6</a>
-            </li>
-            <li>
-            <a href="https://github.com/markhibberd/argonaut/blob/master/notes/6.0-M5.markdown">6.0-M5</a>
-            </li>
-            <li>
-            <a href="https://github.com/markhibberd/argonaut/blob/master/notes/6.0-M4.markdown">6.0-M4</a>
-            </li>
-            <li>
-            <a href="https://github.com/markhibberd/argonaut/blob/master/notes/6.0-M3.markdown">6.0-M3</a>
-            </li>
-
-            <li>
-            <a href="https://github.com/markhibberd/argonaut/blob/master/notes/6.0-M2.markdown">6.0-M2</a>
-            </li>
-          </ul>
+          <p>Release Notes:
+            <a href="https://github.com/markhibberd/argonaut/blob/master/notes/6.0-M6.markdown">[6.0-M6]</a>
+            <a href="https://github.com/markhibberd/argonaut/blob/master/notes/6.0-M5.markdown">[6.0-M5]</a>
+            <a href="https://github.com/markhibberd/argonaut/blob/master/notes/6.0-M4.markdown">[6.0-M4]</a>
+            <a href="https://github.com/markhibberd/argonaut/blob/master/notes/6.0-M3.markdown">[6.0-M3]</a>
+            <a href="https://github.com/markhibberd/argonaut/blob/master/notes/6.0-M2.markdown">[6.0-M2]</a>
+          </p>
         </div>
 
 
