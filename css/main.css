@@ -1,0 +1,14 @@
+@import url("header.css");
+
+body {
+    background-color: #eee !important;
+}
+
+#content {
+    width: 960px;
+    margin: auto;
+}
+
+#box-thing {
+    text-align: center;
+}
