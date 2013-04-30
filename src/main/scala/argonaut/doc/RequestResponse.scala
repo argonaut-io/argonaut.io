@@ -11,10 +11,10 @@ object RequestResponse extends App {
       |}
       |""".stripMargin
 
+  // parse the json and prepend a name field
   val updatedJson: Option[Json] = for {
-    parsed <- requestJson.parseOption                     // Parse the JSON.
-    modified = ("name", jString("testuser")) ->: parsed   // Prepend a name field into the JSON.
-  } yield modified
+    parsed <- requestJson.parseOption
+  } yield ("name", jString("testuser")) ->: parsed
 
   // If there was a failure at any point, provide a default.
   val responseJson: Json = updatedJson.getOrElse{

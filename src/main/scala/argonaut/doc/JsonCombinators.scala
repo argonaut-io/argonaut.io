@@ -4,11 +4,47 @@ import argonaut._, Argonaut._
 
 object JsonCombinators extends App {
   // withString modifies a string value otherwise leaves the Json instance unchanged.
-  val appendedString: Json = jString("JSO").withString(_ + "N")
+  val appendedString: Json =
+    jString("JSO").withString(_ + "N")
+
   // withNumber modifies a number value otherwise leaves the Json instance unchanged.
-  val incrementedNumber: Json = jNumber(100).withNumber(_ + 10)
+  val incrementedNumber: Json =
+    jNumber(100).withNumber(_ + 10)
+
   // withObject modifies an object value otherwise leaves the Json instance unchanged.
-  val modifiedObject: Json = jSingleObject("field", jTrue).withObject(_ - "field")
+  val modifiedObject: Json =
+    jSingleObject("field", jTrue).withObject(_ - "field")
+
   // withArray modifies an array value otherwise leaves the Json instance unchanged.
-  val modifiedArray: Json = jSingleArray(jTrue).withArray(_ :+ jFalse)
+  val modifiedArray: Json =
+    jSingleArray(jTrue).withArray(_ :+ jFalse)
+
+  // get the value if, and only if, the json is a number
+  val numberAccess: Option[JsonNumber] =
+    jNumber(20).number
+
+  // get the value if, and only if, the json is a boolean
+  val booleanAccess: Option[Boolean] =
+    jTrue.boolean
+
+  // get the value if, and only if, the json is a string
+  val stringAccess: Option[String] =
+    jTrue.string
+
+  // get the value if, and only if, the json is an array
+  val arrayAccess: Option[List[Json]] =
+    jSingleArray(jTrue).array
+
+  // get the value if, and only if, the json is an array
+  val objectAccess: Option[JsonObject] =
+    jSingleObject("field", jTrue).obj
+
+  // pluck a field out of nested json structures
+  val nestedObjectAccess: Option[Json] =
+    jSingleObject("field",
+      jSingleObject("nested", jTrue)) --| List("field", "nested")
+
+  // Many more in Json.scala -->
+  //    https://github.com/markhibberd/argonaut/blob/master/src/main/scala/argonaut/Json.scala
+
 }
