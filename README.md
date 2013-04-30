@@ -21,6 +21,6 @@ To run up a localserver on, `http://localhost:4000`:
 
 To publish to site:
 
-   make publish
+    make publish
 
 Note that this publishes current origin/master of your repo, be somewhat careful.
