@@ -22,7 +22,7 @@ publish: clean gen scaladocs
 	rsync -aH gen/argonaut/target/scala-2.10/api/* scaladocs/. && \
 	rm -rf gen && \
 	git add scaladocs && \
-	git commit -m "Latest docs." && \
+	git commit -m "Latest docs." 
 	git push origin master
 	git checkout gh-pages && \
 	git merge origin/master && \
