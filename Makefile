@@ -8,7 +8,7 @@ default: dev
 dev:
 	jekyll --auto --serve
 
-gen scaladocs
+gen scaladocs:
 	mkdir -p $@
 
 publish: gen scaladocs
