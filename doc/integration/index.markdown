@@ -14,10 +14,7 @@ title: argonaut
     <p>
       Grab argonaut-unfiltered by adding the following dependency to sbt:
     </p>
-    <pre>
-      libraryDependencies ++= Seq(
-      "io.argonaut" %% "argonaut-unfiltered" % "6.0-M6"
-      )</pre>
+    <pre>"io.argonaut" %% "argonaut-unfiltered" % "6.0-M6"</pre>
 
     <p>
       Use <code>JsonRequest</code> to wrap the <code>HttpRequest</code>. This
@@ -37,28 +34,27 @@ title: argonaut
     </p>
 
     <pre class="prettyprint lang-scala linenums">
-      import argonaut._, Argonaut._
-      import argonaut.integrate.unfiltered._
-      import unfiltered.request._
-      import unfiltered.response._
+import argonaut._, Argonaut._
+import argonaut.integrate.unfiltered._
+import unfiltered.request._
+import unfiltered.response._
 
-      class App extends unfiltered.filter.Plan {
-      case class Data(value: String)
+class App extends unfiltered.filter.Plan {
 
-      implicit def DataEncodeJson: EncodeJson[Data] =
-      jencode1L((d: Data) => d.value)("data")
-      implicit def DataDecodeJson: DecodeJson[Data] =
-      jdecode1L(Data.apply)("data")
+  case class Data(value: String)
 
-      def intent = {
-      case req@ Get("/echo") =>
+  implicit def DataCodecJson: CodecJson[Data] =
+    casecodec1(Data.apply, Data.unapply)("data")
+
+  def intent = {
+    case req@ Get("/echo") =>
       JsonRequest(req).decodeOption[Data] match {
-      case None => BadRequest
-      case Some(data) => Ok ~> JsonResponse(data)
+        case None => BadRequest
+        case Some(data) => Ok ~> JsonResponse(data)
       }
-      }
-      }
-    </pre>
+    }
+  }
+</pre>
 
     <script type="text/javascript">
       prettyPrint();
