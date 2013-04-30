@@ -5,95 +5,41 @@ title: argonaut
 
 <div id="main">
 
-<script type="text/javascript">
-  examples([
-    'ParseValidation',
-    'ParseWithSuccess',
-    'ParseWithFailure',
-    'ParseOr',
-    'ParseOption'
-  ]);
-</script>
+  <script type="text/javascript">
+    examples([
+    'ParseExample',
+    'DecodeExample'
+    ]);
+  </script>
 
-<h1>Json Parsing</h1>
+  <h1>Json Parsing</h1>
 
-<div id="content">
+  <div id="content">
 
-<h2>Parse</h2>
-
-<p>
-The simplest scenario is the convertion of a string to the Json data type.
-We provide a set of library functions that help parse and use the result.
-</p>
-
-<h4><code>Parse.parse</code></h4>
-
-<p>
-Using <code>scalaz.Validation</code> to capture the success or failure of the operation:
-</p>
-
-<pre class="prettyprint lang-scala linenums" id="example_ParseValidation">
-</pre>
-
-<h4><code>Parse.parseWith</code></h4>
-
-<p>
-For convenience we can handle the success and failure cases directly:
-</p>
-
-<pre class="prettyprint lang-scala linenums" id="example_ParseWithSuccess">
-</pre>
-
-<pre class="prettyprint lang-scala linenums" id="example_ParseWithFailure">
-</pre>
-
-<h4><code>Parse.parseOr</code></h4>
-
-<pre class="prettyprint lang-scala linenums" id="example_ParseOr">
-</pre>
-
-<h4><code>Parse.parseOption</code></h4>
-
-<p>
-If you are not concerned with errors, you can parse directly to an option.
-</p>
-
-<pre class="prettyprint lang-scala linenums" id="example_ParseOption">
-</pre>
+    <p>
+      There is a full suite of parsing and decoding operations. Each operation
+      can be called directly via `Parse` or via a syntax implicit on `Strings`.
+      The parse operations are also designed to be cleanly added as syntax to third-party
+      libraries in a consistent form (see <a href="/doc/integration">argonaut-unfilterd</a>
+      for an example.
+    </p>
 
 
-<h2>Decode</h2>
+    <h2>Parsing</h2>
 
-<p>
-A more likely scenario then parsing directly to json
-is you want to parse and then decode. The following
-is a set of functions
-</p>
+    The parse operations convert an input into a `Json` data type with
+    various error-handling mechanims.
 
-<h4><code>Parse.decode</code></h4>
+    <pre class="prettyprint lang-scala linenums" id="example_ParseExample">
+    </pre>
 
+    <h2>Parsing and Decoding</h2>
 
-<h4><code>Parse.decodeWith</code></h4>
+    The decode operations convert an input into a `Json` data type, and
+    then attempt to decode the json using a `Codec` with various error-handling mechanims.
 
-<h4><code>Parse.decodeWithEither</code></h4>
+    <pre class="prettyprint lang-scala linenums" id="example_DecodeExample">
+    </pre>
 
-<h4><code>Parse.decodeWithNel</code></h4>
-
-<h4><code>Parse.decodeOr</code></h4>
-
-<h4><code>Parse.decodeOption</code></h4>
-
-<p>
-</p>
-
-
-<h2>String Implicits</h2>
-
-<p>
-</p>
-
-</div>
-
-
-
+  </div>
 </div>

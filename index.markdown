@@ -25,12 +25,10 @@ title: argonaut
           </p>
           <p>Depending on argonaut with sbt, stable:</p>
           <pre>
-            "io.argonaut" %% "argonaut" % "6.0-M5"
-          </pre>
+            "io.argonaut" %% "argonaut" % "6.0-M5"     </pre>
           <p>Depending on argonaut with sbt, latest:</p>
           <pre>
-            "io.argonaut" %% "argonaut" % "6.0-SNAPSHOT" changing()
-          </pre>
+            "io.argonaut" %% "argonaut" % "6.0-SNAPSHOT" changing()      </pre>
 
           <p>
             We are still building out our documention. In the meantime,
@@ -66,6 +64,11 @@ title: argonaut
             <a href="https://twitter.com/seanparsons">@seanparsons</a>
 
           </p>
+          <p>
+            Mailing list: <br/>
+            <a href="https://groups.google.com/forum/?fromgroups#!forum/argonaut-json">argonaut-json</a> on google groups.
+          </p>
+
         </div>
       </div>
 

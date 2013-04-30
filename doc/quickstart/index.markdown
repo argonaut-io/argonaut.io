@@ -29,11 +29,10 @@ title: argonaut
 
     <p>
       To get a feel for the power of argonaut. We present the following
-      example that leverages the parser, codecs and zipper to process a
-      response from the twitter search api.
+      example that leverages the parser, codecs and zipper to process.
     </p>
 
-    <pre class="prettyprint lang-scala linenums" id="example_TweetExample">
+    <pre class="prettyprint lang-scala linenums" id="example_QuickStartExample">
     </pre>
 
     <p>
@@ -45,11 +44,13 @@ title: argonaut
     <h2>A Starting Example</h2>
 
     <p>
-      As JSON tends to be at the boundary of most services the common case is to process some values from JSON,
-      do some computation with said values and then produce more JSON for a response.
+      As JSON tends to be at the boundary of most services the common case
+      is to process some values from JSON, do some computation with said
+      values and then produce more JSON for a response.
     </p>
 
-    For example:
+    This example works directly with the json, skipping the convenience of
+    using codecs and the zipper:
 
     <pre class="prettyprint lang-scala linenums" id="example_RequestResponse">
     </pre>
