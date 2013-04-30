@@ -20,6 +20,8 @@ title: argonaut
 
   <div id="content">
 
+    <h2>Codecs</h2>
+
     There are two critical aspects to codecs, encode a data type to json, and
     decode a data type from json.
 

@@ -16,6 +16,8 @@ title: argonaut
 
   <div id="content">
 
+    <h2>Parsing</h2>
+
     <p>
       There is a full suite of parsing and decoding operations. Each operation
       can be called directly via `Parse` or via a syntax implicit on `Strings`.
@@ -24,8 +26,6 @@ title: argonaut
       for an example.
     </p>
 
-
-    <h2>Parsing</h2>
 
     The parse operations convert an input into a `Json` data type with
     various error-handling mechanims.
