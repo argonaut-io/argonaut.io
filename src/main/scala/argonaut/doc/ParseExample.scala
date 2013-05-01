@@ -1,5 +1,6 @@
 package argonaut.doc
 
+import scalaz._, Scalaz._
 import argonaut._, Argonaut._
 
 object ParseExample extends App {
@@ -18,10 +19,10 @@ object ParseExample extends App {
 
   // Parse handling success and failure with functions
   val greeting1: String =
-    Parse.parseOr(json, _.field("greeting").getOrElse("Hello!"), msg => msg)
+    Parse.parseWith(json, _.field("greeting").flatMap(_.string).getOrElse("Hello!"), msg => msg)
 
   // Parse handling success and providing a default for failure
   val greeting2: String =
-    Parse.parseOr(json, _.field("greeting").getOrElse("Hello!"), "Oi!")
+    Parse.parseOr(json, _.field("greeting").flatMap(_.string)getOrElse("Hello!"), "Oi!")
 
 }

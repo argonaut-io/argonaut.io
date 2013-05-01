@@ -25,7 +25,7 @@ object JsonCombinators extends App {
 
   // get the value if, and only if, the json is a boolean
   val booleanAccess: Option[Boolean] =
-    jTrue.boolean
+    jTrue.bool
 
   // get the value if, and only if, the json is a string
   val stringAccess: Option[String] =
@@ -42,7 +42,7 @@ object JsonCombinators extends App {
   // pluck a field out of nested json structures
   val nestedObjectAccess: Option[Json] =
     jSingleObject("field",
-      jSingleObject("nested", jTrue)) --| List("field", "nested")
+      jSingleObject("nested", jTrue)) -|| List("field", "nested")
 
   // Many more in Json.scala -->
   //    https://github.com/markhibberd/argonaut/blob/master/src/main/scala/argonaut/Json.scala

@@ -1,5 +1,6 @@
 package argonaut.doc
 
+import scalaz._, Scalaz._
 import argonaut._, Argonaut._
 
 object BuildingJson extends App {
@@ -41,7 +42,7 @@ object BuildingJson extends App {
   // Note the `:=` operator which takes the value on the right and uses
   // the its corresponding type class to convert it to json.
 
-  val jsonObjectWithCodec: Json
+  val jsonObjectWithCodec: Json =
     ("key1" := 3) ->: ("key2" := "hello") ->: jEmptyObject
 
 
@@ -51,12 +52,12 @@ object BuildingJson extends App {
   // pair, and the '->?:' operator which will conditionally prepend
   // the field to the object.
 
-  val jsonObjectWithCodecAndOptionals: Json
-    ("key1" := 3) ->: ("option" :=? None) ->?: jEmptyObject
+  val jsonObjectWithCodecAndOptionals: Json =
+    ("key1" := 3) ->: ("option" :=? none[String]) ->?: jEmptyObject
 
   // The alternative to this, would include the field in the object
   // but set its value to null in the None case.
 
-  val jsonObjectWithCodecAndOptionals: Json
-    ("key1" := 3) ->: ("option" := None) ->: jEmptyObject
+  val jsonObjectWithCodecAndNullFields: Json =
+    ("key1" := 3) ->: ("option" := none[String]) ->: jEmptyObject
 }

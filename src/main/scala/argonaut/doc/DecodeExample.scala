@@ -43,7 +43,7 @@ object DecodeExample extends App {
     Parse.decodeWithEither[String, Person](json,
       _.greeting,
       {
-        case -\/(msg) => "got an error parsing: " + msg,
+        case -\/(msg) => "got an error parsing: " + msg
         case \/-((msg, history)) => "got an error decoding: " + msg + " - " + history.shows
       }
     )
@@ -55,8 +55,4 @@ object DecodeExample extends App {
   // decode handling success and or providing a default for failure
   val greeting4: String =
     Parse.decodeOr[String, Person](json, _.greeting, "howdy")
-
-  // Parse handling success and providing a default for failure
-  val greeting2: String =
-    Parse.parseOr(json, _.field("greeting").getOrElse("Hello!"), "Oi!")
 }

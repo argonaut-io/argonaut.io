@@ -1,6 +1,6 @@
 package argonaut.doc
 
-import argonaut._, Argonaut._
+import argonaut._, Argonaut._, CodecJson._
 
 object CodecJsonDefaultExample extends App {
 
@@ -16,5 +16,5 @@ object CodecJsonDefaultExample extends App {
   // an exmplic version of this see:
 
   def ExplicitPersonCodecJson: DecodeJson[Person] =
-    codec2(Person.apply, Person.unapply andThen (_.get))("name", "age")
+    codec2(Person.apply, (Person.unapply _) andThen (_.get))("name", "age")
 }
