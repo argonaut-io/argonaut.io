@@ -180,3 +180,7 @@ a:hover.blocklink > div {
 h6 {
     margin-bottom: 5px;
 }
+
+.shift {
+    margin-left: -50px;
+}

@@ -20,11 +20,11 @@ title: argonaut
         <div class="title">Getting Started</div>
         <div class="details">
           <p>
-            The current published version of argonaut is 6.0-M6 and is
+            The current published version of argonaut is 6.0-M7 and is
             available on <a href="https://oss.sonatype.org">https://oss.sonatype.org</a>.
           </p>
           <p>Depending on argonaut with sbt, stable:</p>
-          <pre>"io.argonaut" %% "argonaut" % "6.0-M6"     </pre>
+          <pre>"io.argonaut" %% "argonaut" % "6.0-M7"     </pre>
           <p>Depending on argonaut with sbt, latest:</p>
           <pre>"io.argonaut" %% "argonaut" % "6.0-SNAPSHOT" changing()      </pre>
 
@@ -35,6 +35,7 @@ title: argonaut
           </p>
 
           <p>Release Notes:
+            <a href="https://github.com/markhibberd/argonaut/blob/master/notes/6.0-M7.markdown">[6.0-M7]</a>
             <a href="https://github.com/markhibberd/argonaut/blob/master/notes/6.0-M6.markdown">[6.0-M6]</a>
             <a href="https://github.com/markhibberd/argonaut/blob/master/notes/6.0-M5.markdown">[6.0-M5]</a>
             <a href="https://github.com/markhibberd/argonaut/blob/master/notes/6.0-M4.markdown">[6.0-M4]</a>
@@ -45,6 +46,60 @@ title: argonaut
 
 
       </div>
+      <div id="help" class="section">
+        <div class="title">Features</div>
+        <div class="details">
+<h6>Concise Codec Definitions <a href="/doc/codec">#</a></h6>
+<pre class="prettyprint lang-scala linenums shift">
+
+import argonaut._, Argonaut._
+
+case class Person(name: String, age: Int, things: List[String])
+
+implicit def PersonCodecJson =
+  casecodec3(Person.apply, Person.unapply)("name", "age", "things")
+
+</pre>
+
+<h6>Rich library for Parsing, Printing, Conversion and Manipulation <a href="/doc/parsing">#</a></h6>
+
+<pre class="prettyprint lang-scala linenums:9 shift">
+
+val person =
+    Person("Bam Bam", 2, List("club"))
+
+val json: Json =
+    person.asJson
+
+val prettyprinted: String =
+    json.spaces2
+
+val parsed: Option[Person] =
+    prettyprinted.decodeOption[Person]
+
+</pre>
+
+<h6>History Preserving Zipper <a href="/doc/zipper">#</a></h6>
+<pre class="prettyprint lang-scala linenums:22 shift">
+
+val cursor =
+    json.hcursor --\ "field" --\ "nested" --\ "deep" := "new value"
+
+val history =
+    cursor.history
+
+val updated =
+    -cursor
+
+</pre>
+
+    <script type="text/javascript">
+      prettyPrint();
+    </script>
+
+        </div>
+      </div>
+
       <div id="help" class="section">
         <div class="title">Getting Help</div>
         <div class="details">
@@ -63,7 +118,7 @@ title: argonaut
 
           </p>
           <p>
-            Mailing list: <br/>
+            Mailing list:
             <a href="https://groups.google.com/forum/?fromgroups#!forum/argonaut-json">argonaut-json</a> on google groups.
           </p>
 
