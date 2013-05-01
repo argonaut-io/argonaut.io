@@ -46,7 +46,7 @@
       
           <div id="comment" class="fullcommenttop"><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
-          <div class="superTypes hiddenContent"><a href="CodecJsons.html" class="extype" name="argonaut.CodecJsons">CodecJsons</a>, <a href="LowPriorityCodecJsons.html" class="extype" name="argonaut.LowPriorityCodecJsons">LowPriorityCodecJsons</a>, <a href="GeneratedCodecJsons.html" class="extype" name="argonaut.GeneratedCodecJsons">GeneratedCodecJsons</a>, <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+          <div class="superTypes hiddenContent"><a href="CodecJsons.html" class="extype" name="argonaut.CodecJsons">CodecJsons</a>, <a href="GeneratedCodecJsons.html" class="extype" name="argonaut.GeneratedCodecJsons">GeneratedCodecJsons</a>, <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
         </div></div>
         
 
@@ -64,7 +64,7 @@
                 <span class="filtertype">Inherited<br />
                 </span>
                 <ol id="linearization">
-                  <li class="in" name="argonaut.CodecJson"><span>CodecJson</span></li><li class="in" name="argonaut.CodecJsons"><span>CodecJsons</span></li><li class="in" name="argonaut.LowPriorityCodecJsons"><span>LowPriorityCodecJsons</span></li><li class="in" name="argonaut.GeneratedCodecJsons"><span>GeneratedCodecJsons</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                  <li class="in" name="argonaut.CodecJson"><span>CodecJson</span></li><li class="in" name="argonaut.CodecJsons"><span>CodecJsons</span></li><li class="in" name="argonaut.GeneratedCodecJsons"><span>GeneratedCodecJsons</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
                 </ol>
               </div><div id="ancestors">
             <span class="filtertype"></span>
@@ -155,19 +155,6 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
-    </li><li name="argonaut.LowPriorityCodecJsons#DerivedCodecJson" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="DerivedCodecJson[A](implicitE:argonaut.EncodeJson[A],implicitD:argonaut.DecodeJson[A]):argonaut.CodecJson[A]"></a>
-      <a id="DerivedCodecJson[A](EncodeJson[A],DecodeJson[A]):CodecJson[A]"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier">implicit </span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">DerivedCodecJson</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span class="implicit">implicit </span><span name="E">E: <a href="EncodeJson.html" class="extype" name="argonaut.EncodeJson">EncodeJson</a>[<span class="extype" name="argonaut.LowPriorityCodecJsons.DerivedCodecJson.A">A</span>]</span>, <span name="D">D: <a href="DecodeJson.html" class="extype" name="argonaut.DecodeJson">DecodeJson</a>[<span class="extype" name="argonaut.LowPriorityCodecJsons.DerivedCodecJson.A">A</span>]</span>)</span><span class="result">: <a href="CodecJson.html" class="extype" name="argonaut.CodecJson">CodecJson</a>[<span class="extype" name="argonaut.LowPriorityCodecJsons.DerivedCodecJson.A">A</span>]</span>
-      </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="LowPriorityCodecJsons.html" class="extype" name="argonaut.LowPriorityCodecJsons">LowPriorityCodecJsons</a></dd></dl></div>
     </li><li name="argonaut.CodecJson#apply" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="apply[A](encoder:A=&gt;argonaut.Json,decoder:argonaut.HCursor=&gt;argonaut.DecodeResult[A]):argonaut.CodecJson[A]"></a>
       <a id="apply[A]((A)⇒Json,(HCursor)⇒DecodeResult[A]):CodecJson[A]"></a>
@@ -782,6 +769,19 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="GeneratedCodecJsons.html" class="extype" name="argonaut.GeneratedCodecJsons">GeneratedCodecJsons</a></dd></dl></div>
+    </li><li name="argonaut.CodecJson#derived" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="derived[A](implicitE:argonaut.EncodeJson[A],implicitD:argonaut.DecodeJson[A]):argonaut.CodecJson[A]"></a>
+      <a id="derived[A](EncodeJson[A],DecodeJson[A]):CodecJson[A]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">derived</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span class="implicit">implicit </span><span name="E">E: <a href="EncodeJson.html" class="extype" name="argonaut.EncodeJson">EncodeJson</a>[<span class="extype" name="argonaut.CodecJson.derived.A">A</span>]</span>, <span name="D">D: <a href="DecodeJson.html" class="extype" name="argonaut.DecodeJson">DecodeJson</a>[<span class="extype" name="argonaut.CodecJson.derived.A">A</span>]</span>)</span><span class="result">: <a href="CodecJson.html" class="extype" name="argonaut.CodecJson">CodecJson</a>[<span class="extype" name="argonaut.CodecJson.derived.A">A</span>]</span>
+      </span>
+      </h4>
+      
     </li><li name="scala.AnyRef#eq" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="eq(x$1:AnyRef):Boolean"></a>
       <a id="eq(AnyRef):Boolean"></a>
@@ -987,8 +987,6 @@
         <div id="inheritedMembers">
         <div class="parent" name="argonaut.CodecJsons">
               <h3>Inherited from <a href="CodecJsons.html" class="extype" name="argonaut.CodecJsons">CodecJsons</a></h3>
-            </div><div class="parent" name="argonaut.LowPriorityCodecJsons">
-              <h3>Inherited from <a href="LowPriorityCodecJsons.html" class="extype" name="argonaut.LowPriorityCodecJsons">LowPriorityCodecJsons</a></h3>
             </div><div class="parent" name="argonaut.GeneratedCodecJsons">
               <h3>Inherited from <a href="GeneratedCodecJsons.html" class="extype" name="argonaut.GeneratedCodecJsons">GeneratedCodecJsons</a></h3>
             </div><div class="parent" name="scala.AnyRef">
