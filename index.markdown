@@ -185,13 +185,18 @@ val updated =
         </div>
       </div>
 
-      <div id="thanksyourkit" class="section">
+      <div id="thankyou" class="section">
         <div class="title">Thanks</div>
         <div class="details">
           <h6>YourKit</h6>
-          <p>
+          <p id="thanksyourkit">
             YourKit is kindly supporting argonaut and other open source projects with its
             full-featured <a href="http://www.yourkit.com/java/profiler/index.jsp">Java Profiler</a>.
+          </p>
+          <h6>Ephox</h6>
+          <p>
+            Argonaut was orginally conceived, developed and open sourced by
+            <a href="http://ephox.com/">Ephox</a>.
           </p>
         </div>
       </div>
