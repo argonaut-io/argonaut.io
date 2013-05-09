@@ -35,6 +35,7 @@ title: argonaut
           </p>
 
           <p>Release Notes:
+            <a href="https://github.com/markhibberd/argonaut/blob/master/notes/6.0-RC1.markdown">[6.0-RC1]</a>
             <a href="https://github.com/markhibberd/argonaut/blob/master/notes/6.0-M7.markdown">[6.0-M7]</a>
             <a href="https://github.com/markhibberd/argonaut/blob/master/notes/6.0-M6.markdown">[6.0-M6]</a>
             <a href="https://github.com/markhibberd/argonaut/blob/master/notes/6.0-M5.markdown">[6.0-M5]</a>
