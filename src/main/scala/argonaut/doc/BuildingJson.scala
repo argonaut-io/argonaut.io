@@ -22,11 +22,20 @@ object BuildingJson extends App {
 
   // Arrays
   val jsonArray: Json =
+    Json.array(jsonNumber, jsonString)
+
+  val jsonArrayAlternative: Json =
     jArray(List(jsonNumber, jsonString))
 
   // Object
   val jsonObject: Json =
-    jObjectAssocList(List(("key1", jsonNumber), ("key2", jsonString)))
+    Json("key1" -> jsonNumber, "key2" -> jsonString)
+
+  val jsonObjectExplicit: Json =
+    Json.obj("key1" -> jsonNumber, "key2" -> jsonString)
+
+  val jsonObjectAlternative: Json =
+    jObjectAssocList(List("key1" -> jsonNumber, "key2" -> jsonString))
 
   // Arrays and object creation can be cleaned up with a cons style
   // syntax for clarity and flexibility
@@ -43,6 +52,12 @@ object BuildingJson extends App {
   // the its corresponding type class to convert it to json.
 
   val jsonObjectWithCodec: Json =
+    Json("key1" := 3, "key2" := "hello")
+
+  val jsonObjectExplicitWithCodec: Json =
+    Json.obj("key1" := 3, "key2" := "hello")
+
+  val jsonObjectBuilderWithCodec: Json =
     ("key1" := 3) ->: ("key2" := "hello") ->: jEmptyObject
 
 

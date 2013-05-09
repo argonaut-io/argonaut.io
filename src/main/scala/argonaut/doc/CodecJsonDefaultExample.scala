@@ -1,6 +1,6 @@
 package argonaut.doc
 
-import argonaut._, Argonaut._, CodecJson._
+import argonaut._, Argonaut._
 
 object CodecJsonDefaultExample extends App {
 

@@ -14,7 +14,7 @@ title: argonaut
     <p>
       Grab argonaut-unfiltered by adding the following dependency to sbt:
     </p>
-    <pre>"io.argonaut" %% "argonaut-unfiltered" % "6.0-M7"</pre>
+    <pre>"io.argonaut" %% "argonaut-unfiltered" % "6.0-RC1"</pre>
 
     <p>
       Use <code>JsonRequest</code> to wrap the <code>HttpRequest</code>. This

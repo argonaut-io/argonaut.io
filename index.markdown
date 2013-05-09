@@ -20,11 +20,11 @@ title: argonaut
         <div class="title">Getting Started</div>
         <div class="details">
           <p>
-            The current published version of argonaut is 6.0-M7 and is
+            The current published version of argonaut is 6.0-RC1 and is
             available on <a href="https://oss.sonatype.org">https://oss.sonatype.org</a>.
           </p>
           <p>Depending on argonaut with sbt, stable:</p>
-          <pre>"io.argonaut" %% "argonaut" % "6.0-M7"     </pre>
+          <pre>"io.argonaut" %% "argonaut" % "6.0-RC1"     </pre>
           <p>Depending on argonaut with sbt, latest:</p>
           <pre>"io.argonaut" %% "argonaut" % "6.0-SNAPSHOT" changing()      </pre>
 
