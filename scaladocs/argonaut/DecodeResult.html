@@ -36,7 +36,7 @@
 
       <h4 id="signature" class="signature">
       <span class="modifier_kind">
-        <span class="modifier">sealed </span>
+        <span class="modifier"></span>
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
@@ -281,6 +281,19 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="argonaut.DecodeResult#getOr" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="getOr[AA&gt;:A](els:=&gt;AA):AA"></a>
+      <a id="getOr[AA&gt;:A](⇒AA):AA"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getOr</span><span class="tparams">[<span name="AA">AA &gt;: <span class="extype" name="argonaut.DecodeResult.A">A</span></span>]</span><span class="params">(<span name="els">els: ⇒ <span class="extype" name="argonaut.DecodeResult.getOr.AA">AA</span></span>)</span><span class="result">: <span class="extype" name="argonaut.DecodeResult.getOr.AA">AA</span></span>
+      </span>
+      </h4>
+      
     </li><li name="argonaut.DecodeResult#history" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="history:Option[argonaut.CursorHistory]"></a>
       <a id="history:Option[CursorHistory]"></a>
@@ -437,6 +450,19 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="argonaut.DecodeResult#toDisjunction" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="toDisjunction:scalaz.\/[(String,argonaut.CursorHistory),A]"></a>
+      <a id="toDisjunction:\/[(String,CursorHistory),A]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">toDisjunction</span><span class="result">: <span class="extype" name="scalaz.\/">\/</span>[(<span class="extype" name="scala.Predef.String">String</span>, <a href="CursorHistory.html" class="extype" name="argonaut.CursorHistory">CursorHistory</a>), <span class="extype" name="argonaut.DecodeResult.A">A</span>]</span>
+      </span>
+      </h4>
+      
     </li><li name="argonaut.DecodeResult#toEither" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="toEither:Either[(String,argonaut.CursorHistory),A]"></a>
       <a id="toEither:Either[(String,CursorHistory),A]"></a>
@@ -447,6 +473,19 @@
       </span>
       <span class="symbol">
         <span class="name">toEither</span><span class="result">: <span class="extype" name="scala.Either">Either</span>[(<span class="extype" name="scala.Predef.String">String</span>, <a href="CursorHistory.html" class="extype" name="argonaut.CursorHistory">CursorHistory</a>), <span class="extype" name="argonaut.DecodeResult.A">A</span>]</span>
+      </span>
+      </h4>
+      
+    </li><li name="argonaut.DecodeResult#toOption" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="toOption:Option[A]"></a>
+      <a id="toOption:Option[A]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">toOption</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="argonaut.DecodeResult.A">A</span>]</span>
       </span>
       </h4>
       
@@ -475,7 +514,7 @@
         <span class="name">value</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="argonaut.DecodeResult.A">A</span>]</span>
       </span>
       </h4>
-      
+      <p class="shortcomment cmt">alias for <code>toOption</code></p>
     </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="wait():Unit"></a>
       <a id="wait():Unit"></a>

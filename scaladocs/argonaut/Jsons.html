@@ -116,6 +116,19 @@
       </span>
       </h4>
       
+    </li><li name="argonaut.Jsons.JsonBoolean" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="JsonBoolean=Boolean"></a>
+      <a id="JsonBoolean:JsonBoolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">type</span>
+      </span>
+      <span class="symbol">
+        <span class="name">JsonBoolean</span><span class="result"> = <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      
     </li><li name="argonaut.Jsons.JsonField" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="JsonField=String"></a>
       <a id="JsonField:JsonField"></a>
@@ -246,7 +259,7 @@
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">implicit </span>
-        <span class="kind">def</span>
+        <span class="kind">val</span>
       </span>
       <span class="symbol">
         <span class="name">JsonInstances</span><span class="result">: <span class="extype" name="scalaz.Equal">Equal</span>[<a href="Json.html" class="extype" name="argonaut.Json">Json</a>] with <span class="extype" name="scalaz.Show">Show</span>[<a href="Json.html" class="extype" name="argonaut.Json">Json</a>]</span>
@@ -376,6 +389,19 @@
       </span>
       </h4>
       <p class="shortcomment cmt">Construct a JSON value that is an array.</p>
+    </li><li name="argonaut.Jsons#jArrayElemets" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="jArrayElemets(elements:argonaut.Json*):argonaut.Json"></a>
+      <a id="jArrayElemets(Json*):Json"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">jArrayElemets</span><span class="params">(<span name="elements">elements: <a href="Json.html" class="extype" name="argonaut.Json">Json</a>*</span>)</span><span class="result">: <a href="Json.html" class="extype" name="argonaut.Json">Json</a></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Returns a function that takes a single value and produces a JSON array that contains only that value.</p>
     </li><li name="argonaut.Jsons#jArrayPL" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="jArrayPL:scalaz.@?&gt;[argonaut.Json,Jsons.this.JsonArray]"></a>
       <a id="jArrayPL:@?&gt;[Json,JsonArray]"></a>
@@ -532,6 +558,19 @@
       </span>
       </h4>
       <p class="shortcomment cmt">Construct a JSON value that is an object from an association list.</p>
+    </li><li name="argonaut.Jsons#jObjectFields" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="jObjectFields(x:(Jsons.this.JsonField,argonaut.Json)*):argonaut.Json"></a>
+      <a id="jObjectFields((JsonField,Json)*):Json"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">jObjectFields</span><span class="params">(<span name="x">x: (<a href="#JsonField=String" class="extmbr" name="argonaut.Jsons.JsonField">JsonField</a>, <a href="Json.html" class="extype" name="argonaut.Json">Json</a>)*</span>)</span><span class="result">: <a href="Json.html" class="extype" name="argonaut.Json">Json</a></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Construct a JSON value that is an object from an association list (var args).</p>
     </li><li name="argonaut.Jsons#jObjectMap" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="jObjectMap(x:Jsons.this.JsonObjectMap):argonaut.Json"></a>
       <a id="jObjectMap(JsonObjectMap):Json"></a>

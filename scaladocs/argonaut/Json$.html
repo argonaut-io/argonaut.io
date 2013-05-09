@@ -112,6 +112,19 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Jsons.html" class="extype" name="argonaut.Jsons">Jsons</a></dd></dl></div>
+    </li><li name="argonaut.Jsons.JsonBoolean" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="JsonBoolean=Boolean"></a>
+      <a id="JsonBoolean:JsonBoolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">type</span>
+      </span>
+      <span class="symbol">
+        <span class="name">JsonBoolean</span><span class="result"> = <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Jsons.html" class="extype" name="argonaut.Jsons">Jsons</a></dd></dl></div>
     </li><li name="argonaut.Jsons.JsonField" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="JsonField=String"></a>
       <a id="JsonField:JsonField"></a>
@@ -242,13 +255,39 @@
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">implicit </span>
-        <span class="kind">def</span>
+        <span class="kind">val</span>
       </span>
       <span class="symbol">
         <span class="name">JsonInstances</span><span class="result">: <span class="extype" name="scalaz.Equal">Equal</span>[<a href="Json.html" class="extype" name="argonaut.Json">Json</a>] with <span class="extype" name="scalaz.Show">Show</span>[<a href="Json.html" class="extype" name="argonaut.Json">Json</a>]</span>
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Jsons.html" class="extype" name="argonaut.Jsons">Jsons</a></dd></dl></div>
+    </li><li name="argonaut.Json#apply" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="apply(fields:(argonaut.Json.JsonField,argonaut.Json)*):argonaut.Json"></a>
+      <a id="apply((JsonField,Json)*):Json"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">apply</span><span class="params">(<span name="fields">fields: (<a href="#JsonField=String" class="extmbr" name="argonaut.Json.JsonField">JsonField</a>, <a href="Json.html" class="extype" name="argonaut.Json">Json</a>)*</span>)</span><span class="result">: <a href="Json.html" class="extype" name="argonaut.Json">Json</a></span>
+      </span>
+      </h4>
+      
+    </li><li name="argonaut.Json#array" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="array(elements:argonaut.Json*):argonaut.Json"></a>
+      <a id="array(Json*):Json"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">array</span><span class="params">(<span name="elements">elements: <a href="Json.html" class="extype" name="argonaut.Json">Json</a>*</span>)</span><span class="result">: <a href="Json.html" class="extype" name="argonaut.Json">Json</a></span>
+      </span>
+      </h4>
+      
     </li><li name="scala.Any#asInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="asInstanceOf[T0]:T0"></a>
       <a id="asInstanceOf[T0]:T0"></a>
@@ -372,6 +411,20 @@
       </span>
       </h4>
       <p class="shortcomment cmt">Construct a JSON value that is an array.</p><div class="fullcomment"><div class="comment cmt"><p>Construct a JSON value that is an array.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Jsons.html" class="extype" name="argonaut.Jsons">Jsons</a></dd></dl></div>
+    </li><li name="argonaut.Jsons#jArrayElemets" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="jArrayElemets(elements:argonaut.Json*):argonaut.Json"></a>
+      <a id="jArrayElemets(Json*):Json"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">jArrayElemets</span><span class="params">(<span name="elements">elements: <a href="Json.html" class="extype" name="argonaut.Json">Json</a>*</span>)</span><span class="result">: <a href="Json.html" class="extype" name="argonaut.Json">Json</a></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Returns a function that takes a single value and produces a JSON array that contains only that value.</p><div class="fullcomment"><div class="comment cmt"><p>Returns a function that takes a single value and produces a JSON array that contains only that value.
 </p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Jsons.html" class="extype" name="argonaut.Jsons">Jsons</a></dd></dl></div>
     </li><li name="argonaut.Jsons#jArrayPL" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="jArrayPL:scalaz.@?&gt;[argonaut.Json,Jsons.this.JsonArray]"></a>
@@ -541,6 +594,20 @@
       </h4>
       <p class="shortcomment cmt">Construct a JSON value that is an object from an association list.</p><div class="fullcomment"><div class="comment cmt"><p>Construct a JSON value that is an object from an association list.
 </p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Jsons.html" class="extype" name="argonaut.Jsons">Jsons</a></dd></dl></div>
+    </li><li name="argonaut.Jsons#jObjectFields" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="jObjectFields(x:(Jsons.this.JsonField,argonaut.Json)*):argonaut.Json"></a>
+      <a id="jObjectFields((JsonField,Json)*):Json"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">jObjectFields</span><span class="params">(<span name="x">x: (<a href="#JsonField=String" class="extmbr" name="argonaut.Json.JsonField">JsonField</a>, <a href="Json.html" class="extype" name="argonaut.Json">Json</a>)*</span>)</span><span class="result">: <a href="Json.html" class="extype" name="argonaut.Json">Json</a></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Construct a JSON value that is an object from an association list (var args).</p><div class="fullcomment"><div class="comment cmt"><p>Construct a JSON value that is an object from an association list (var args).
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Jsons.html" class="extype" name="argonaut.Jsons">Jsons</a></dd></dl></div>
     </li><li name="argonaut.Jsons#jObjectMap" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="jObjectMap(x:Jsons.this.JsonObjectMap):argonaut.Json"></a>
       <a id="jObjectMap(JsonObjectMap):Json"></a>
@@ -706,6 +773,19 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="argonaut.Json#obj" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="obj(fields:(argonaut.Json.JsonField,argonaut.Json)*):argonaut.Json"></a>
+      <a id="obj((JsonField,Json)*):Json"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">obj</span><span class="params">(<span name="fields">fields: (<a href="#JsonField=String" class="extmbr" name="argonaut.Json.JsonField">JsonField</a>, <a href="Json.html" class="extype" name="argonaut.Json">Json</a>)*</span>)</span><span class="result">: <a href="Json.html" class="extype" name="argonaut.Json">Json</a></span>
+      </span>
+      </h4>
+      
     </li><li name="scala.AnyRef#synchronized" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="synchronized[T0](x$1:=&gt;T0):T0"></a>
       <a id="synchronized[T0](⇒T0):T0"></a>
