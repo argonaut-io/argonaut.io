@@ -10,7 +10,7 @@ object QuickStartExample extends App {
       { "name": "Mark", "age": 191 },
       { "name": "Fred", "age": 33, "greeting": "hey ho, lets go!" },
       { "name": "Barney", "age": 35, "address": {
-        "street", "rock street", "number": 10, "post_code": 2039
+        "street": "rock street", "number": 10, "post_code": 2039
       }}
     ]
   """
@@ -25,7 +25,11 @@ object QuickStartExample extends App {
 
   // convert back to json, and then to a pretty printed string, alternative
   // ways to print may be nospaces, spaces2, or a custom format
-  println(nice.asJson.spaces4)
+
+  val result = nice.asJson
+  println(result.spaces4)
+
+  assert(result.array.exists(_.length == 3))
 }
 
 
