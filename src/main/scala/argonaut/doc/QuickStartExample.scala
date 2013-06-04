@@ -7,9 +7,11 @@ import argonaut._, Argonaut._
 object QuickStartExample extends App {
   val input = """
     [
-      { "name": "Mark", "age": 191, "post_code": 2039 },
-      { "name": "Fred", "age": 33, "post_code": 9999, "greeting": "hey ho, lets go!" },
-      { "name": "Barney", "age": 35, "post_code": 9999 }
+      { "name": "Mark", "age": 191 },
+      { "name": "Fred", "age": 33, "greeting": "hey ho, lets go!" },
+      { "name": "Barney", "age": 35, "address": {
+        "street", "rock street", "number": 10, "post_code": 2039
+      }}
     ]
   """
 
@@ -35,7 +37,7 @@ object Address {
     casecodec3(Address.apply, Address.unapply)("street", "number", "post_code")
 }
 
-case class Person(name: String, age: Int, address: Address, greeting: Option[String])
+case class Person(name: String, age: Int, address: Option[Address], greeting: Option[String])
 
 object Person {
   implicit def AddressCodecJson: CodecJson[Person] =
