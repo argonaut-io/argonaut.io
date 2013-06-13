@@ -20,11 +20,11 @@ title: argonaut
         <div class="title">Getting Started</div>
         <div class="details">
           <p>
-            The current published version of argonaut is 6.0-RC1 and is
+            The current published version of argonaut is 6.0-RC2 and is
             available on <a href="https://oss.sonatype.org">https://oss.sonatype.org</a>.
           </p>
           <p>Depending on argonaut with sbt, stable:</p>
-          <pre>"io.argonaut" %% "argonaut" % "6.0-RC1"     </pre>
+          <pre>"io.argonaut" %% "argonaut" % "6.0-RC2"     </pre>
           <p>Depending on argonaut with sbt, latest:</p>
           <pre>"io.argonaut" %% "argonaut" % "6.0-SNAPSHOT" changing()      </pre>
 
@@ -35,6 +35,7 @@ title: argonaut
           </p>
 
           <p>Release Notes:
+            <a href="https://github.com/markhibberd/argonaut/blob/master/notes/6.0-RC2.markdown">[6.0-RC2]</a>
             <a href="https://github.com/markhibberd/argonaut/blob/master/notes/6.0-RC1.markdown">[6.0-RC1]</a>
             <a href="https://github.com/markhibberd/argonaut/blob/master/notes/6.0-M7.markdown">[6.0-M7]</a>
             <a href="https://github.com/markhibberd/argonaut/blob/master/notes/6.0-M6.markdown">[6.0-M6]</a>
