@@ -19,9 +19,9 @@ title: argonaut
     <h2>Using Argonaut with SBT</h2>
 
     <p>Depending on argonaut with sbt, stable:</p>
-    <pre>"io.argonaut" %% "argonaut" % "6.0-RC2" </pre>
+    <pre>"io.argonaut" %% "argonaut" % "{{ site.release }}" </pre>
     <p>Depending on argonaut with sbt, latest:</p>
-    <pre>"io.argonaut" %% "argonaut" % "6.0-SNAPSHOT" changing()  </pre>
+    <pre>"io.argonaut" %% "argonaut" % "{{ site.development }}" changing()  </pre>
 
     <h2>What your code will look like?</h2>
 

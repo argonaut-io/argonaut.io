@@ -20,13 +20,13 @@ title: argonaut
         <div class="title">Getting Started</div>
         <div class="details">
           <p>
-            The current published version of argonaut is 6.0-RC2 and is
+            The current published version of argonaut is {{ site.release }} and is
             available on <a href="https://oss.sonatype.org">https://oss.sonatype.org</a>.
           </p>
           <p>Depending on argonaut with sbt, stable:</p>
-          <pre>"io.argonaut" %% "argonaut" % "6.0-RC2"     </pre>
+          <pre>"io.argonaut" %% "argonaut" % "{{ site.release }}"     </pre>
           <p>Depending on argonaut with sbt, latest:</p>
-          <pre>"io.argonaut" %% "argonaut" % "6.0-SNAPSHOT" changing()      </pre>
+          <pre>"io.argonaut" %% "argonaut" % "{{ site.development }}" changing()      </pre>
 
           <p>
             Then checkout the <a href="/doc/quickstart">quickstart</a>,
@@ -35,14 +35,9 @@ title: argonaut
           </p>
 
           <p>Release Notes:
-            <a href="https://github.com/markhibberd/argonaut/blob/master/notes/6.0-RC2.markdown">[6.0-RC2]</a>
-            <a href="https://github.com/markhibberd/argonaut/blob/master/notes/6.0-RC1.markdown">[6.0-RC1]</a>
-            <a href="https://github.com/markhibberd/argonaut/blob/master/notes/6.0-M7.markdown">[6.0-M7]</a>
-            <a href="https://github.com/markhibberd/argonaut/blob/master/notes/6.0-M6.markdown">[6.0-M6]</a>
-            <a href="https://github.com/markhibberd/argonaut/blob/master/notes/6.0-M5.markdown">[6.0-M5]</a>
-            <a href="https://github.com/markhibberd/argonaut/blob/master/notes/6.0-M4.markdown">[6.0-M4]</a>
-            <a href="https://github.com/markhibberd/argonaut/blob/master/notes/6.0-M3.markdown">[6.0-M3]</a>
-            <a href="https://github.com/markhibberd/argonaut/blob/master/notes/6.0-M2.markdown">[6.0-M2]</a>
+            {% for note in site.notes %}
+            <a href="https://github.com/markhibberd/argonaut/blob/master/notes/{{ note }}.markdown">[{{ note }}]</a>
+            {% endfor %}
           </p>
         </div>
 
