@@ -34,6 +34,14 @@ title: argonaut
             the <a href="scaladocs/">scaladocs</a>.
           </p>
 
+          <p>
+            Note that the 6.0 release supports scala 2.9.2, 2.9.3 and 2.10.* with scalaz 7.0.*.
+          </p>
+
+          <p>
+            Note that the 6.1 development stream supports scala 2.10.* with scalaz 7.1.*.
+          </p>
+
           <p>Release Notes:
             {% for note in site.notes %}
             <a href="https://github.com/markhibberd/argonaut/blob/master/notes/{{ note }}.markdown">[{{ note }}]</a>
