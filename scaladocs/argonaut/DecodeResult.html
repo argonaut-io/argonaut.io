@@ -40,7 +40,7 @@
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <span class="name">DecodeResult</span><span class="tparams">[<span name="A">+A</span>]</span><span class="params">(<span name="result">result: <span class="extype" name="scalaz.\/">\/</span>[(<span class="extype" name="scala.Predef.String">String</span>, <a href="CursorHistory.html" class="extype" name="argonaut.CursorHistory">CursorHistory</a>), <span class="extype" name="argonaut.DecodeResult.A">A</span>]</span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+        <span class="name">DecodeResult</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="result">result: <span class="extype" name="scalaz.\/">\/</span>[(<span class="extype" name="scala.Predef.String">String</span>, <a href="CursorHistory.html" class="extype" name="argonaut.CursorHistory">CursorHistory</a>), <span class="extype" name="argonaut.DecodeResult.A">A</span>]</span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       </h4>
       
@@ -334,15 +334,15 @@
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
     </li><li name="argonaut.DecodeResult#loop" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="loop[X,B&gt;:A](e:(String,argonaut.CursorHistory)=&gt;X,f:B=&gt;scalaz.\/[X,argonaut.DecodeResult[B]]):X"></a>
-      <a id="loop[X,B&gt;:A]((String,CursorHistory)⇒X,(B)⇒\/[X,DecodeResult[B]]):X"></a>
+      <a id="loop[X](e:(String,argonaut.CursorHistory)=&gt;X,f:A=&gt;scalaz.\/[X,argonaut.DecodeResult[A]]):X"></a>
+      <a id="loop[X]((String,CursorHistory)⇒X,(A)⇒\/[X,DecodeResult[A]]):X"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier">final </span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">loop</span><span class="tparams">[<span name="X">X</span>, <span name="B">B &gt;: <span class="extype" name="argonaut.DecodeResult.A">A</span></span>]</span><span class="params">(<span name="e">e: (<span class="extype" name="scala.Predef.String">String</span>, <a href="CursorHistory.html" class="extype" name="argonaut.CursorHistory">CursorHistory</a>) ⇒ <span class="extype" name="argonaut.DecodeResult.loop.X">X</span></span>, <span name="f">f: (<span class="extype" name="argonaut.DecodeResult.loop.B">B</span>) ⇒ <span class="extype" name="scalaz.\/">\/</span>[<span class="extype" name="argonaut.DecodeResult.loop.X">X</span>, <a href="" class="extype" name="argonaut.DecodeResult">DecodeResult</a>[<span class="extype" name="argonaut.DecodeResult.loop.B">B</span>]]</span>)</span><span class="result">: <span class="extype" name="argonaut.DecodeResult.loop.X">X</span></span>
+        <span class="name">loop</span><span class="tparams">[<span name="X">X</span>]</span><span class="params">(<span name="e">e: (<span class="extype" name="scala.Predef.String">String</span>, <a href="CursorHistory.html" class="extype" name="argonaut.CursorHistory">CursorHistory</a>) ⇒ <span class="extype" name="argonaut.DecodeResult.loop.X">X</span></span>, <span name="f">f: (<span class="extype" name="argonaut.DecodeResult.A">A</span>) ⇒ <span class="extype" name="scalaz.\/">\/</span>[<span class="extype" name="argonaut.DecodeResult.loop.X">X</span>, <a href="" class="extype" name="argonaut.DecodeResult">DecodeResult</a>[<span class="extype" name="argonaut.DecodeResult.A">A</span>]]</span>)</span><span class="result">: <span class="extype" name="argonaut.DecodeResult.loop.X">X</span></span>
       </span>
       </h4>
       
