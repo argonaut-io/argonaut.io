@@ -1,4 +1,5 @@
 exclude: ['README.md', 'Makefile', 'build.sbt', 'target', 'gen', 'sbt', 'project']
-release: 6.0
+release: 6.0.1
 development: 6.1-SNAPSHOT
-notes: ['6.0-M2', '6.0-M3', '6.0-M4', '6.0-M5', '6.0-M6', '6.0-M7', '6.0-RC1', '6.0-RC2', '6.0-RC3', '6.0']
+milestone: 6.1-M2
+notes: ['6.0-M2', '6.0-M3', '6.0-M4', '6.0-M5', '6.0-M6', '6.0-M7', '6.0-RC1', '6.0-RC2', '6.0-RC3', '6.0', '6.0.1', '6.1-M1', '6.1-M2']

@@ -27,6 +27,8 @@ title: argonaut
           <pre>"io.argonaut" %% "argonaut" % "{{ site.release }}"     </pre>
           <p>Depending on argonaut with sbt, latest:</p>
           <pre>"io.argonaut" %% "argonaut" % "{{ site.development }}" changing()      </pre>
+          <p>Depending on argonaut with sbt, latest milestone:</p>
+          <pre>"io.argonaut" %% "argonaut" % "{{ site.milestone }}"  </pre>
 
           <p>
             Then checkout the <a href="/doc/quickstart">quickstart</a>,
