@@ -2403,6 +2403,19 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="CursorOpElements.html" class="extype" name="argonaut.CursorOpElements">CursorOpElements</a></dd></dl></div>
+    </li><li name="argonaut.CursorOpElements#cursorOpFindL" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="cursorOpFindL:scalaz.@?&gt;[argonaut.CursorOpElement,argonaut.Json=&gt;Boolean]"></a>
+      <a id="cursorOpFindL:@?&gt;[CursorOpElement,(Json)⇒Boolean]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">cursorOpFindL</span><span class="result">: <span class="extype" name="scalaz.@?&gt;">@?&gt;</span>[<a href="CursorOpElement.html" class="extype" name="argonaut.CursorOpElement">CursorOpElement</a>, (<a href="Json.html" class="extype" name="argonaut.Json">Json</a>) ⇒ <span class="extype" name="scala.Boolean">Boolean</span>]</span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="CursorOpElements.html" class="extype" name="argonaut.CursorOpElements">CursorOpElements</a></dd></dl></div>
     </li><li name="argonaut.CursorOpElements#cursorOpLeftAtL" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="cursorOpLeftAtL:scalaz.@?&gt;[argonaut.CursorOpElement,argonaut.Json=&gt;Boolean]"></a>
       <a id="cursorOpLeftAtL:@?&gt;[CursorOpElement,(Json)⇒Boolean]"></a>
@@ -2835,18 +2848,53 @@
       <p class="shortcomment cmt">Construct a JSON value that is <code>null</code>.</p><div class="fullcomment"><div class="comment cmt"><p>Construct a JSON value that is <code>null</code>.
 </p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Jsons.html" class="extype" name="argonaut.Jsons">Jsons</a></dd></dl></div>
     </li><li name="argonaut.Jsons#jNumber" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="jNumber:Jsons.this.JsonNumber=&gt;argonaut.Json"></a>
-      <a id="jNumber:(JsonNumber)⇒Json"></a>
+      <a id="jNumber:Jsons.this.JsonNumber=&gt;Option[argonaut.Json]"></a>
+      <a id="jNumber:(JsonNumber)⇒Option[Json]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">val</span>
       </span>
       <span class="symbol">
-        <span class="name">jNumber</span><span class="result">: (<a href="#JsonNumber=Double" class="extmbr" name="argonaut.Argonaut.JsonNumber">JsonNumber</a>) ⇒ <a href="Json.html" class="extype" name="argonaut.Json">Json</a></span>
+        <span class="name">jNumber</span><span class="result">: (<a href="#JsonNumber=Double" class="extmbr" name="argonaut.Argonaut.JsonNumber">JsonNumber</a>) ⇒ <span class="extype" name="scala.Option">Option</span>[<a href="Json.html" class="extype" name="argonaut.Json">Json</a>]</span>
       </span>
       </h4>
-      <p class="shortcomment cmt">Construct a JSON value that is a number.</p><div class="fullcomment"><div class="comment cmt"><p>Construct a JSON value that is a number.
+      <p class="shortcomment cmt">Construct a JSON value that is a number.</p><div class="fullcomment"><div class="comment cmt"><p>Construct a JSON value that is a number.</p><p>Note: NaN, +Infinity and -Infinity are not valid json.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Jsons.html" class="extype" name="argonaut.Jsons">Jsons</a></dd></dl></div>
+    </li><li name="argonaut.Jsons#jNumberOrNull" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="jNumberOrNull:Jsons.this.JsonNumber=&gt;argonaut.Json"></a>
+      <a id="jNumberOrNull:(JsonNumber)⇒Json"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">jNumberOrNull</span><span class="result">: (<a href="#JsonNumber=Double" class="extmbr" name="argonaut.Argonaut.JsonNumber">JsonNumber</a>) ⇒ <a href="Json.html" class="extype" name="argonaut.Json">Json</a></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Construct a JSON value that is a number.</p><div class="fullcomment"><div class="comment cmt"><p>Construct a JSON value that is a number. Transforming
+NaN, +Infinity and -Infinity to jNull. This matches
+the behaviour of most browsers, but is a lossy operation
+as you can no longer distinguish between NaN and Infinity.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Jsons.html" class="extype" name="argonaut.Jsons">Jsons</a></dd></dl></div>
+    </li><li name="argonaut.Jsons#jNumberOrString" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="jNumberOrString:Jsons.this.JsonNumber=&gt;argonaut.Json"></a>
+      <a id="jNumberOrString:(JsonNumber)⇒Json"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">jNumberOrString</span><span class="result">: (<a href="#JsonNumber=Double" class="extmbr" name="argonaut.Argonaut.JsonNumber">JsonNumber</a>) ⇒ <a href="Json.html" class="extype" name="argonaut.Json">Json</a></span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Construct a JSON value that is a number.</p><div class="fullcomment"><div class="comment cmt"><p>Construct a JSON value that is a number. Transforming
+NaN, +Infinity and -Infinity to their string implementations.</p><p>This is an argonaut specific transformation that allows all
+doubles to be encoded without losing information, but aware
+interoperability is unlikely without custom handling of
+these values. See also <code>jNumber</code> and <code>jNumberOrNull</code>.
 </p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Jsons.html" class="extype" name="argonaut.Jsons">Jsons</a></dd></dl></div>
     </li><li name="argonaut.Jsons#jNumberPL" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="jNumberPL:scalaz.@?&gt;[argonaut.Json,Jsons.this.JsonNumber]"></a>

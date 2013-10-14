@@ -2,9 +2,9 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html>
         <head>
-          <title>CursorOpElements - argonaut.CursorOpElements</title>
-          <meta name="description" content="CursorOpElements - argonaut.CursorOpElements" />
-          <meta name="keywords" content="CursorOpElements argonaut.CursorOpElements" />
+          <title>CursorOpFind - argonaut.CursorOpFind</title>
+          <meta name="description" content="CursorOpFind - argonaut.CursorOpFind" />
+          <meta name="keywords" content="CursorOpFind argonaut.CursorOpFind" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       <link href="../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
@@ -17,7 +17,7 @@
       <script type="text/javascript">
          if(top === self) {
             var url = '../index.html';
-            var hash = 'argonaut.CursorOpElements';
+            var hash = 'argonaut.CursorOpFind';
             var anchor = window.location.hash;
             var anchor_opt = '';
             if (anchor.length >= 1)
@@ -29,27 +29,24 @@
         </head>
         <body class="type">
       <div id="definition">
-        <img src="../lib/trait_big.png" />
+        <img src="../lib/class_big.png" />
         <p id="owner"><a href="package.html" class="extype" name="argonaut">argonaut</a></p>
-        <h1>CursorOpElements</h1>
+        <h1>CursorOpFind</h1>
       </div>
 
       <h4 id="signature" class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
-        <span class="kind">trait</span>
+        <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <span class="name">CursorOpElements</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+        <span class="name">CursorOpFind</span><span class="params">(<span name="p">p: (<a href="Json.html" class="extype" name="argonaut.Json">Json</a>) ⇒ <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="result"> extends <a href="CursorOpElement.html" class="extype" name="argonaut.CursorOpElement">CursorOpElement</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
       </span>
       </h4>
       
           <div id="comment" class="fullcommenttop"><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
-          <div class="superTypes hiddenContent"><span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
-        </div><div class="toggleContainer block">
-          <span class="toggle">Known Subclasses</span>
-          <div class="subClasses hiddenContent"><a href="Argonaut$.html" class="extype" name="argonaut.Argonaut">Argonaut</a>, <a href="Argonauts.html" class="extype" name="argonaut.Argonauts">Argonauts</a>, <a href="CursorOpElement$.html" class="extype" name="argonaut.CursorOpElement">CursorOpElement</a></div>
+          <div class="superTypes hiddenContent"><span class="extype" name="scala.Serializable">Serializable</span>, <span class="extype" name="java.io.Serializable">Serializable</span>, <span class="extype" name="scala.Product">Product</span>, <span class="extype" name="scala.Equals">Equals</span>, <a href="CursorOpElement.html" class="extype" name="argonaut.CursorOpElement">CursorOpElement</a>, <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
         </div></div>
         
 
@@ -67,7 +64,7 @@
                 <span class="filtertype">Inherited<br />
                 </span>
                 <ol id="linearization">
-                  <li class="in" name="argonaut.CursorOpElements"><span>CursorOpElements</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                  <li class="in" name="argonaut.CursorOpFind"><span>CursorOpFind</span></li><li class="in" name="scala.Serializable"><span>Serializable</span></li><li class="in" name="java.io.Serializable"><span>Serializable</span></li><li class="in" name="scala.Product"><span>Product</span></li><li class="in" name="scala.Equals"><span>Equals</span></li><li class="in" name="argonaut.CursorOpElement"><span>CursorOpElement</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
                 </ol>
               </div><div id="ancestors">
             <span class="filtertype"></span>
@@ -85,7 +82,23 @@
 
       <div id="template">
         <div id="allMembers">
-        
+        <div id="constructors" class="members">
+              <h3>Instance Constructors</h3>
+              <ol><li name="argonaut.CursorOpFind#&lt;init&gt;" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="&lt;init&gt;(p:argonaut.Json=&gt;Boolean):argonaut.CursorOpFind"></a>
+      <a id="&lt;init&gt;:CursorOpFind"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">new</span>
+      </span>
+      <span class="symbol">
+        <span class="name">CursorOpFind</span><span class="params">(<span name="p">p: (<a href="Json.html" class="extype" name="argonaut.Json">Json</a>) ⇒ <span class="extype" name="scala.Boolean">Boolean</span></span>)</span>
+      </span>
+      </h4>
+      
+    </li></ol>
+            </div>
 
         
 
@@ -158,19 +171,6 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
-    </li><li name="argonaut.CursorOpElements#CursorOpElementInstances" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="CursorOpElementInstances:scalaz.Show[argonaut.CursorOpElement]withscalaz.Equal[argonaut.CursorOpElement]"></a>
-      <a id="CursorOpElementInstances:Show[CursorOpElement]withEqual[CursorOpElement]"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier">implicit </span>
-        <span class="kind">val</span>
-      </span>
-      <span class="symbol">
-        <span class="name">CursorOpElementInstances</span><span class="result">: <span class="extype" name="scalaz.Show">Show</span>[<a href="CursorOpElement.html" class="extype" name="argonaut.CursorOpElement">CursorOpElement</a>] with <span class="extype" name="scalaz.Equal">Equal</span>[<a href="CursorOpElement.html" class="extype" name="argonaut.CursorOpElement">CursorOpElement</a>]</span>
-      </span>
-      </h4>
-      
     </li><li name="scala.Any#asInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="asInstanceOf[T0]:T0"></a>
       <a id="asInstanceOf[T0]:T0"></a>
@@ -200,136 +200,6 @@
                 <span class="name">@throws</span><span class="args">()</span>
               
         </dd></dl></div>
-    </li><li name="argonaut.CursorOpElements#cursorOpDeleteGoFieldL" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="cursorOpDeleteGoFieldL:scalaz.@?&gt;[argonaut.CursorOpElement,argonaut.Json.JsonField]"></a>
-      <a id="cursorOpDeleteGoFieldL:@?&gt;[CursorOpElement,Json.JsonField]"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">cursorOpDeleteGoFieldL</span><span class="result">: <span class="extype" name="scalaz.@?&gt;">@?&gt;</span>[<a href="CursorOpElement.html" class="extype" name="argonaut.CursorOpElement">CursorOpElement</a>, <a href="Json$.html#JsonField=String" class="extmbr" name="argonaut.Json.JsonField">Json.JsonField</a>]</span>
-      </span>
-      </h4>
-      
-    </li><li name="argonaut.CursorOpElements#cursorOpDownAtL" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="cursorOpDownAtL:scalaz.@?&gt;[argonaut.CursorOpElement,argonaut.Json=&gt;Boolean]"></a>
-      <a id="cursorOpDownAtL:@?&gt;[CursorOpElement,(Json)⇒Boolean]"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">cursorOpDownAtL</span><span class="result">: <span class="extype" name="scalaz.@?&gt;">@?&gt;</span>[<a href="CursorOpElement.html" class="extype" name="argonaut.CursorOpElement">CursorOpElement</a>, (<a href="Json.html" class="extype" name="argonaut.Json">Json</a>) ⇒ <span class="extype" name="scala.Boolean">Boolean</span>]</span>
-      </span>
-      </h4>
-      
-    </li><li name="argonaut.CursorOpElements#cursorOpDownFieldL" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="cursorOpDownFieldL:scalaz.@?&gt;[argonaut.CursorOpElement,argonaut.Json.JsonField]"></a>
-      <a id="cursorOpDownFieldL:@?&gt;[CursorOpElement,Json.JsonField]"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">cursorOpDownFieldL</span><span class="result">: <span class="extype" name="scalaz.@?&gt;">@?&gt;</span>[<a href="CursorOpElement.html" class="extype" name="argonaut.CursorOpElement">CursorOpElement</a>, <a href="Json$.html#JsonField=String" class="extmbr" name="argonaut.Json.JsonField">Json.JsonField</a>]</span>
-      </span>
-      </h4>
-      
-    </li><li name="argonaut.CursorOpElements#cursorOpDownNL" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="cursorOpDownNL:scalaz.@?&gt;[argonaut.CursorOpElement,Int]"></a>
-      <a id="cursorOpDownNL:@?&gt;[CursorOpElement,Int]"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">cursorOpDownNL</span><span class="result">: <span class="extype" name="scalaz.@?&gt;">@?&gt;</span>[<a href="CursorOpElement.html" class="extype" name="argonaut.CursorOpElement">CursorOpElement</a>, <span class="extype" name="scala.Int">Int</span>]</span>
-      </span>
-      </h4>
-      
-    </li><li name="argonaut.CursorOpElements#cursorOpFieldL" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="cursorOpFieldL:scalaz.@?&gt;[argonaut.CursorOpElement,argonaut.Json.JsonField]"></a>
-      <a id="cursorOpFieldL:@?&gt;[CursorOpElement,Json.JsonField]"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">cursorOpFieldL</span><span class="result">: <span class="extype" name="scalaz.@?&gt;">@?&gt;</span>[<a href="CursorOpElement.html" class="extype" name="argonaut.CursorOpElement">CursorOpElement</a>, <a href="Json$.html#JsonField=String" class="extmbr" name="argonaut.Json.JsonField">Json.JsonField</a>]</span>
-      </span>
-      </h4>
-      
-    </li><li name="argonaut.CursorOpElements#cursorOpFindL" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="cursorOpFindL:scalaz.@?&gt;[argonaut.CursorOpElement,argonaut.Json=&gt;Boolean]"></a>
-      <a id="cursorOpFindL:@?&gt;[CursorOpElement,(Json)⇒Boolean]"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">cursorOpFindL</span><span class="result">: <span class="extype" name="scalaz.@?&gt;">@?&gt;</span>[<a href="CursorOpElement.html" class="extype" name="argonaut.CursorOpElement">CursorOpElement</a>, (<a href="Json.html" class="extype" name="argonaut.Json">Json</a>) ⇒ <span class="extype" name="scala.Boolean">Boolean</span>]</span>
-      </span>
-      </h4>
-      
-    </li><li name="argonaut.CursorOpElements#cursorOpLeftAtL" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="cursorOpLeftAtL:scalaz.@?&gt;[argonaut.CursorOpElement,argonaut.Json=&gt;Boolean]"></a>
-      <a id="cursorOpLeftAtL:@?&gt;[CursorOpElement,(Json)⇒Boolean]"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">cursorOpLeftAtL</span><span class="result">: <span class="extype" name="scalaz.@?&gt;">@?&gt;</span>[<a href="CursorOpElement.html" class="extype" name="argonaut.CursorOpElement">CursorOpElement</a>, (<a href="Json.html" class="extype" name="argonaut.Json">Json</a>) ⇒ <span class="extype" name="scala.Boolean">Boolean</span>]</span>
-      </span>
-      </h4>
-      
-    </li><li name="argonaut.CursorOpElements#cursorOpLeftNL" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="cursorOpLeftNL:scalaz.@?&gt;[argonaut.CursorOpElement,Int]"></a>
-      <a id="cursorOpLeftNL:@?&gt;[CursorOpElement,Int]"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">cursorOpLeftNL</span><span class="result">: <span class="extype" name="scalaz.@?&gt;">@?&gt;</span>[<a href="CursorOpElement.html" class="extype" name="argonaut.CursorOpElement">CursorOpElement</a>, <span class="extype" name="scala.Int">Int</span>]</span>
-      </span>
-      </h4>
-      
-    </li><li name="argonaut.CursorOpElements#cursorOpRightAtL" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="cursorOpRightAtL:scalaz.@?&gt;[argonaut.CursorOpElement,argonaut.Json=&gt;Boolean]"></a>
-      <a id="cursorOpRightAtL:@?&gt;[CursorOpElement,(Json)⇒Boolean]"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">cursorOpRightAtL</span><span class="result">: <span class="extype" name="scalaz.@?&gt;">@?&gt;</span>[<a href="CursorOpElement.html" class="extype" name="argonaut.CursorOpElement">CursorOpElement</a>, (<a href="Json.html" class="extype" name="argonaut.Json">Json</a>) ⇒ <span class="extype" name="scala.Boolean">Boolean</span>]</span>
-      </span>
-      </h4>
-      
-    </li><li name="argonaut.CursorOpElements#cursorOpRightNL" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="cursorOpRightNL:scalaz.@?&gt;[argonaut.CursorOpElement,Int]"></a>
-      <a id="cursorOpRightNL:@?&gt;[CursorOpElement,Int]"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">cursorOpRightNL</span><span class="result">: <span class="extype" name="scalaz.@?&gt;">@?&gt;</span>[<a href="CursorOpElement.html" class="extype" name="argonaut.CursorOpElement">CursorOpElement</a>, <span class="extype" name="scala.Int">Int</span>]</span>
-      </span>
-      </h4>
-      
     </li><li name="scala.AnyRef#eq" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="eq(x$1:AnyRef):Boolean"></a>
       <a id="eq(AnyRef):Boolean"></a>
@@ -343,19 +213,6 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="scala.AnyRef#equals" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="equals(x$1:Any):Boolean"></a>
-      <a id="equals(Any):Boolean"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
-      </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="scala.AnyRef#finalize" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="finalize():Unit"></a>
       <a id="finalize():Unit"></a>
@@ -385,19 +242,110 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li name="scala.AnyRef#hashCode" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="hashCode():Int"></a>
-      <a id="hashCode():Int"></a>
+    </li><li name="argonaut.CursorOpElement#isDeleteGoFirst" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="isDeleteGoFirst:Boolean"></a>
+      <a id="isDeleteGoFirst:Boolean"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">hashCode</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+        <span class="name">isDeleteGoFirst</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
       </span>
       </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="CursorOpElement.html" class="extype" name="argonaut.CursorOpElement">CursorOpElement</a></dd></dl></div>
+    </li><li name="argonaut.CursorOpElement#isDeleteGoLast" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="isDeleteGoLast:Boolean"></a>
+      <a id="isDeleteGoLast:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isDeleteGoLast</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="CursorOpElement.html" class="extype" name="argonaut.CursorOpElement">CursorOpElement</a></dd></dl></div>
+    </li><li name="argonaut.CursorOpElement#isDeleteGoLeft" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="isDeleteGoLeft:Boolean"></a>
+      <a id="isDeleteGoLeft:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isDeleteGoLeft</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="CursorOpElement.html" class="extype" name="argonaut.CursorOpElement">CursorOpElement</a></dd></dl></div>
+    </li><li name="argonaut.CursorOpElement#isDeleteGoParent" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="isDeleteGoParent:Boolean"></a>
+      <a id="isDeleteGoParent:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isDeleteGoParent</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="CursorOpElement.html" class="extype" name="argonaut.CursorOpElement">CursorOpElement</a></dd></dl></div>
+    </li><li name="argonaut.CursorOpElement#isDeleteGoRight" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="isDeleteGoRight:Boolean"></a>
+      <a id="isDeleteGoRight:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isDeleteGoRight</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="CursorOpElement.html" class="extype" name="argonaut.CursorOpElement">CursorOpElement</a></dd></dl></div>
+    </li><li name="argonaut.CursorOpElement#isDeleteLefts" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="isDeleteLefts:Boolean"></a>
+      <a id="isDeleteLefts:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isDeleteLefts</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="CursorOpElement.html" class="extype" name="argonaut.CursorOpElement">CursorOpElement</a></dd></dl></div>
+    </li><li name="argonaut.CursorOpElement#isDeleteRights" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="isDeleteRights:Boolean"></a>
+      <a id="isDeleteRights:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isDeleteRights</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="CursorOpElement.html" class="extype" name="argonaut.CursorOpElement">CursorOpElement</a></dd></dl></div>
+    </li><li name="argonaut.CursorOpElement#isFirst" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="isFirst:Boolean"></a>
+      <a id="isFirst:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isFirst</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="CursorOpElement.html" class="extype" name="argonaut.CursorOpElement">CursorOpElement</a></dd></dl></div>
     </li><li name="scala.Any#isInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="isInstanceOf[T0]:Boolean"></a>
       <a id="isInstanceOf[T0]:Boolean"></a>
@@ -411,6 +359,58 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="argonaut.CursorOpElement#isLast" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="isLast:Boolean"></a>
+      <a id="isLast:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isLast</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="CursorOpElement.html" class="extype" name="argonaut.CursorOpElement">CursorOpElement</a></dd></dl></div>
+    </li><li name="argonaut.CursorOpElement#isLeft" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="isLeft:Boolean"></a>
+      <a id="isLeft:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isLeft</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="CursorOpElement.html" class="extype" name="argonaut.CursorOpElement">CursorOpElement</a></dd></dl></div>
+    </li><li name="argonaut.CursorOpElement#isRight" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="isRight:Boolean"></a>
+      <a id="isRight:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isRight</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="CursorOpElement.html" class="extype" name="argonaut.CursorOpElement">CursorOpElement</a></dd></dl></div>
+    </li><li name="argonaut.CursorOpElement#isUp" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="isUp:Boolean"></a>
+      <a id="isUp:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isUp</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="CursorOpElement.html" class="extype" name="argonaut.CursorOpElement">CursorOpElement</a></dd></dl></div>
     </li><li name="scala.AnyRef#ne" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="ne(x$1:AnyRef):Boolean"></a>
       <a id="ne(AnyRef):Boolean"></a>
@@ -450,6 +450,19 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="argonaut.CursorOpFind#p" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="p:argonaut.Json=&gt;Boolean"></a>
+      <a id="p:(Json)⇒Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">p</span><span class="result">: (<a href="Json.html" class="extype" name="argonaut.Json">Json</a>) ⇒ <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4>
+      
     </li><li name="scala.AnyRef#synchronized" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="synchronized[T0](x$1:=&gt;T0):T0"></a>
       <a id="synchronized[T0](⇒T0):T0"></a>
@@ -463,19 +476,6 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="scala.AnyRef#toString" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="toString():String"></a>
-      <a id="toString():String"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">toString</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
-      </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="wait():Unit"></a>
       <a id="wait():Unit"></a>
@@ -533,7 +533,17 @@
         </div>
 
         <div id="inheritedMembers">
-        <div class="parent" name="scala.AnyRef">
+        <div class="parent" name="scala.Serializable">
+              <h3>Inherited from <span class="extype" name="scala.Serializable">Serializable</span></h3>
+            </div><div class="parent" name="java.io.Serializable">
+              <h3>Inherited from <span class="extype" name="java.io.Serializable">Serializable</span></h3>
+            </div><div class="parent" name="scala.Product">
+              <h3>Inherited from <span class="extype" name="scala.Product">Product</span></h3>
+            </div><div class="parent" name="scala.Equals">
+              <h3>Inherited from <span class="extype" name="scala.Equals">Equals</span></h3>
+            </div><div class="parent" name="argonaut.CursorOpElement">
+              <h3>Inherited from <a href="CursorOpElement.html" class="extype" name="argonaut.CursorOpElement">CursorOpElement</a></h3>
+            </div><div class="parent" name="scala.AnyRef">
               <h3>Inherited from <span class="extype" name="scala.AnyRef">AnyRef</span></h3>
             </div><div class="parent" name="scala.Any">
               <h3>Inherited from <span class="extype" name="scala.Any">Any</span></h3>
