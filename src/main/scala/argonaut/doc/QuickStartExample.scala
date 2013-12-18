@@ -44,6 +44,6 @@ object Address {
 case class Person(name: String, age: Int, address: Option[Address], greeting: Option[String])
 
 object Person {
-  implicit def AddressCodecJson: CodecJson[Person] =
+  implicit def PersonCodecJson: CodecJson[Person] =
     casecodec4(Person.apply, Person.unapply)("name", "age", "address", "greeting")
 }
