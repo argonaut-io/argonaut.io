@@ -18,7 +18,7 @@ publish: clean gen scaladocs
 	git checkout master
 	git pull origin master
 	(cd gen && git clone git://github.com/markhibberd/argonaut.git)
-	(cd gen/argonaut && ./sbt '; ++2.10.1 ; doc')
+	(cd gen/argonaut && ./sbt '; ++2.10.3 ; doc')
 	rsync -aH gen/argonaut/target/scala-2.10/api/* scaladocs/.
 	rm -rf gen
 	git add scaladocs
