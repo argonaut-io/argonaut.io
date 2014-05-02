@@ -8,7 +8,7 @@ object CodecJsonExample extends App {
 
   // Explicit CodecJson instance.
 
-  implicit def PersonCodecJson: DecodeJson[Person] =
+  implicit def PersonCodecJson: CodecJson[Person] =
     CodecJson(
       (p: Person) =>
         ("name" := p.name) ->:
