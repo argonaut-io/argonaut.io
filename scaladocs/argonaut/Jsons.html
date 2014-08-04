@@ -412,10 +412,23 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">jArrayPL</span><span class="result">: <span class="extype" name="scalaz.@?&gt;">@?&gt;</span>[<a href="Json.html" class="extype" name="argonaut.Json">Json</a>, <a href="#JsonArray=List[argonaut.Json]" class="extmbr" name="argonaut.Jsons.JsonArray">JsonArray</a>]</span>
+        <span class="name">jArrayPL</span><span class="result">: <a href="../scalaz/package.html#@?&gt;[A,B]=scalaz.package.PLens[A,B]" class="extmbr" name="scalaz.@?&gt;">@?&gt;</a>[<a href="Json.html" class="extype" name="argonaut.Json">Json</a>, <a href="#JsonArray=List[argonaut.Json]" class="extmbr" name="argonaut.Jsons.JsonArray">JsonArray</a>]</span>
       </span>
       </h4>
       <p class="shortcomment cmt">A partial lens for JSON array values.</p>
+    </li><li name="argonaut.Jsons#jArrayPrism" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="jArrayPrism:monocle.SimplePrism[argonaut.Json,Jsons.this.JsonArray]"></a>
+      <a id="jArrayPrism:SimplePrism[Json,JsonArray]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">jArrayPrism</span><span class="result">: <span class="extype" name="monocle.SimplePrism">SimplePrism</span>[<a href="Json.html" class="extype" name="argonaut.Json">Json</a>, <a href="#JsonArray=List[argonaut.Json]" class="extmbr" name="argonaut.Jsons.JsonArray">JsonArray</a>]</span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">A Prism for JSON array values.</p>
     </li><li name="argonaut.Jsons#jBool" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="jBool:Boolean=&gt;argonaut.Json"></a>
       <a id="jBool:(Boolean)⇒Json"></a>
@@ -438,10 +451,38 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">jBoolPL</span><span class="result">: <span class="extype" name="scalaz.@?&gt;">@?&gt;</span>[<a href="Json.html" class="extype" name="argonaut.Json">Json</a>, <span class="extype" name="scala.Boolean">Boolean</span>]</span>
+        <span class="name">jBoolPL</span><span class="result">: <a href="../scalaz/package.html#@?&gt;[A,B]=scalaz.package.PLens[A,B]" class="extmbr" name="scalaz.@?&gt;">@?&gt;</a>[<a href="Json.html" class="extype" name="argonaut.Json">Json</a>, <span class="extype" name="scala.Boolean">Boolean</span>]</span>
       </span>
       </h4>
       <p class="shortcomment cmt">A partial lens for JSON boolean values.</p>
+    </li><li name="argonaut.Jsons#jBoolPrism" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="jBoolPrism:monocle.SimplePrism[argonaut.Json,Boolean]"></a>
+      <a id="jBoolPrism:SimplePrism[Json,Boolean]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">jBoolPrism</span><span class="result">: <span class="extype" name="monocle.SimplePrism">SimplePrism</span>[<a href="Json.html" class="extype" name="argonaut.Json">Json</a>, <span class="extype" name="scala.Boolean">Boolean</span>]</span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">A Prism for JSON boolean values.</p>
+    </li><li name="argonaut.Jsons#jDoublePrism" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="jDoublePrism:monocle.SimplePrism[argonaut.Json,Double]"></a>
+      <a id="jDoublePrism:SimplePrism[Json,Double]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">jDoublePrism</span><span class="result">: <span class="extype" name="monocle.SimplePrism">SimplePrism</span>[<a href="Json.html" class="extype" name="argonaut.Json">Json</a>, <span class="extype" name="scala.Double">Double</span>]</span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">A Prism for JSON number values.</p><div class="fullcomment"><div class="comment cmt"><p>A Prism for JSON number values.
+Note: It is an invalid Prism for NaN, +Infinity and -Infinity as they are not valid json.
+</p></div></div>
     </li><li name="argonaut.Jsons#jEmptyArray" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="jEmptyArray:argonaut.Json"></a>
       <a id="jEmptyArray:Json"></a>
@@ -565,7 +606,7 @@ these values. See also <code>jNumber</code> and <code>jNumberOrNull</code>.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">jNumberPL</span><span class="result">: <span class="extype" name="scalaz.@?&gt;">@?&gt;</span>[<a href="Json.html" class="extype" name="argonaut.Json">Json</a>, <a href="#JsonNumber=Double" class="extmbr" name="argonaut.Jsons.JsonNumber">JsonNumber</a>]</span>
+        <span class="name">jNumberPL</span><span class="result">: <a href="../scalaz/package.html#@?&gt;[A,B]=scalaz.package.PLens[A,B]" class="extmbr" name="scalaz.@?&gt;">@?&gt;</a>[<a href="Json.html" class="extype" name="argonaut.Json">Json</a>, <a href="#JsonNumber=Double" class="extmbr" name="argonaut.Jsons.JsonNumber">JsonNumber</a>]</span>
       </span>
       </h4>
       <p class="shortcomment cmt">A partial lens for JSON number values.</p>
@@ -595,6 +636,32 @@ these values. See also <code>jNumber</code> and <code>jNumberOrNull</code>.
       </span>
       </h4>
       <p class="shortcomment cmt">Construct a JSON value that is an object from an association list.</p>
+    </li><li name="argonaut.Jsons#jObjectAt" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="jObjectAt:monocle.function.At[argonaut.JsonObject,Jsons.this.JsonField,argonaut.Json]"></a>
+      <a id="jObjectAt:At[JsonObject,JsonField,Json]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">jObjectAt</span><span class="result">: <span class="extype" name="monocle.function.At">At</span>[<a href="JsonObject.html" class="extype" name="argonaut.JsonObject">JsonObject</a>, <a href="#JsonField=String" class="extmbr" name="argonaut.Jsons.JsonField">JsonField</a>, <a href="Json.html" class="extype" name="argonaut.Json">Json</a>]</span>
+      </span>
+      </h4>
+      
+    </li><li name="argonaut.Jsons#jObjectEach" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="jObjectEach:monocle.function.Each[argonaut.JsonObject,argonaut.Json]"></a>
+      <a id="jObjectEach:Each[JsonObject,Json]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">jObjectEach</span><span class="result">: <span class="extype" name="monocle.function.Each">Each</span>[<a href="JsonObject.html" class="extype" name="argonaut.JsonObject">JsonObject</a>, <a href="Json.html" class="extype" name="argonaut.Json">Json</a>]</span>
+      </span>
+      </h4>
+      
     </li><li name="argonaut.Jsons#jObjectFields" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="jObjectFields(x:(Jsons.this.JsonField,argonaut.Json)*):argonaut.Json"></a>
       <a id="jObjectFields((JsonField,Json)*):Json"></a>
@@ -608,6 +675,32 @@ these values. See also <code>jNumber</code> and <code>jNumberOrNull</code>.
       </span>
       </h4>
       <p class="shortcomment cmt">Construct a JSON value that is an object from an association list (var args).</p>
+    </li><li name="argonaut.Jsons#jObjectFilterIndex" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="jObjectFilterIndex:monocle.function.FilterIndex[argonaut.JsonObject,Jsons.this.JsonField,argonaut.Json]"></a>
+      <a id="jObjectFilterIndex:FilterIndex[JsonObject,JsonField,Json]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">jObjectFilterIndex</span><span class="result">: <span class="extype" name="monocle.function.FilterIndex">FilterIndex</span>[<a href="JsonObject.html" class="extype" name="argonaut.JsonObject">JsonObject</a>, <a href="#JsonField=String" class="extmbr" name="argonaut.Jsons.JsonField">JsonField</a>, <a href="Json.html" class="extype" name="argonaut.Json">Json</a>]</span>
+      </span>
+      </h4>
+      
+    </li><li name="argonaut.Jsons#jObjectIndex" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="jObjectIndex:monocle.function.Index[argonaut.JsonObject,Jsons.this.JsonField,argonaut.Json]"></a>
+      <a id="jObjectIndex:Index[JsonObject,JsonField,Json]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">jObjectIndex</span><span class="result">: <span class="extype" name="monocle.function.Index">Index</span>[<a href="JsonObject.html" class="extype" name="argonaut.JsonObject">JsonObject</a>, <a href="#JsonField=String" class="extmbr" name="argonaut.Jsons.JsonField">JsonField</a>, <a href="Json.html" class="extype" name="argonaut.Json">Json</a>]</span>
+      </span>
+      </h4>
+      
     </li><li name="argonaut.Jsons#jObjectMap" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="jObjectMap(x:Jsons.this.JsonObjectMap):argonaut.Json"></a>
       <a id="jObjectMap(JsonObjectMap):Json"></a>
@@ -630,10 +723,23 @@ these values. See also <code>jNumber</code> and <code>jNumberOrNull</code>.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">jObjectPL</span><span class="result">: <span class="extype" name="scalaz.@?&gt;">@?&gt;</span>[<a href="Json.html" class="extype" name="argonaut.Json">Json</a>, <a href="JsonObject.html" class="extype" name="argonaut.JsonObject">JsonObject</a>]</span>
+        <span class="name">jObjectPL</span><span class="result">: <a href="../scalaz/package.html#@?&gt;[A,B]=scalaz.package.PLens[A,B]" class="extmbr" name="scalaz.@?&gt;">@?&gt;</a>[<a href="Json.html" class="extype" name="argonaut.Json">Json</a>, <a href="JsonObject.html" class="extype" name="argonaut.JsonObject">JsonObject</a>]</span>
       </span>
       </h4>
       <p class="shortcomment cmt">A partial lens for JSON object values.</p>
+    </li><li name="argonaut.Jsons#jObjectPrism" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="jObjectPrism:monocle.SimplePrism[argonaut.Json,argonaut.JsonObject]"></a>
+      <a id="jObjectPrism:SimplePrism[Json,JsonObject]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">jObjectPrism</span><span class="result">: <span class="extype" name="monocle.SimplePrism">SimplePrism</span>[<a href="Json.html" class="extype" name="argonaut.Json">Json</a>, <a href="JsonObject.html" class="extype" name="argonaut.JsonObject">JsonObject</a>]</span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">A Prism for JSON object values.</p>
     </li><li name="argonaut.Jsons#jSingleArray" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="jSingleArray(j:argonaut.Json):argonaut.Json"></a>
       <a id="jSingleArray(Json):Json"></a>
@@ -682,10 +788,23 @@ these values. See also <code>jNumber</code> and <code>jNumberOrNull</code>.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">jStringPL</span><span class="result">: <span class="extype" name="scalaz.@?&gt;">@?&gt;</span>[<a href="Json.html" class="extype" name="argonaut.Json">Json</a>, <a href="#JsonString=String" class="extmbr" name="argonaut.Jsons.JsonString">JsonString</a>]</span>
+        <span class="name">jStringPL</span><span class="result">: <a href="../scalaz/package.html#@?&gt;[A,B]=scalaz.package.PLens[A,B]" class="extmbr" name="scalaz.@?&gt;">@?&gt;</a>[<a href="Json.html" class="extype" name="argonaut.Json">Json</a>, <a href="#JsonString=String" class="extmbr" name="argonaut.Jsons.JsonString">JsonString</a>]</span>
       </span>
       </h4>
       <p class="shortcomment cmt">A partial lens for JSON string values.</p>
+    </li><li name="argonaut.Jsons#jStringPrism" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="jStringPrism:monocle.SimplePrism[argonaut.Json,Jsons.this.JsonString]"></a>
+      <a id="jStringPrism:SimplePrism[Json,JsonString]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">jStringPrism</span><span class="result">: <span class="extype" name="monocle.SimplePrism">SimplePrism</span>[<a href="Json.html" class="extype" name="argonaut.Json">Json</a>, <a href="#JsonString=String" class="extmbr" name="argonaut.Jsons.JsonString">JsonString</a>]</span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">A Prism for JSON string values.</p>
     </li><li name="argonaut.Jsons#jTrue" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="jTrue:argonaut.Json"></a>
       <a id="jTrue:Json"></a>
@@ -721,7 +840,7 @@ these values. See also <code>jNumber</code> and <code>jNumberOrNull</code>.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">jsonArrayPL</span><span class="params">(<span name="n">n: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scalaz.@?&gt;">@?&gt;</span>[<a href="#JsonArray=List[argonaut.Json]" class="extmbr" name="argonaut.Jsons.JsonArray">JsonArray</a>, <a href="Json.html" class="extype" name="argonaut.Json">Json</a>]</span>
+        <span class="name">jsonArrayPL</span><span class="params">(<span name="n">n: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <a href="../scalaz/package.html#@?&gt;[A,B]=scalaz.package.PLens[A,B]" class="extmbr" name="scalaz.@?&gt;">@?&gt;</a>[<a href="#JsonArray=List[argonaut.Json]" class="extmbr" name="argonaut.Jsons.JsonArray">JsonArray</a>, <a href="Json.html" class="extype" name="argonaut.Json">Json</a>]</span>
       </span>
       </h4>
       <p class="shortcomment cmt">A partial lens for element of JSON array.</p>

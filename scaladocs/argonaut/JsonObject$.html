@@ -176,19 +176,6 @@
       </span>
       </h4>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="JsonObjects.html" class="extype" name="argonaut.JsonObjects">JsonObjects</a></dd></dl></div>
-    </li><li name="argonaut.JsonObject#apply" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="apply(insertionMap:scalaz.InsertionMap[argonaut.Json.JsonField,argonaut.Json]):argonaut.JsonObject"></a>
-      <a id="apply(InsertionMap[Json.JsonField,Json]):JsonObject"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">apply</span><span class="params">(<span name="insertionMap">insertionMap: <span class="extype" name="scalaz.InsertionMap">InsertionMap</span>[<a href="Json$.html#JsonField=String" class="extmbr" name="argonaut.Json.JsonField">Json.JsonField</a>, <a href="Json.html" class="extype" name="argonaut.Json">Json</a>]</span>)</span><span class="result">: <a href="JsonObject.html" class="extype" name="argonaut.JsonObject">JsonObject</a></span>
-      </span>
-      </h4>
-      
     </li><li name="scala.Any#asInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="asInstanceOf[T0]:T0"></a>
       <a id="asInstanceOf[T0]:T0"></a>
@@ -279,6 +266,19 @@
     </span>)</span>
               
         </dd></dl></div>
+    </li><li name="argonaut.JsonObject#from" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="from[F[_]](f:F[(argonaut.Json.JsonField,argonaut.Json)])(implicitevidence$1:scalaz.Foldable[F]):argonaut.JsonObject"></a>
+      <a id="from[F[_]](F[(Json.JsonField,Json)])(Foldable[F]):JsonObject"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">from</span><span class="tparams">[<span name="F">F<span class="tparams">[<span name="_">_</span>]</span></span>]</span><span class="params">(<span name="f">f: <span class="extype" name="argonaut.JsonObject.from.F">F</span>[(<a href="Json$.html#JsonField=String" class="extmbr" name="argonaut.Json.JsonField">Json.JsonField</a>, <a href="Json.html" class="extype" name="argonaut.Json">Json</a>)]</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="arg0">arg0: <span class="extype" name="scalaz.Foldable">Foldable</span>[<span class="extype" name="argonaut.JsonObject.from.F">F</span>]</span>)</span><span class="result">: <a href="JsonObject.html" class="extype" name="argonaut.JsonObject">JsonObject</a></span>
+      </span>
+      </h4>
+      
     </li><li name="scala.AnyRef#getClass" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="getClass():Class[_]"></a>
       <a id="getClass():Class[_]"></a>
@@ -327,7 +327,7 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">jsonObjectL</span><span class="params">(<span name="f">f: <a href="Json$.html#JsonField=String" class="extmbr" name="argonaut.Json.JsonField">Json.JsonField</a></span>)</span><span class="result">: <span class="extype" name="scalaz.@&gt;">@&gt;</span>[<a href="JsonObject.html" class="extype" name="argonaut.JsonObject">JsonObject</a>, <span class="extype" name="scala.Option">Option</span>[<a href="Json.html" class="extype" name="argonaut.Json">Json</a>]]</span>
+        <span class="name">jsonObjectL</span><span class="params">(<span name="f">f: <a href="Json$.html#JsonField=String" class="extmbr" name="argonaut.Json.JsonField">Json.JsonField</a></span>)</span><span class="result">: <a href="../scalaz/package.html#@&gt;[A,B]=scalaz.package.Lens[A,B]" class="extmbr" name="scalaz.@&gt;">@&gt;</a>[<a href="JsonObject.html" class="extype" name="argonaut.JsonObject">JsonObject</a>, <span class="extype" name="scala.Option">Option</span>[<a href="Json.html" class="extype" name="argonaut.Json">Json</a>]]</span>
       </span>
       </h4>
       <p class="shortcomment cmt">The lens to the JSON value.</p><div class="fullcomment"><div class="comment cmt"><p>The lens to the JSON value.
@@ -341,7 +341,7 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">jsonObjectPL</span><span class="params">(<span name="f">f: <a href="Json$.html#JsonField=String" class="extmbr" name="argonaut.Json.JsonField">Json.JsonField</a></span>)</span><span class="result">: <span class="extype" name="scalaz.@?&gt;">@?&gt;</span>[<a href="JsonObject.html" class="extype" name="argonaut.JsonObject">JsonObject</a>, <a href="Json.html" class="extype" name="argonaut.Json">Json</a>]</span>
+        <span class="name">jsonObjectPL</span><span class="params">(<span name="f">f: <a href="Json$.html#JsonField=String" class="extmbr" name="argonaut.Json.JsonField">Json.JsonField</a></span>)</span><span class="result">: <a href="../scalaz/package.html#@?&gt;[A,B]=scalaz.package.PLens[A,B]" class="extmbr" name="scalaz.@?&gt;">@?&gt;</a>[<a href="JsonObject.html" class="extype" name="argonaut.JsonObject">JsonObject</a>, <a href="Json.html" class="extype" name="argonaut.Json">Json</a>]</span>
       </span>
       </h4>
       <p class="shortcomment cmt">The partial lens to the JSON value.</p><div class="fullcomment"><div class="comment cmt"><p>The partial lens to the JSON value.
@@ -487,7 +487,26 @@
 
         
 
-        
+        <div id="values" class="values members">
+              <h3>Deprecated Value Members</h3>
+              <ol><li name="argonaut.JsonObject#apply" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="apply(insertionMap:scalaz.InsertionMap[argonaut.Json.JsonField,argonaut.Json]):argonaut.JsonObject"></a>
+      <a id="apply(InsertionMap[Json.JsonField,Json]):JsonObject"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name deprecated" title="Deprecated: (Since version 6.1) InsertionMap is deprecated in scalaz 7.1. Use fromscala.tools.nsc.doc.base.MemberLookupBase$$anon$1@50612930 instead">apply</span><span class="params">(<span name="insertionMap">insertionMap: <span class="extype" name="scalaz.InsertionMap">InsertionMap</span>[<a href="Json$.html#JsonField=String" class="extmbr" name="argonaut.Json.JsonField">Json.JsonField</a>, <a href="Json.html" class="extype" name="argonaut.Json">Json</a>]</span>)</span><span class="result">: <a href="JsonObject.html" class="extype" name="argonaut.JsonObject">JsonObject</a></span>
+      </span>
+      </h4>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Annotations</dt><dd>
+                <span class="name">@deprecated</span>
+              
+        </dd><dt>Deprecated</dt><dd class="cmt"><p><i>(Since version 6.1)</i> InsertionMap is deprecated in scalaz 7.1. Use <code>from<span class="extype" name="F[_]:">Foldable</span> instead</code></p></dd></dl></div>
+    </li></ol>
+            </div>
         </div>
 
         <div id="inheritedMembers">
