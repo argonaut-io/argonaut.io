@@ -183,13 +183,6 @@ val updated =
             </p>
           </div>
           <div>
-            <h6>Mark Hibberd</h6>
-            <p>
-              <a href="https://twitter.com/markhibberd">@markhibberd</a></br>
-              <a href="http://mth.io">http://mth.io</a>
-            </p>
-          </div>
-          <div>
             <h6>Sean Parsons</h6>
             <p>
               <a href="https://twitter.com/seanparsons">@seanparsons</a></br>
