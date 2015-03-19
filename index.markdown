@@ -51,7 +51,7 @@ title: argonaut
 
           <p>Release Notes:
             {% for note in site.notes %}
-            <a href="https://github.com/markhibberd/argonaut/blob/master/notes/{{ note }}.markdown">[{{ note }}]</a>
+            <a href="https://github.com/argonaut-io/argonaut/blob/master/notes/{{ note }}.markdown">[{{ note }}]</a>
             {% endfor %}
           </p>
 
@@ -126,7 +126,6 @@ val updated =
           <p>
             Contact one of the developers on twitter: <br/>
             <a href="https://twitter.com/dibblego">@dibblego</a>
-            <a href="https://twitter.com/markhibberd">@markhibberd</a>
             <a href="https://twitter.com/seanparsons">@seanparsons</a>
 
           </p>
@@ -142,7 +141,7 @@ val updated =
         <div class="title">Source Code</div>
         <div class="details">
           <p>
-            You can grab the source code from the github repository at <a href="https://github.com/markhibberd/argonaut">https://github.com/markhibberd/argonaut</a>
+            You can grab the source code from the github repository at <a href="https://github.com/argonaut-io/argonaut">https://github.com/argonaut-io/argonaut</a>
           </p>
           <p>
             The project is built with <a href="http://www.scala-sbt.org/">sbt</a>. Just run the sbt script in the root
