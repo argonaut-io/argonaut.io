@@ -7,10 +7,6 @@ object JsonCombinators extends App {
   val appendedString: Json =
     jString("JSO").withString(_ + "N")
 
-  // withNumber modifies a number value otherwise leaves the Json instance unchanged.
-  val incrementedNumber: Json =
-    jNumber(100).withNumber(_ + 10)
-
   // withObject modifies an object value otherwise leaves the Json instance unchanged.
   val modifiedObject: Json =
     jSingleObject("field", jTrue).withObject(_ - "field")
