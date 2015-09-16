@@ -1,6 +1,6 @@
 exclude: ['README.md', 'Makefile', 'build.sbt', 'target', 'gen', 'sbt', 'project']
-release: 6.0.4
-development: 6.1-M4
-milestone: 6.1-M4
-notes: ['6.0-M2', '6.0-M3', '6.0-M4', '6.0-M5', '6.0-M6', '6.0-M7', '6.0-RC1', '6.0-RC2', '6.0-RC3', '6.0', '6.0.1', '6.0.2', '6.0.3', '6.0.4', '6.1-M1', '6.1-M2', '6.1-M3', '6.1-M4']
+release: 6.1
+development: 6.2-SNAPSHOT
+milestone: 6.1
+notes: ['6.0-M2', '6.0-M3', '6.0-M4', '6.0-M5', '6.0-M6', '6.0-M7', '6.0-RC1', '6.0-RC2', '6.0-RC3', '6.0', '6.0.1', '6.0.2', '6.0.3', '6.0.4', '6.1-M1', '6.1-M2', '6.1-M3', '6.1-M4', '6.1-M5', '6.1-M6', '6.1']
 markdown: redcarpet

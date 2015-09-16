@@ -1,7 +1,7 @@
 Argonaut Documentation Project
 ------------------------------
 
-[![Build Status](https://travis-ci.org/markhibberd/argonaut.io.png)](https://travis-ci.org/markhibberd/argonaut.io)
+[![Build Status](https://travis-ci.org/argonaut-io/argonaut.io.png)](https://travis-ci.org/argonaut-io/argonaut.io)
 
 ### What is Argonaut?
 
