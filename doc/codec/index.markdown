@@ -74,7 +74,7 @@ title: argonaut
     </pre>
 
     <p>
-      We also provide a set of very convenient methods for building EncodeJson
+      We also provide a set of very convenient methods for building DecodeJson
       instances.
     </p>
 
