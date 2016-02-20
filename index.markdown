@@ -27,8 +27,14 @@ title: argonaut
           <pre>"io.argonaut" %% "argonaut" % "{{ site.release }}"     </pre>
           <p>Depending on argonaut with sbt, latest:</p>
           <pre>"io.argonaut" %% "argonaut" % "{{ site.development }}" changing()      </pre>
+          <pre>"io.argonaut" %% "argonaut-scalaz" % "{{ site.development }}" changing()      </pre>
+          <pre>"io.argonaut" %% "argonaut-monocle" % "{{ site.development }}" changing()      </pre>
+          <pre>"io.argonaut" %% "argonaut-cats" % "{{ site.development }}" changing()      </pre>
           <p>Depending on argonaut with sbt, latest milestone:</p>
           <pre>"io.argonaut" %% "argonaut" % "{{ site.milestone }}"  </pre>
+          <pre>"io.argonaut" %% "argonaut-scalaz" % "{{ site.milestone }}"  </pre>
+          <pre>"io.argonaut" %% "argonaut-monocle" % "{{ site.milestone }}"  </pre>
+          <pre>"io.argonaut" %% "argonaut-cats" % "{{ site.milestone }}"  </pre>
 
           <p>
             Then checkout the <a href="/doc/quickstart">quickstart</a>,
@@ -37,16 +43,16 @@ title: argonaut
           </p>
 
           <p>
-            Note that the 6.0.x release supports scala 2.9.2, 2.9.3, 2.10.* and 2.11.0-RC1 with scalaz 7.0.*.
-          </p>
-
-          <p>
-            Note that the 6.1.x development stream supports scala 2.10.* with scalaz 7.1.*.
+            The 6.1.x release supports scala 2.10.* and 2.11.* with scalaz 7.1.*.
           </p>
  
           <p>
-            All minor releases (from 6.0 onwards) are binary compatible, i.e. 6.0.x stream are drop in replacements, and the same will be true for 6.1.x, but
-            going from 6.0 to 6.1 _may_ require changes or recompilation.
+            The 6.2.x release supports scala 2.10.* and 2.11.* with scalaz 7.2.*.
+          </p>
+ 
+          <p>
+            All minor releases (from 6.0 onwards) are binary compatible, i.e. 6.1.x stream are drop in replacements, and the same will be true for 6.2.x, but
+            going from 6.1 to 6.2 _may_ require changes or recompilation.
           </p>
 
           <p>Release Notes:
