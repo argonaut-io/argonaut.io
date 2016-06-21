@@ -31,7 +31,7 @@ object JsonCombinators extends App {
   val arrayAccess: Option[List[Json]] =
     jSingleArray(jTrue).array
 
-  // get the value if, and only if, the json is an array
+  // get the value if, and only if, the json is an object
   val objectAccess: Option[JsonObject] =
     jSingleObject("field", jTrue).obj
 
