@@ -9,7 +9,7 @@ clean:
 	rm -rf gen
 
 dev:
-	jekyll --auto --serve
+	jekyll serve
 
 gen scaladocs:
 	mkdir -p $@
@@ -17,9 +17,9 @@ gen scaladocs:
 publish: clean gen scaladocs
 	git checkout master
 	git pull origin master
-	(cd gen && git clone git://github.com/markhibberd/argonaut.git)
-	(cd gen/argonaut && ./sbt '; ++2.10.3 ; doc')
-	rsync -aH gen/argonaut/target/scala-2.10/api/* scaladocs/.
+	(cd gen && git clone git://github.com/argonaut-io/argonaut.git)
+	(cd gen/argonaut && ./sbt '; ++2.11.11 ; doc')
+	rsync -aH gen/argonaut/target/scala-2.11/api/* scaladocs/.
 	rm -rf gen
 	git add scaladocs
 	git commit -m "Latest docs." || true

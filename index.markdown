@@ -5,12 +5,8 @@ title: argonaut
 
 <div id="banner">
   <div class="guts">
-    <div id="project">
-      Argonaut
-    </div>
-    <div id="byline">
-      Purely Functional JSON in Scala
-    </div>
+    <div id="project">Argonaut</div>
+    <div id="byline">Purely Functional JSON in Scala</div>
   </div>
 </div>
 <div id="main">
@@ -25,16 +21,9 @@ title: argonaut
           </p>
           <p>Depending on argonaut with sbt, stable:</p>
           <pre>"io.argonaut" %% "argonaut" % "{{ site.release }}"     </pre>
-          <p>Depending on argonaut with sbt, latest:</p>
-          <pre>"io.argonaut" %% "argonaut" % "{{ site.development }}" changing()      </pre>
-          <pre>"io.argonaut" %% "argonaut-scalaz" % "{{ site.development }}" changing()      </pre>
-          <pre>"io.argonaut" %% "argonaut-monocle" % "{{ site.development }}" changing()      </pre>
-          <pre>"io.argonaut" %% "argonaut-cats" % "{{ site.development }}" changing()      </pre>
-          <p>Depending on argonaut with sbt, latest milestone:</p>
-          <pre>"io.argonaut" %% "argonaut" % "{{ site.milestone }}"  </pre>
-          <pre>"io.argonaut" %% "argonaut-scalaz" % "{{ site.milestone }}"  </pre>
-          <pre>"io.argonaut" %% "argonaut-monocle" % "{{ site.milestone }}"  </pre>
-          <pre>"io.argonaut" %% "argonaut-cats" % "{{ site.milestone }}"  </pre>
+          <pre>"io.argonaut" %% "argonaut-scalaz" % "{{ site.release }}"  </pre>
+          <pre>"io.argonaut" %% "argonaut-monocle" % "{{ site.release }}"  </pre>
+          <pre>"io.argonaut" %% "argonaut-cats" % "{{ site.release }}"  </pre>
 
           <p>
             Then checkout the <a href="/doc/quickstart">quickstart</a>,
@@ -43,11 +32,7 @@ title: argonaut
           </p>
 
           <p>
-            The 6.1.x release supports scala 2.10.* and 2.11.* with scalaz 7.1.*.
-          </p>
- 
-          <p>
-            The 6.2.x release supports scala 2.10.* and 2.11.* with scalaz 7.2.*.
+            The 6.2.x release supports scala 2.10.*, 2.11.* and 2.12.* with scalaz 7.2.*.
           </p>
  
           <p>
