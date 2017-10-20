@@ -1,5 +1,4 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<!DOCTYPE html >
 <html>
         <head>
           <title>DecodeJson - argonaut.DecodeJson</title>
@@ -9,6 +8,11 @@
           
       <link href="../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
       <link href="../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../lib/jquery.js" id="jquery-js"></script>
+      <script type="text/javascript" src="../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../lib/template.js"></script>
+      <script type="text/javascript" src="../lib/tools.tooltip.js"></script>
+      
       <script type="text/javascript">
          if(top === self) {
             var url = '../index.html';
@@ -24,9 +28,17 @@
         </head>
         <body class="type">
       <div id="definition">
-        <a href="DecodeJson$.html" title="Go to companion"><img src="../lib/trait_to_object_big.png" /></a>
+        <a href="DecodeJson$.html" title="See companion object"><img alt="Trait/Object" src="../lib/trait_to_object_big.png" /></a>
         <p id="owner"><a href="package.html" class="extype" name="argonaut">argonaut</a></p>
-        <h1><a href="DecodeJson$.html" title="Go to companion">DecodeJson</a></h1>
+        <h1><a href="DecodeJson$.html" title="See companion object">DecodeJson</a></h1><h3><span class="morelinks"><div>
+            Related Docs:
+            <a href="DecodeJson$.html" title="See companion object">object DecodeJson</a>
+            | <a href="package.html" class="extype" name="argonaut">package argonaut</a>
+          </div></span></h3><span class="permalink">
+      <a href="../index.html#argonaut.DecodeJson" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       </div>
 
       <h4 id="signature" class="signature">
@@ -35,17 +47,17 @@
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <span class="name">DecodeJson</span><span class="tparams">[<span name="A">A</span>]</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+        <span class="name">DecodeJson</span><span class="tparams">[<span name="A">A</span>]</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>
       </span>
       </h4>
       
-          <div id="comment" class="fullcommenttop"><div class="toggleContainer block">
+          <div id="comment" class="fullcommenttop"><dl class="attributes block"> <dt>Source</dt><dd><a href="https://github.com/argonaut-io/argonaut/tree/2c719f155744881d30fc932dcbbf597a9ce8084c/argonaut/shared/src/main/scala/argonaut/DecodeJson.scala" target="_blank">DecodeJson.scala</a></dd></dl><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
-          <div class="superTypes hiddenContent"><span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+          <div class="superTypes hiddenContent"><a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a>, <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.Any" class="extype" target="_top">Any</a></div>
         </div><div class="toggleContainer block">
-          <span class="toggle">Known Subclasses</span>
-          <div class="subClasses hiddenContent"><a href="CodecJson.html" class="extype" name="argonaut.CodecJson">CodecJson</a></div>
-        </div></div>
+            <span class="toggle">Known Subclasses</span>
+            <div class="subClasses hiddenContent"><a href="CodecJson.html" class="extype" name="argonaut.CodecJson">CodecJson</a></div>
+          </div></div>
         
 
       <div id="mbrsel">
@@ -55,7 +67,7 @@
               <ol>
                 
                 <li class="alpha in"><span>Alphabetic</span></li>
-                <li class="inherit out"><span>By inheritance</span></li>
+                <li class="inherit out"><span>By Inheritance</span></li>
               </ol>
             </div>
         <div id="ancestors">
@@ -68,9 +80,8 @@
             <span class="filtertype"></span>
             <ol>
               <li class="hideall out"><span>Hide All</span></li>
-              <li class="showall in"><span>Show all</span></li>
+              <li class="showall in"><span>Show All</span></li>
             </ol>
-            <a href="http://docs.scala-lang.org/overviews/scaladoc/usage.html#members" target="_blank">Learn more about member selection</a>
           </div>
         <div id="visbl">
             <span class="filtertype">Visibility</span>
@@ -84,24 +95,31 @@
 
         
 
-        
-
         <div id="values" class="values members">
-              <h3>Value Members</h3>
-              <ol><li name="scala.AnyRef#!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="!=(x$1:AnyRef):Boolean"></a>
-      <a id="!=(AnyRef):Boolean"></a>
+              <h3>Abstract Value Members</h3>
+              <ol><li name="argonaut.DecodeJson#decode" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="decode(c:argonaut.HCursor):argonaut.DecodeResult[A]"></a>
+      <a id="decode(HCursor):DecodeResult[A]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
-        <span class="modifier">final </span>
+        <span class="modifier">abstract </span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">decode</span><span class="params">(<span name="c">c: <a href="HCursor.html" class="extype" name="argonaut.HCursor">HCursor</a></span>)</span><span class="result">: <a href="DecodeResult.html" class="extype" name="argonaut.DecodeResult">DecodeResult</a>[<span class="extype" name="argonaut.DecodeJson.A">A</span>]</span>
       </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="scala.Any#!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.DecodeJson@decode(c:argonaut.HCursor):argonaut.DecodeResult[A]" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Decode the given hcursor.</p>
+    </li></ol>
+            </div>
+
+        <div id="values" class="values members">
+              <h3>Concrete Value Members</h3>
+              <ol><li name="scala.AnyRef#!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="!=(x$1:Any):Boolean"></a>
       <a id="!=(Any):Boolean"></a>
       <h4 class="signature">
@@ -110,10 +128,14 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.Any" class="extype" target="_top">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
       </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.DecodeJson@!=(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="scala.AnyRef###" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="##():Int"></a>
       <a id="##():Int"></a>
@@ -123,9 +145,13 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+        <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.Int" class="extype" target="_top">Int</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.DecodeJson@##():Int" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="argonaut.DecodeJson#&amp;&amp;&amp;" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="&amp;&amp;&amp;[B](x:argonaut.DecodeJson[B]):argonaut.DecodeJson[(A,B)]"></a>
@@ -138,22 +164,13 @@
       <span class="symbol">
         <span title="gt4s: $amp$amp$amp" class="name">&amp;&amp;&amp;</span><span class="tparams">[<span name="B">B</span>]</span><span class="params">(<span name="x">x: <a href="" class="extype" name="argonaut.DecodeJson">DecodeJson</a>[<span class="extype" name="argonaut.DecodeJson.&amp;&amp;&amp;.B">B</span>]</span>)</span><span class="result">: <a href="" class="extype" name="argonaut.DecodeJson">DecodeJson</a>[(<span class="extype" name="argonaut.DecodeJson.A">A</span>, <span class="extype" name="argonaut.DecodeJson.&amp;&amp;&amp;.B">B</span>)]</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.DecodeJson@&amp;&amp;&amp;[B](x:argonaut.DecodeJson[B]):argonaut.DecodeJson[(A,B)]" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       <p class="shortcomment cmt">Combine two decoders.</p>
     </li><li name="scala.AnyRef#==" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="==(x$1:AnyRef):Boolean"></a>
-      <a id="==(AnyRef):Boolean"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier">final </span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
-      </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="scala.Any#==" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="==(x$1:Any):Boolean"></a>
       <a id="==(Any):Boolean"></a>
       <h4 class="signature">
@@ -162,10 +179,14 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.Any" class="extype" target="_top">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
       </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.DecodeJson@==(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="argonaut.DecodeJson#apply" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="apply(c:argonaut.HCursor):argonaut.DecodeResult[A]"></a>
       <a id="apply(HCursor):DecodeResult[A]"></a>
@@ -177,7 +198,11 @@
       <span class="symbol">
         <span class="name">apply</span><span class="params">(<span name="c">c: <a href="HCursor.html" class="extype" name="argonaut.HCursor">HCursor</a></span>)</span><span class="result">: <a href="DecodeResult.html" class="extype" name="argonaut.DecodeResult">DecodeResult</a>[<span class="extype" name="argonaut.DecodeJson.A">A</span>]</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.DecodeJson@apply(c:argonaut.HCursor):argonaut.DecodeResult[A]" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       <p class="shortcomment cmt">Decode the given hcursor.</p><div class="fullcomment"><div class="comment cmt"><p>Decode the given hcursor. Alias for <code>decode</code>.
 </p></div></div>
     </li><li name="scala.Any#asInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -191,7 +216,11 @@
       <span class="symbol">
         <span class="name">asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Any.asInstanceOf.T0">T0</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.DecodeJson@asInstanceOf[T0]:T0" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
     </li><li name="scala.AnyRef#clone" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="clone():Object"></a>
@@ -202,9 +231,13 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">clone</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+        <span class="name">clone</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.DecodeJson@clone():Object" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">(<span>
       
@@ -212,19 +245,6 @@
     </span>)</span>
               
         </dd></dl></div>
-    </li><li name="argonaut.DecodeJson#decode" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="decode(c:argonaut.HCursor):argonaut.DecodeResult[A]"></a>
-      <a id="decode(HCursor):DecodeResult[A]"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">decode</span><span class="params">(<span name="c">c: <a href="HCursor.html" class="extype" name="argonaut.HCursor">HCursor</a></span>)</span><span class="result">: <a href="DecodeResult.html" class="extype" name="argonaut.DecodeResult">DecodeResult</a>[<span class="extype" name="argonaut.DecodeJson.A">A</span>]</span>
-      </span>
-      </h4>
-      <p class="shortcomment cmt">Decode the given hcursor.</p>
     </li><li name="argonaut.DecodeJson#decodeJson" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="decodeJson(j:argonaut.Json):argonaut.DecodeResult[A]"></a>
       <a id="decodeJson(Json):DecodeResult[A]"></a>
@@ -236,7 +256,11 @@
       <span class="symbol">
         <span class="name">decodeJson</span><span class="params">(<span name="j">j: <a href="Json.html" class="extype" name="argonaut.Json">Json</a></span>)</span><span class="result">: <a href="DecodeResult.html" class="extype" name="argonaut.DecodeResult">DecodeResult</a>[<span class="extype" name="argonaut.DecodeJson.A">A</span>]</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.DecodeJson@decodeJson(j:argonaut.Json):argonaut.DecodeResult[A]" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       <p class="shortcomment cmt">Decode the given json.</p>
     </li><li name="scala.AnyRef#eq" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="eq(x$1:AnyRef):Boolean"></a>
@@ -247,9 +271,13 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.DecodeJson@eq(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li name="scala.AnyRef#equals" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="equals(x$1:Any):Boolean"></a>
@@ -260,9 +288,13 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.Any" class="extype" target="_top">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.DecodeJson@equals(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="scala.AnyRef#finalize" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="finalize():Unit"></a>
@@ -273,9 +305,13 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">finalize</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.DecodeJson@finalize():Unit" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">(<span>
       
@@ -294,8 +330,29 @@
       <span class="symbol">
         <span class="name">flatMap</span><span class="tparams">[<span name="B">B</span>]</span><span class="params">(<span name="f">f: (<span class="extype" name="argonaut.DecodeJson.A">A</span>) ⇒ <a href="" class="extype" name="argonaut.DecodeJson">DecodeJson</a>[<span class="extype" name="argonaut.DecodeJson.flatMap.B">B</span>]</span>)</span><span class="result">: <a href="" class="extype" name="argonaut.DecodeJson">DecodeJson</a>[<span class="extype" name="argonaut.DecodeJson.flatMap.B">B</span>]</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.DecodeJson@flatMap[B](f:A=&gt;argonaut.DecodeJson[B]):argonaut.DecodeJson[B]" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       <p class="shortcomment cmt">Monad.</p>
+    </li><li name="argonaut.DecodeJson#flatMapCursor" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="flatMapCursor(f:argonaut.HCursor=&gt;argonaut.DecodeResult[argonaut.HCursor]):argonaut.DecodeJson[A]"></a>
+      <a id="flatMapCursor((HCursor)⇒DecodeResult[HCursor]):DecodeJson[A]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">flatMapCursor</span><span class="params">(<span name="f">f: (<a href="HCursor.html" class="extype" name="argonaut.HCursor">HCursor</a>) ⇒ <a href="DecodeResult.html" class="extype" name="argonaut.DecodeResult">DecodeResult</a>[<a href="HCursor.html" class="extype" name="argonaut.HCursor">HCursor</a>]</span>)</span><span class="result">: <a href="" class="extype" name="argonaut.DecodeJson">DecodeJson</a>[<span class="extype" name="argonaut.DecodeJson.A">A</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.DecodeJson@flatMapCursor(f:argonaut.HCursor=&gt;argonaut.DecodeResult[argonaut.HCursor]):argonaut.DecodeJson[A]" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Transform the incoming HCursor to produce another DecodeJson instance.</p>
     </li><li name="scala.AnyRef#getClass" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="getClass():Class[_]"></a>
       <a id="getClass():Class[_]"></a>
@@ -307,7 +364,11 @@
       <span class="symbol">
         <span class="name">getClass</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.Class">Class</span>[_]</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.DecodeJson@getClass():Class[_]" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="scala.AnyRef#hashCode" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="hashCode():Int"></a>
@@ -318,9 +379,13 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">hashCode</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+        <span class="name">hashCode</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.Int" class="extype" target="_top">Int</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.DecodeJson@hashCode():Int" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="scala.Any#isInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="isInstanceOf[T0]:Boolean"></a>
@@ -331,23 +396,14 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.DecodeJson@isInstanceOf[T0]:Boolean" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
-    </li><li name="argonaut.DecodeJson#kleisli" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="kleisli:scalaz.Kleisli[argonaut.DecodeResult,argonaut.HCursor,A]"></a>
-      <a id="kleisli:Kleisli[DecodeResult,HCursor,A]"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">kleisli</span><span class="result">: <span class="extype" name="scalaz.Kleisli">Kleisli</span>[<a href="DecodeResult.html" class="extype" name="argonaut.DecodeResult">DecodeResult</a>, <a href="HCursor.html" class="extype" name="argonaut.HCursor">HCursor</a>, <span class="extype" name="argonaut.DecodeJson.A">A</span>]</span>
-      </span>
-      </h4>
-      <p class="shortcomment cmt">Isomorphism to kleisli.</p>
     </li><li name="argonaut.DecodeJson#map" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="map[B](f:A=&gt;B):argonaut.DecodeJson[B]"></a>
       <a id="map[B]((A)⇒B):DecodeJson[B]"></a>
@@ -359,7 +415,11 @@
       <span class="symbol">
         <span class="name">map</span><span class="tparams">[<span name="B">B</span>]</span><span class="params">(<span name="f">f: (<span class="extype" name="argonaut.DecodeJson.A">A</span>) ⇒ <span class="extype" name="argonaut.DecodeJson.map.B">B</span></span>)</span><span class="result">: <a href="" class="extype" name="argonaut.DecodeJson">DecodeJson</a>[<span class="extype" name="argonaut.DecodeJson.map.B">B</span>]</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.DecodeJson@map[B](f:A=&gt;B):argonaut.DecodeJson[B]" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       <p class="shortcomment cmt">Covariant functor.</p>
     </li><li name="scala.AnyRef#ne" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="ne(x$1:AnyRef):Boolean"></a>
@@ -370,9 +430,13 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.DecodeJson@ne(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li name="scala.AnyRef#notify" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="notify():Unit"></a>
@@ -383,9 +447,13 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">notify</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">notify</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.DecodeJson@notify():Unit" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li name="scala.AnyRef#notifyAll" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="notifyAll():Unit"></a>
@@ -396,9 +464,13 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.DecodeJson@notifyAll():Unit" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li name="argonaut.DecodeJson#product" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="product[B](x:argonaut.DecodeJson[B]):(argonaut.HCursor,argonaut.HCursor)=&gt;argonaut.DecodeResult[(A,B)]"></a>
@@ -411,7 +483,11 @@
       <span class="symbol">
         <span class="name">product</span><span class="tparams">[<span name="B">B</span>]</span><span class="params">(<span name="x">x: <a href="" class="extype" name="argonaut.DecodeJson">DecodeJson</a>[<span class="extype" name="argonaut.DecodeJson.product.B">B</span>]</span>)</span><span class="result">: (<a href="HCursor.html" class="extype" name="argonaut.HCursor">HCursor</a>, <a href="HCursor.html" class="extype" name="argonaut.HCursor">HCursor</a>) ⇒ <a href="DecodeResult.html" class="extype" name="argonaut.DecodeResult">DecodeResult</a>[(<span class="extype" name="argonaut.DecodeJson.A">A</span>, <span class="extype" name="argonaut.DecodeJson.product.B">B</span>)]</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.DecodeJson@product[B](x:argonaut.DecodeJson[B]):(argonaut.HCursor,argonaut.HCursor)=&gt;argonaut.DecodeResult[(A,B)]" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       <p class="shortcomment cmt">Run two decoders.</p>
     </li><li name="argonaut.DecodeJson#setName" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="setName(n:String):argonaut.DecodeJson[A]"></a>
@@ -424,20 +500,28 @@
       <span class="symbol">
         <span class="name">setName</span><span class="params">(<span name="n">n: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="" class="extype" name="argonaut.DecodeJson">DecodeJson</a>[<span class="extype" name="argonaut.DecodeJson.A">A</span>]</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.DecodeJson@setName(n:String):argonaut.DecodeJson[A]" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       <p class="shortcomment cmt">Build a new DecodeJson codec with the specified name.</p>
     </li><li name="argonaut.DecodeJson#split" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="split[B](x:argonaut.DecodeJson[B]):scalaz.\/[argonaut.HCursor,argonaut.HCursor]=&gt;argonaut.DecodeResult[scalaz.\/[A,B]]"></a>
-      <a id="split[B](DecodeJson[B]):(\/[HCursor,HCursor])⇒DecodeResult[\/[A,B]]"></a>
+      <a id="split[B](x:argonaut.DecodeJson[B]):Either[argonaut.HCursor,argonaut.HCursor]=&gt;argonaut.DecodeResult[Either[A,B]]"></a>
+      <a id="split[B](DecodeJson[B]):(Either[HCursor,HCursor])⇒DecodeResult[Either[A,B]]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">split</span><span class="tparams">[<span name="B">B</span>]</span><span class="params">(<span name="x">x: <a href="" class="extype" name="argonaut.DecodeJson">DecodeJson</a>[<span class="extype" name="argonaut.DecodeJson.split.B">B</span>]</span>)</span><span class="result">: (<span class="extype" name="scalaz.\/">\/</span>[<a href="HCursor.html" class="extype" name="argonaut.HCursor">HCursor</a>, <a href="HCursor.html" class="extype" name="argonaut.HCursor">HCursor</a>]) ⇒ <a href="DecodeResult.html" class="extype" name="argonaut.DecodeResult">DecodeResult</a>[<span class="extype" name="scalaz.\/">\/</span>[<span class="extype" name="argonaut.DecodeJson.A">A</span>, <span class="extype" name="argonaut.DecodeJson.split.B">B</span>]]</span>
+        <span class="name">split</span><span class="tparams">[<span name="B">B</span>]</span><span class="params">(<span name="x">x: <a href="" class="extype" name="argonaut.DecodeJson">DecodeJson</a>[<span class="extype" name="argonaut.DecodeJson.split.B">B</span>]</span>)</span><span class="result">: (<span class="extype" name="scala.Either">Either</span>[<a href="HCursor.html" class="extype" name="argonaut.HCursor">HCursor</a>, <a href="HCursor.html" class="extype" name="argonaut.HCursor">HCursor</a>]) ⇒ <a href="DecodeResult.html" class="extype" name="argonaut.DecodeResult">DecodeResult</a>[<span class="extype" name="scala.Either">Either</span>[<span class="extype" name="argonaut.DecodeJson.A">A</span>, <span class="extype" name="argonaut.DecodeJson.split.B">B</span>]]</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.DecodeJson@split[B](x:argonaut.DecodeJson[B]):Either[argonaut.HCursor,argonaut.HCursor]=&gt;argonaut.DecodeResult[Either[A,B]]" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       <p class="shortcomment cmt">Run one or another decoder.</p>
     </li><li name="scala.AnyRef#synchronized" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="synchronized[T0](x$1:=&gt;T0):T0"></a>
@@ -450,7 +534,11 @@
       <span class="symbol">
         <span class="name">synchronized</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">(<span name="arg0">arg0: ⇒ <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>)</span><span class="result">: <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.DecodeJson@synchronized[T0](x$1:=&gt;T0):T0" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li name="scala.AnyRef#toString" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="toString():String"></a>
@@ -463,7 +551,11 @@
       <span class="symbol">
         <span class="name">toString</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.DecodeJson@toString():String" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="argonaut.DecodeJson#tryDecode" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="tryDecode(c:argonaut.ACursor):argonaut.DecodeResult[A]"></a>
@@ -476,7 +568,11 @@
       <span class="symbol">
         <span class="name">tryDecode</span><span class="params">(<span name="c">c: <a href="ACursor.html" class="extype" name="argonaut.ACursor">ACursor</a></span>)</span><span class="result">: <a href="DecodeResult.html" class="extype" name="argonaut.DecodeResult">DecodeResult</a>[<span class="extype" name="argonaut.DecodeJson.A">A</span>]</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.DecodeJson@tryDecode(c:argonaut.ACursor):argonaut.DecodeResult[A]" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       <p class="shortcomment cmt">Decode the given acursor.</p>
     </li><li name="argonaut.DecodeJson#validate" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="validate(f:argonaut.HCursor=&gt;Boolean,message:=&gt;String):argonaut.DecodeJson[A]"></a>
@@ -487,9 +583,13 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">validate</span><span class="params">(<span name="f">f: (<a href="HCursor.html" class="extype" name="argonaut.HCursor">HCursor</a>) ⇒ <span class="extype" name="scala.Boolean">Boolean</span></span>, <span name="message">message: ⇒ <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="" class="extype" name="argonaut.DecodeJson">DecodeJson</a>[<span class="extype" name="argonaut.DecodeJson.A">A</span>]</span>
+        <span class="name">validate</span><span class="params">(<span name="f">f: (<a href="HCursor.html" class="extype" name="argonaut.HCursor">HCursor</a>) ⇒ <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>, <span name="message">message: ⇒ <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="" class="extype" name="argonaut.DecodeJson">DecodeJson</a>[<span class="extype" name="argonaut.DecodeJson.A">A</span>]</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.DecodeJson@validate(f:argonaut.HCursor=&gt;Boolean,message:=&gt;String):argonaut.DecodeJson[A]" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       <p class="shortcomment cmt">Build a new DecodeJson codec with the specified precondition that f(c) == true.</p>
     </li><li name="argonaut.DecodeJson#validateFields" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="validateFields(n:Int):argonaut.DecodeJson[A]"></a>
@@ -500,9 +600,13 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">validateFields</span><span class="params">(<span name="n">n: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <a href="" class="extype" name="argonaut.DecodeJson">DecodeJson</a>[<span class="extype" name="argonaut.DecodeJson.A">A</span>]</span>
+        <span class="name">validateFields</span><span class="params">(<span name="n">n: <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.Int" class="extype" target="_top">Int</a></span>)</span><span class="result">: <a href="" class="extype" name="argonaut.DecodeJson">DecodeJson</a>[<span class="extype" name="argonaut.DecodeJson.A">A</span>]</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.DecodeJson@validateFields(n:Int):argonaut.DecodeJson[A]" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       <p class="shortcomment cmt">Build a new DecodeJson codec with the precondition that the cursor focus is object with exactly n field.</p>
     </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="wait():Unit"></a>
@@ -513,9 +617,13 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">wait</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">wait</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.DecodeJson@wait():Unit" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">(<span>
       
@@ -532,9 +640,13 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>, <span name="arg1">arg1: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.Long" class="extype" target="_top">Long</a></span>, <span name="arg1">arg1: <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.Int" class="extype" target="_top">Int</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.DecodeJson@wait(x$1:Long,x$2:Int):Unit" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">(<span>
       
@@ -551,9 +663,13 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.Long" class="extype" target="_top">Long</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.DecodeJson@wait(x$1:Long):Unit" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">(<span>
       
@@ -561,18 +677,39 @@
     </span>)</span>
               
         </dd></dl></div>
-    </li><li name="argonaut.DecodeJson#|||" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="|||[AA&gt;:A](x:=&gt;argonaut.DecodeJson[AA]):argonaut.DecodeJson[AA]"></a>
-      <a id="|||[AA&gt;:A](⇒DecodeJson[AA]):DecodeJson[AA]"></a>
+    </li><li name="argonaut.DecodeJson#widen" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="widen[AA]()(implicitev:&lt;:&lt;[A,AA]):argonaut.DecodeJson[AA]"></a>
+      <a id="widen[AA]()(&lt;:&lt;[A,AA]):DecodeJson[AA]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span title="gt4s: $bar$bar$bar" class="name">|||</span><span class="tparams">[<span name="AA">AA &gt;: <span class="extype" name="argonaut.DecodeJson.A">A</span></span>]</span><span class="params">(<span name="x">x: ⇒ <a href="" class="extype" name="argonaut.DecodeJson">DecodeJson</a>[<span class="extype" name="argonaut.DecodeJson.|||.AA">AA</span>]</span>)</span><span class="result">: <a href="" class="extype" name="argonaut.DecodeJson">DecodeJson</a>[<span class="extype" name="argonaut.DecodeJson.|||.AA">AA</span>]</span>
+        <span class="name">widen</span><span class="tparams">[<span name="AA">AA</span>]</span><span class="params">()</span><span class="params">(<span class="implicit">implicit </span><span name="ev">ev: <span class="extype" name="scala.Predef.&lt;:&lt;">&lt;:&lt;</span>[<span class="extype" name="argonaut.DecodeJson.A">A</span>, <span class="extype" name="argonaut.DecodeJson.widen.AA">AA</span>]</span>)</span><span class="result">: <a href="" class="extype" name="argonaut.DecodeJson">DecodeJson</a>[<span class="extype" name="argonaut.DecodeJson.widen.AA">AA</span>]</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.DecodeJson@widen[AA]()(implicitev:&lt;:&lt;[A,AA]):argonaut.DecodeJson[AA]" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Widen A into AA.</p>
+    </li><li name="argonaut.DecodeJson#|||" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="|||[B,AA](x:=&gt;argonaut.DecodeJson[B])(implicitevA:&lt;:&lt;[A,AA],implicitevB:&lt;:&lt;[B,AA]):argonaut.DecodeJson[AA]"></a>
+      <a id="|||[B,AA](⇒DecodeJson[B])(&lt;:&lt;[A,AA],&lt;:&lt;[B,AA]):DecodeJson[AA]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $bar$bar$bar" class="name">|||</span><span class="tparams">[<span name="B">B</span>, <span name="AA">AA</span>]</span><span class="params">(<span name="x">x: ⇒ <a href="" class="extype" name="argonaut.DecodeJson">DecodeJson</a>[<span class="extype" name="argonaut.DecodeJson.|||.B">B</span>]</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="evA">evA: <span class="extype" name="scala.Predef.&lt;:&lt;">&lt;:&lt;</span>[<span class="extype" name="argonaut.DecodeJson.A">A</span>, <span class="extype" name="argonaut.DecodeJson.|||.AA">AA</span>]</span>, <span name="evB">evB: <span class="extype" name="scala.Predef.&lt;:&lt;">&lt;:&lt;</span>[<span class="extype" name="argonaut.DecodeJson.|||.B">B</span>, <span class="extype" name="argonaut.DecodeJson.|||.AA">AA</span>]</span>)</span><span class="result">: <a href="" class="extype" name="argonaut.DecodeJson">DecodeJson</a>[<span class="extype" name="argonaut.DecodeJson.|||.AA">AA</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.DecodeJson@|||[B,AA](x:=&gt;argonaut.DecodeJson[B])(implicitevA:&lt;:&lt;[A,AA],implicitevB:&lt;:&lt;[B,AA]):argonaut.DecodeJson[AA]" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       <p class="shortcomment cmt">Choose the first succeeding decoder.</p>
     </li></ol>
             </div>
@@ -584,9 +721,9 @@
 
         <div id="inheritedMembers">
         <div class="parent" name="scala.AnyRef">
-              <h3>Inherited from <span class="extype" name="scala.AnyRef">AnyRef</span></h3>
+              <h3>Inherited from <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></h3>
             </div><div class="parent" name="scala.Any">
-              <h3>Inherited from <span class="extype" name="scala.Any">Any</span></h3>
+              <h3>Inherited from <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.Any" class="extype" target="_top">Any</a></h3>
             </div>
         
         </div>
@@ -603,6 +740,7 @@
       <div id="tooltip"></div>
 
       <div id="footer">  </div>
-      <script defer="defer" type="text/javascript" id="jquery-js" src="../lib/jquery.js"></script><script defer="defer" type="text/javascript" id="jquery-ui-js" src="../lib/jquery-ui.js"></script><script defer="defer" type="text/javascript" id="tools-tooltip-js" src="../lib/tools.tooltip.js"></script><script defer="defer" type="text/javascript" id="template-js" src="../lib/template.js"></script>
+
+
     </body>
       </html>
