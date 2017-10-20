@@ -2,10 +2,15 @@ organization := "io.argonaut"
 
 name := "argonaut-doc"
 
-scalaVersion := "2.10.1"
+val Scala211 = "2.11.9"
 
-crossScalaVersions := Seq("2.9.2", "2.9.3", "2.10.1")
+scalaVersion := Scala211
+
+crossScalaVersions := Seq(Scala211)
 
 libraryDependencies ++= Seq(
-  "io.argonaut" %% "argonaut" % "6.1"
+  "io.argonaut" %% "argonaut" % "6.2",
+  "io.argonaut" %% "argonaut-scalaz" % "6.2",
+  "io.argonaut" %% "argonaut-cats" % "6.2",
+  "io.argonaut" %% "argonaut-monocle" % "6.2"
 )

@@ -1,5 +1,4 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<!DOCTYPE html >
 <html>
         <head>
           <title>ParseWrap - argonaut.ParseWrap</title>
@@ -9,6 +8,11 @@
           
       <link href="../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
       <link href="../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../lib/jquery.js" id="jquery-js"></script>
+      <script type="text/javascript" src="../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../lib/template.js"></script>
+      <script type="text/javascript" src="../lib/tools.tooltip.js"></script>
+      
       <script type="text/javascript">
          if(top === self) {
             var url = '../index.html';
@@ -24,9 +28,15 @@
         </head>
         <body class="type">
       <div id="definition">
-        <img src="../lib/class_big.png" />
+        <img alt="Class" src="../lib/class_big.png" />
         <p id="owner"><a href="package.html" class="extype" name="argonaut">argonaut</a></p>
-        <h1>ParseWrap</h1>
+        <h1>ParseWrap</h1><h3><span class="morelinks"><div>Related Doc:
+            <a href="package.html" class="extype" name="argonaut">package argonaut</a>
+          </div></span></h3><span class="permalink">
+      <a href="../index.html#argonaut.ParseWrap" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       </div>
 
       <h4 id="signature" class="signature">
@@ -35,18 +45,18 @@
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <span class="name">ParseWrap</span><span class="tparams">[<span name="A">A</span>]</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+        <span class="name">ParseWrap</span><span class="tparams">[<span name="A">A</span>]</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>
       </span>
       </h4>
       
-          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Utiltity for building the argonaut API over
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Utility for building the argonaut API over
 various types. This is used to implement
 StringWrap, and it is expected that it would
 be used by integrations with other toolkits
 to provide an argonaut API on their types.
-</p></div><div class="toggleContainer block">
+</p></div><dl class="attributes block"> <dt>Source</dt><dd><a href="https://github.com/argonaut-io/argonaut/tree/2c719f155744881d30fc932dcbbf597a9ce8084c/argonaut/shared/src/main/scala/argonaut/ParseWrap.scala" target="_blank">ParseWrap.scala</a></dd></dl><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
-          <div class="superTypes hiddenContent"><span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+          <div class="superTypes hiddenContent"><a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a>, <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.Any" class="extype" target="_top">Any</a></div>
         </div></div>
         
 
@@ -57,7 +67,7 @@ to provide an argonaut API on their types.
               <ol>
                 
                 <li class="alpha in"><span>Alphabetic</span></li>
-                <li class="inherit out"><span>By inheritance</span></li>
+                <li class="inherit out"><span>By Inheritance</span></li>
               </ol>
             </div>
         <div id="ancestors">
@@ -70,9 +80,8 @@ to provide an argonaut API on their types.
             <span class="filtertype"></span>
             <ol>
               <li class="hideall out"><span>Hide All</span></li>
-              <li class="showall in"><span>Show all</span></li>
+              <li class="showall in"><span>Show All</span></li>
             </ol>
-            <a href="http://docs.scala-lang.org/overviews/scaladoc/usage.html#members" target="_blank">Learn more about member selection</a>
           </div>
         <div id="visbl">
             <span class="filtertype">Visibility</span>
@@ -95,7 +104,11 @@ to provide an argonaut API on their types.
       <span class="symbol">
         <span class="name">ParseWrap</span><span class="params">(<span name="value">value: <span class="extype" name="argonaut.ParseWrap.A">A</span></span>, <span name="parser">parser: <a href="Parse.html" class="extype" name="argonaut.Parse">Parse</a>[<span class="extype" name="argonaut.ParseWrap.A">A</span>]</span>)</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.ParseWrap@&lt;init&gt;(value:A,parser:argonaut.Parse[A]):argonaut.ParseWrap[A]" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       
     </li></ol>
             </div>
@@ -107,19 +120,6 @@ to provide an argonaut API on their types.
         <div id="values" class="values members">
               <h3>Value Members</h3>
               <ol><li name="scala.AnyRef#!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="!=(x$1:AnyRef):Boolean"></a>
-      <a id="!=(AnyRef):Boolean"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier">final </span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
-      </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="scala.Any#!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="!=(x$1:Any):Boolean"></a>
       <a id="!=(Any):Boolean"></a>
       <h4 class="signature">
@@ -128,10 +128,14 @@ to provide an argonaut API on their types.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.Any" class="extype" target="_top">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
       </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.ParseWrap@!=(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="scala.AnyRef###" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="##():Int"></a>
       <a id="##():Int"></a>
@@ -141,24 +145,15 @@ to provide an argonaut API on their types.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+        <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.Int" class="extype" target="_top">Int</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.ParseWrap@##():Int" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="scala.AnyRef#==" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="==(x$1:AnyRef):Boolean"></a>
-      <a id="==(AnyRef):Boolean"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier">final </span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
-      </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="scala.Any#==" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="==(x$1:Any):Boolean"></a>
       <a id="==(Any):Boolean"></a>
       <h4 class="signature">
@@ -167,10 +162,14 @@ to provide an argonaut API on their types.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.Any" class="extype" target="_top">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
       </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.ParseWrap@==(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="scala.Any#asInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="asInstanceOf[T0]:T0"></a>
       <a id="asInstanceOf[T0]:T0"></a>
@@ -182,7 +181,11 @@ to provide an argonaut API on their types.
       <span class="symbol">
         <span class="name">asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Any.asInstanceOf.T0">T0</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.ParseWrap@asInstanceOf[T0]:T0" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
     </li><li name="scala.AnyRef#clone" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="clone():Object"></a>
@@ -193,9 +196,13 @@ to provide an argonaut API on their types.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">clone</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+        <span class="name">clone</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.ParseWrap@clone():Object" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">(<span>
       
@@ -204,31 +211,39 @@ to provide an argonaut API on their types.
               
         </dd></dl></div>
     </li><li name="argonaut.ParseWrap#decode" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="decode[X](implicitevidence$1:argonaut.DecodeJson[X]):scalaz.\/[scalaz.\/[String,(String,argonaut.CursorHistory)],X]"></a>
-      <a id="decode[X](DecodeJson[X]):\/[\/[String,(String,CursorHistory)],X]"></a>
+      <a id="decode[X](implicitevidence$1:argonaut.DecodeJson[X]):Either[Either[String,(String,argonaut.CursorHistory)],X]"></a>
+      <a id="decode[X](DecodeJson[X]):Either[Either[String,(String,CursorHistory)],X]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">decode</span><span class="tparams">[<span name="X">X</span>]</span><span class="params">(<span class="implicit">implicit </span><span name="arg0">arg0: <a href="DecodeJson.html" class="extype" name="argonaut.DecodeJson">DecodeJson</a>[<span class="extype" name="argonaut.ParseWrap.decode.X">X</span>]</span>)</span><span class="result">: <span class="extype" name="scalaz.\/">\/</span>[<span class="extype" name="scalaz.\/">\/</span>[<span class="extype" name="scala.Predef.String">String</span>, (<span class="extype" name="scala.Predef.String">String</span>, <a href="CursorHistory.html" class="extype" name="argonaut.CursorHistory">CursorHistory</a>)], <span class="extype" name="argonaut.ParseWrap.decode.X">X</span>]</span>
+        <span class="name">decode</span><span class="tparams">[<span name="X">X</span>]</span><span class="params">(<span class="implicit">implicit </span><span name="arg0">arg0: <a href="DecodeJson.html" class="extype" name="argonaut.DecodeJson">DecodeJson</a>[<span class="extype" name="argonaut.ParseWrap.decode.X">X</span>]</span>)</span><span class="result">: <span class="extype" name="scala.Either">Either</span>[<span class="extype" name="scala.Either">Either</span>[<span class="extype" name="scala.Predef.String">String</span>, (<span class="extype" name="scala.Predef.String">String</span>, <a href="CursorHistory.html" class="extype" name="argonaut.CursorHistory">CursorHistory</a>)], <span class="extype" name="argonaut.ParseWrap.decode.X">X</span>]</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.ParseWrap@decode[X](implicitevidence$1:argonaut.DecodeJson[X]):Either[Either[String,(String,argonaut.CursorHistory)],X]" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       <p class="shortcomment cmt">Parses the string value and decodes it returning a list of all the failures stemming from
 either the JSON parsing or the decoding.</p>
     </li><li name="argonaut.ParseWrap#decodeEither" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="decodeEither[X](implicitevidence$7:argonaut.DecodeJson[X]):scalaz.\/[String,X]"></a>
-      <a id="decodeEither[X](DecodeJson[X]):\/[String,X]"></a>
+      <a id="decodeEither[X](implicitevidence$7:argonaut.DecodeJson[X]):Either[String,X]"></a>
+      <a id="decodeEither[X](DecodeJson[X]):Either[String,X]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">decodeEither</span><span class="tparams">[<span name="X">X</span>]</span><span class="params">(<span class="implicit">implicit </span><span name="arg0">arg0: <a href="DecodeJson.html" class="extype" name="argonaut.DecodeJson">DecodeJson</a>[<span class="extype" name="argonaut.ParseWrap.decodeEither.X">X</span>]</span>)</span><span class="result">: <span class="extype" name="scalaz.\/">\/</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="argonaut.ParseWrap.decodeEither.X">X</span>]</span>
+        <span class="name">decodeEither</span><span class="tparams">[<span name="X">X</span>]</span><span class="params">(<span class="implicit">implicit </span><span name="arg0">arg0: <a href="DecodeJson.html" class="extype" name="argonaut.DecodeJson">DecodeJson</a>[<span class="extype" name="argonaut.ParseWrap.decodeEither.X">X</span>]</span>)</span><span class="result">: <span class="extype" name="scala.Either">Either</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="argonaut.ParseWrap.decodeEither.X">X</span>]</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.ParseWrap@decodeEither[X](implicitevidence$7:argonaut.DecodeJson[X]):Either[String,X]" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       <p class="shortcomment cmt">Parses and decodes the string value to a possible JSON value.</p>
     </li><li name="argonaut.ParseWrap#decodeOption" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="decodeOption[X](implicitevidence$6:argonaut.DecodeJson[X]):Option[X]"></a>
@@ -239,83 +254,86 @@ either the JSON parsing or the decoding.</p>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">decodeOption</span><span class="tparams">[<span name="X">X</span>]</span><span class="params">(<span class="implicit">implicit </span><span name="arg0">arg0: <a href="DecodeJson.html" class="extype" name="argonaut.DecodeJson">DecodeJson</a>[<span class="extype" name="argonaut.ParseWrap.decodeOption.X">X</span>]</span>)</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="argonaut.ParseWrap.decodeOption.X">X</span>]</span>
+        <span class="name">decodeOption</span><span class="tparams">[<span name="X">X</span>]</span><span class="params">(<span class="implicit">implicit </span><span name="arg0">arg0: <a href="DecodeJson.html" class="extype" name="argonaut.DecodeJson">DecodeJson</a>[<span class="extype" name="argonaut.ParseWrap.decodeOption.X">X</span>]</span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.Option" class="extype" target="_top">Option</a>[<span class="extype" name="argonaut.ParseWrap.decodeOption.X">X</span>]</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.ParseWrap@decodeOption[X](implicitevidence$6:argonaut.DecodeJson[X]):Option[X]" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       <p class="shortcomment cmt">Parses and decodes the string value to a possible JSON value.</p>
     </li><li name="argonaut.ParseWrap#decodeOr" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="decodeOr[A,X](success:X=&gt;A,default:=&gt;A)(implicitevidence$5:argonaut.DecodeJson[X]):A"></a>
-      <a id="decodeOr[A,X]((X)⇒A,⇒A)(DecodeJson[X]):A"></a>
+      <a id="decodeOr[Y,X](success:X=&gt;Y,default:=&gt;Y)(implicitevidence$5:argonaut.DecodeJson[X]):Y"></a>
+      <a id="decodeOr[Y,X]((X)⇒Y,⇒Y)(DecodeJson[X]):Y"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">decodeOr</span><span class="tparams">[<span name="A">A</span>, <span name="X">X</span>]</span><span class="params">(<span name="success">success: (<span class="extype" name="argonaut.ParseWrap.decodeOr.X">X</span>) ⇒ <span class="extype" name="argonaut.ParseWrap.decodeOr.A">A</span></span>, <span name="default">default: ⇒ <span class="extype" name="argonaut.ParseWrap.decodeOr.A">A</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="arg0">arg0: <a href="DecodeJson.html" class="extype" name="argonaut.DecodeJson">DecodeJson</a>[<span class="extype" name="argonaut.ParseWrap.decodeOr.X">X</span>]</span>)</span><span class="result">: <span class="extype" name="argonaut.ParseWrap.decodeOr.A">A</span></span>
+        <span class="name">decodeOr</span><span class="tparams">[<span name="Y">Y</span>, <span name="X">X</span>]</span><span class="params">(<span name="success">success: (<span class="extype" name="argonaut.ParseWrap.decodeOr.X">X</span>) ⇒ <span class="extype" name="argonaut.ParseWrap.decodeOr.Y">Y</span></span>, <span name="default">default: ⇒ <span class="extype" name="argonaut.ParseWrap.decodeOr.Y">Y</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="arg0">arg0: <a href="DecodeJson.html" class="extype" name="argonaut.DecodeJson">DecodeJson</a>[<span class="extype" name="argonaut.ParseWrap.decodeOr.X">X</span>]</span>)</span><span class="result">: <span class="extype" name="argonaut.ParseWrap.decodeOr.Y">Y</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.ParseWrap@decodeOr[Y,X](success:X=&gt;Y,default:=&gt;Y)(implicitevidence$5:argonaut.DecodeJson[X]):Y" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       <p class="shortcomment cmt">Parses the string value into a JSON value and if it succeeds, decodes to a data-type.</p><div class="fullcomment"><div class="comment cmt"><p>Parses the string value into a JSON value and if it succeeds, decodes to a data-type.
-</p></div><dl class="paramcmts block"><dt class="param">success</dt><dd class="cmt"><p>Run this function if the parse produces a success.</p></dd><dt class="param">default</dt><dd class="cmt"><p>Return this value of the parse or decode fails.
-</p></dd></dl></div>
-    </li><li name="argonaut.ParseWrap#decodeValidation" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="decodeValidation[X](implicitevidence$8:argonaut.DecodeJson[X]):scalaz.Validation[String,X]"></a>
-      <a id="decodeValidation[X](DecodeJson[X]):Validation[String,X]"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">decodeValidation</span><span class="tparams">[<span name="X">X</span>]</span><span class="params">(<span class="implicit">implicit </span><span name="arg0">arg0: <a href="DecodeJson.html" class="extype" name="argonaut.DecodeJson">DecodeJson</a>[<span class="extype" name="argonaut.ParseWrap.decodeValidation.X">X</span>]</span>)</span><span class="result">: <span class="extype" name="scalaz.Validation">Validation</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="argonaut.ParseWrap.decodeValidation.X">X</span>]</span>
-      </span>
-      </h4>
-      <p class="shortcomment cmt">Parses and decodes the string value to a possible JSON value.</p>
+</p></div><dl class="paramcmts block"><dt class="param">success</dt><dd class="cmt"><p>Run this function if the parse produces a success.</p></dd><dt class="param">default</dt><dd class="cmt"><p>Return this value of the parse or decode fails.</p></dd></dl></div>
     </li><li name="argonaut.ParseWrap#decodeWith" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="decodeWith[A,X](success:X=&gt;A,parsefailure:String=&gt;A,decodefailure:(String,argonaut.CursorHistory)=&gt;A)(implicitevidence$2:argonaut.DecodeJson[X]):A"></a>
-      <a id="decodeWith[A,X]((X)⇒A,(String)⇒A,(String,CursorHistory)⇒A)(DecodeJson[X]):A"></a>
+      <a id="decodeWith[Y,X](success:X=&gt;Y,parsefailure:String=&gt;Y,decodefailure:(String,argonaut.CursorHistory)=&gt;Y)(implicitevidence$2:argonaut.DecodeJson[X]):Y"></a>
+      <a id="decodeWith[Y,X]((X)⇒Y,(String)⇒Y,(String,CursorHistory)⇒Y)(DecodeJson[X]):Y"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">decodeWith</span><span class="tparams">[<span name="A">A</span>, <span name="X">X</span>]</span><span class="params">(<span name="success">success: (<span class="extype" name="argonaut.ParseWrap.decodeWith.X">X</span>) ⇒ <span class="extype" name="argonaut.ParseWrap.decodeWith.A">A</span></span>, <span name="parsefailure">parsefailure: (<span class="extype" name="scala.Predef.String">String</span>) ⇒ <span class="extype" name="argonaut.ParseWrap.decodeWith.A">A</span></span>, <span name="decodefailure">decodefailure: (<span class="extype" name="scala.Predef.String">String</span>, <a href="CursorHistory.html" class="extype" name="argonaut.CursorHistory">CursorHistory</a>) ⇒ <span class="extype" name="argonaut.ParseWrap.decodeWith.A">A</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="arg0">arg0: <a href="DecodeJson.html" class="extype" name="argonaut.DecodeJson">DecodeJson</a>[<span class="extype" name="argonaut.ParseWrap.decodeWith.X">X</span>]</span>)</span><span class="result">: <span class="extype" name="argonaut.ParseWrap.decodeWith.A">A</span></span>
+        <span class="name">decodeWith</span><span class="tparams">[<span name="Y">Y</span>, <span name="X">X</span>]</span><span class="params">(<span name="success">success: (<span class="extype" name="argonaut.ParseWrap.decodeWith.X">X</span>) ⇒ <span class="extype" name="argonaut.ParseWrap.decodeWith.Y">Y</span></span>, <span name="parsefailure">parsefailure: (<span class="extype" name="scala.Predef.String">String</span>) ⇒ <span class="extype" name="argonaut.ParseWrap.decodeWith.Y">Y</span></span>, <span name="decodefailure">decodefailure: (<span class="extype" name="scala.Predef.String">String</span>, <a href="CursorHistory.html" class="extype" name="argonaut.CursorHistory">CursorHistory</a>) ⇒ <span class="extype" name="argonaut.ParseWrap.decodeWith.Y">Y</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="arg0">arg0: <a href="DecodeJson.html" class="extype" name="argonaut.DecodeJson">DecodeJson</a>[<span class="extype" name="argonaut.ParseWrap.decodeWith.X">X</span>]</span>)</span><span class="result">: <span class="extype" name="argonaut.ParseWrap.decodeWith.Y">Y</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.ParseWrap@decodeWith[Y,X](success:X=&gt;Y,parsefailure:String=&gt;Y,decodefailure:(String,argonaut.CursorHistory)=&gt;Y)(implicitevidence$2:argonaut.DecodeJson[X]):Y" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       <p class="shortcomment cmt">Parses the string value into a JSON value and if it succeeds, decodes to a data-type.</p><div class="fullcomment"><div class="comment cmt"><p>Parses the string value into a JSON value and if it succeeds, decodes to a data-type.
-</p></div><dl class="paramcmts block"><dt class="param">success</dt><dd class="cmt"><p>Run this function if the parse produces a success.</p></dd><dt class="param">parsefailure</dt><dd class="cmt"><p>Run this function if the parse produces a failure.</p></dd><dt class="param">decodefailure</dt><dd class="cmt"><p>Run this function if the decode produces a failure.
-</p></dd></dl></div>
+</p></div><dl class="paramcmts block"><dt class="param">success</dt><dd class="cmt"><p>Run this function if the parse produces a success.</p></dd><dt class="param">parsefailure</dt><dd class="cmt"><p>Run this function if the parse produces a failure.</p></dd><dt class="param">decodefailure</dt><dd class="cmt"><p>Run this function if the decode produces a failure.</p></dd></dl></div>
     </li><li name="argonaut.ParseWrap#decodeWithEither" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="decodeWithEither[A,X](success:X=&gt;A,failure:scalaz.\/[String,(String,argonaut.CursorHistory)]=&gt;A)(implicitevidence$3:argonaut.DecodeJson[X]):A"></a>
-      <a id="decodeWithEither[A,X]((X)⇒A,(\/[String,(String,CursorHistory)])⇒A)(DecodeJson[X]):A"></a>
+      <a id="decodeWithEither[Y,X](success:X=&gt;Y,failure:Either[String,(String,argonaut.CursorHistory)]=&gt;Y)(implicitevidence$3:argonaut.DecodeJson[X]):Y"></a>
+      <a id="decodeWithEither[Y,X]((X)⇒Y,(Either[String,(String,CursorHistory)])⇒Y)(DecodeJson[X]):Y"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">decodeWithEither</span><span class="tparams">[<span name="A">A</span>, <span name="X">X</span>]</span><span class="params">(<span name="success">success: (<span class="extype" name="argonaut.ParseWrap.decodeWithEither.X">X</span>) ⇒ <span class="extype" name="argonaut.ParseWrap.decodeWithEither.A">A</span></span>, <span name="failure">failure: (<span class="extype" name="scalaz.\/">\/</span>[<span class="extype" name="scala.Predef.String">String</span>, (<span class="extype" name="scala.Predef.String">String</span>, <a href="CursorHistory.html" class="extype" name="argonaut.CursorHistory">CursorHistory</a>)]) ⇒ <span class="extype" name="argonaut.ParseWrap.decodeWithEither.A">A</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="arg0">arg0: <a href="DecodeJson.html" class="extype" name="argonaut.DecodeJson">DecodeJson</a>[<span class="extype" name="argonaut.ParseWrap.decodeWithEither.X">X</span>]</span>)</span><span class="result">: <span class="extype" name="argonaut.ParseWrap.decodeWithEither.A">A</span></span>
+        <span class="name">decodeWithEither</span><span class="tparams">[<span name="Y">Y</span>, <span name="X">X</span>]</span><span class="params">(<span name="success">success: (<span class="extype" name="argonaut.ParseWrap.decodeWithEither.X">X</span>) ⇒ <span class="extype" name="argonaut.ParseWrap.decodeWithEither.Y">Y</span></span>, <span name="failure">failure: (<span class="extype" name="scala.Either">Either</span>[<span class="extype" name="scala.Predef.String">String</span>, (<span class="extype" name="scala.Predef.String">String</span>, <a href="CursorHistory.html" class="extype" name="argonaut.CursorHistory">CursorHistory</a>)]) ⇒ <span class="extype" name="argonaut.ParseWrap.decodeWithEither.Y">Y</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="arg0">arg0: <a href="DecodeJson.html" class="extype" name="argonaut.DecodeJson">DecodeJson</a>[<span class="extype" name="argonaut.ParseWrap.decodeWithEither.X">X</span>]</span>)</span><span class="result">: <span class="extype" name="argonaut.ParseWrap.decodeWithEither.Y">Y</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.ParseWrap@decodeWithEither[Y,X](success:X=&gt;Y,failure:Either[String,(String,argonaut.CursorHistory)]=&gt;Y)(implicitevidence$3:argonaut.DecodeJson[X]):Y" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       <p class="shortcomment cmt">Parses the string value into a JSON value and if it succeeds, decodes to a data-type.</p><div class="fullcomment"><div class="comment cmt"><p>Parses the string value into a JSON value and if it succeeds, decodes to a data-type.
-</p></div><dl class="paramcmts block"><dt class="param">success</dt><dd class="cmt"><p>Run this function if the parse produces a success.</p></dd><dt class="param">failure</dt><dd class="cmt"><p>Run this function if the parse produces a failure.
-</p></dd></dl></div>
+</p></div><dl class="paramcmts block"><dt class="param">success</dt><dd class="cmt"><p>Run this function if the parse produces a success.</p></dd><dt class="param">failure</dt><dd class="cmt"><p>Run this function if the parse produces a failure.</p></dd></dl></div>
     </li><li name="argonaut.ParseWrap#decodeWithMessage" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="decodeWithMessage[A,X](success:X=&gt;A,failure:String=&gt;A)(implicitevidence$4:argonaut.DecodeJson[X]):A"></a>
-      <a id="decodeWithMessage[A,X]((X)⇒A,(String)⇒A)(DecodeJson[X]):A"></a>
+      <a id="decodeWithMessage[Y,X](success:X=&gt;Y,failure:String=&gt;Y)(implicitevidence$4:argonaut.DecodeJson[X]):Y"></a>
+      <a id="decodeWithMessage[Y,X]((X)⇒Y,(String)⇒Y)(DecodeJson[X]):Y"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">decodeWithMessage</span><span class="tparams">[<span name="A">A</span>, <span name="X">X</span>]</span><span class="params">(<span name="success">success: (<span class="extype" name="argonaut.ParseWrap.decodeWithMessage.X">X</span>) ⇒ <span class="extype" name="argonaut.ParseWrap.decodeWithMessage.A">A</span></span>, <span name="failure">failure: (<span class="extype" name="scala.Predef.String">String</span>) ⇒ <span class="extype" name="argonaut.ParseWrap.decodeWithMessage.A">A</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="arg0">arg0: <a href="DecodeJson.html" class="extype" name="argonaut.DecodeJson">DecodeJson</a>[<span class="extype" name="argonaut.ParseWrap.decodeWithMessage.X">X</span>]</span>)</span><span class="result">: <span class="extype" name="argonaut.ParseWrap.decodeWithMessage.A">A</span></span>
+        <span class="name">decodeWithMessage</span><span class="tparams">[<span name="Y">Y</span>, <span name="X">X</span>]</span><span class="params">(<span name="success">success: (<span class="extype" name="argonaut.ParseWrap.decodeWithMessage.X">X</span>) ⇒ <span class="extype" name="argonaut.ParseWrap.decodeWithMessage.Y">Y</span></span>, <span name="failure">failure: (<span class="extype" name="scala.Predef.String">String</span>) ⇒ <span class="extype" name="argonaut.ParseWrap.decodeWithMessage.Y">Y</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="arg0">arg0: <a href="DecodeJson.html" class="extype" name="argonaut.DecodeJson">DecodeJson</a>[<span class="extype" name="argonaut.ParseWrap.decodeWithMessage.X">X</span>]</span>)</span><span class="result">: <span class="extype" name="argonaut.ParseWrap.decodeWithMessage.Y">Y</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.ParseWrap@decodeWithMessage[Y,X](success:X=&gt;Y,failure:String=&gt;Y)(implicitevidence$4:argonaut.DecodeJson[X]):Y" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       <p class="shortcomment cmt">Parses the string value into a JSON value and if it succeeds, decodes to a data-type.</p><div class="fullcomment"><div class="comment cmt"><p>Parses the string value into a JSON value and if it succeeds, decodes to a data-type.
-</p></div><dl class="paramcmts block"><dt class="param">success</dt><dd class="cmt"><p>Run this function if the parse produces a success.</p></dd><dt class="param">failure</dt><dd class="cmt"><p>Run this function if the parse produces a failure.
-</p></dd></dl></div>
+</p></div><dl class="paramcmts block"><dt class="param">success</dt><dd class="cmt"><p>Run this function if the parse produces a success.</p></dd><dt class="param">failure</dt><dd class="cmt"><p>Run this function if the parse produces a failure.</p></dd></dl></div>
     </li><li name="scala.AnyRef#eq" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="eq(x$1:AnyRef):Boolean"></a>
       <a id="eq(AnyRef):Boolean"></a>
@@ -325,9 +343,13 @@ either the JSON parsing or the decoding.</p>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.ParseWrap@eq(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li name="scala.AnyRef#equals" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="equals(x$1:Any):Boolean"></a>
@@ -338,9 +360,13 @@ either the JSON parsing or the decoding.</p>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.Any" class="extype" target="_top">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.ParseWrap@equals(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="scala.AnyRef#finalize" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="finalize():Unit"></a>
@@ -351,9 +377,13 @@ either the JSON parsing or the decoding.</p>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">finalize</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.ParseWrap@finalize():Unit" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">(<span>
       
@@ -372,7 +402,11 @@ either the JSON parsing or the decoding.</p>
       <span class="symbol">
         <span class="name">getClass</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.Class">Class</span>[_]</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.ParseWrap@getClass():Class[_]" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="scala.AnyRef#hashCode" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="hashCode():Int"></a>
@@ -383,9 +417,13 @@ either the JSON parsing or the decoding.</p>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">hashCode</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+        <span class="name">hashCode</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.Int" class="extype" target="_top">Int</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.ParseWrap@hashCode():Int" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="scala.Any#isInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="isInstanceOf[T0]:Boolean"></a>
@@ -396,9 +434,13 @@ either the JSON parsing or the decoding.</p>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.ParseWrap@isInstanceOf[T0]:Boolean" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
     </li><li name="scala.AnyRef#ne" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="ne(x$1:AnyRef):Boolean"></a>
@@ -409,9 +451,13 @@ either the JSON parsing or the decoding.</p>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.ParseWrap@ne(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li name="scala.AnyRef#notify" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="notify():Unit"></a>
@@ -422,9 +468,13 @@ either the JSON parsing or the decoding.</p>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">notify</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">notify</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.ParseWrap@notify():Unit" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li name="scala.AnyRef#notifyAll" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="notifyAll():Unit"></a>
@@ -435,22 +485,30 @@ either the JSON parsing or the decoding.</p>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.ParseWrap@notifyAll():Unit" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li name="argonaut.ParseWrap#parse" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="parse:scalaz.\/[String,argonaut.Json]"></a>
-      <a id="parse:\/[String,Json]"></a>
+      <a id="parse:Either[String,argonaut.Json]"></a>
+      <a id="parse:Either[String,Json]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">parse</span><span class="result">: <span class="extype" name="scalaz.\/">\/</span>[<span class="extype" name="scala.Predef.String">String</span>, <a href="Json.html" class="extype" name="argonaut.Json">Json</a>]</span>
+        <span class="name">parse</span><span class="result">: <span class="extype" name="scala.Either">Either</span>[<span class="extype" name="scala.Predef.String">String</span>, <a href="Json.html" class="extype" name="argonaut.Json">Json</a>]</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.ParseWrap@parse:Either[String,argonaut.Json]" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       <p class="shortcomment cmt">Parses the string value and either returns a list of the failures from parsing the string
 or an instance of the Json type if parsing succeeds.</p>
     </li><li name="argonaut.ParseWrap#parseOption" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
@@ -462,9 +520,13 @@ or an instance of the Json type if parsing succeeds.</p>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">parseOption</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<a href="Json.html" class="extype" name="argonaut.Json">Json</a>]</span>
+        <span class="name">parseOption</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.Option" class="extype" target="_top">Option</a>[<a href="Json.html" class="extype" name="argonaut.Json">Json</a>]</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.ParseWrap@parseOption:Option[argonaut.Json]" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       <p class="shortcomment cmt">Parses the string value to a possible JSON value.</p>
     </li><li name="argonaut.ParseWrap#parseOr" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="parseOr[X](success:argonaut.Json=&gt;X,failure:=&gt;X):X"></a>
@@ -477,11 +539,14 @@ or an instance of the Json type if parsing succeeds.</p>
       <span class="symbol">
         <span class="name">parseOr</span><span class="tparams">[<span name="X">X</span>]</span><span class="params">(<span name="success">success: (<a href="Json.html" class="extype" name="argonaut.Json">Json</a>) ⇒ <span class="extype" name="argonaut.ParseWrap.parseOr.X">X</span></span>, <span name="failure">failure: ⇒ <span class="extype" name="argonaut.ParseWrap.parseOr.X">X</span></span>)</span><span class="result">: <span class="extype" name="argonaut.ParseWrap.parseOr.X">X</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.ParseWrap@parseOr[X](success:argonaut.Json=&gt;X,failure:=&gt;X):X" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       <p class="shortcomment cmt">Parses the string value and executes one of the given functions, depending on the parse outcome.</p><div class="fullcomment"><div class="comment cmt"><p>Parses the string value and executes one of the given functions, depending on the parse outcome.
 Any error message is ignored.
-</p></div><dl class="paramcmts block"><dt class="param">success</dt><dd class="cmt"><p>Run this function if the parse succeeds.</p></dd><dt class="param">failure</dt><dd class="cmt"><p>Run this function if the parse produces a failure.
-</p></dd></dl></div>
+</p></div><dl class="paramcmts block"><dt class="param">success</dt><dd class="cmt"><p>Run this function if the parse succeeds.</p></dd><dt class="param">failure</dt><dd class="cmt"><p>Run this function if the parse produces a failure.</p></dd></dl></div>
     </li><li name="argonaut.ParseWrap#parseWith" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="parseWith[X](success:argonaut.Json=&gt;X,failure:String=&gt;X):X"></a>
       <a id="parseWith[X]((Json)⇒X,(String)⇒X):X"></a>
@@ -493,10 +558,13 @@ Any error message is ignored.
       <span class="symbol">
         <span class="name">parseWith</span><span class="tparams">[<span name="X">X</span>]</span><span class="params">(<span name="success">success: (<a href="Json.html" class="extype" name="argonaut.Json">Json</a>) ⇒ <span class="extype" name="argonaut.ParseWrap.parseWith.X">X</span></span>, <span name="failure">failure: (<span class="extype" name="scala.Predef.String">String</span>) ⇒ <span class="extype" name="argonaut.ParseWrap.parseWith.X">X</span></span>)</span><span class="result">: <span class="extype" name="argonaut.ParseWrap.parseWith.X">X</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.ParseWrap@parseWith[X](success:argonaut.Json=&gt;X,failure:String=&gt;X):X" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       <p class="shortcomment cmt">Parses the string value and executes one of the given functions, depending on the parse outcome.</p><div class="fullcomment"><div class="comment cmt"><p>Parses the string value and executes one of the given functions, depending on the parse outcome.
-</p></div><dl class="paramcmts block"><dt class="param">success</dt><dd class="cmt"><p>Run this function if the parse succeeds.</p></dd><dt class="param">failure</dt><dd class="cmt"><p>Run this function if the parse produces a failure.
-</p></dd></dl></div>
+</p></div><dl class="paramcmts block"><dt class="param">success</dt><dd class="cmt"><p>Run this function if the parse succeeds.</p></dd><dt class="param">failure</dt><dd class="cmt"><p>Run this function if the parse produces a failure.</p></dd></dl></div>
     </li><li name="scala.AnyRef#synchronized" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="synchronized[T0](x$1:=&gt;T0):T0"></a>
       <a id="synchronized[T0](⇒T0):T0"></a>
@@ -508,7 +576,11 @@ Any error message is ignored.
       <span class="symbol">
         <span class="name">synchronized</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">(<span name="arg0">arg0: ⇒ <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>)</span><span class="result">: <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.ParseWrap@synchronized[T0](x$1:=&gt;T0):T0" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li name="scala.AnyRef#toString" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="toString():String"></a>
@@ -521,7 +593,11 @@ Any error message is ignored.
       <span class="symbol">
         <span class="name">toString</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.ParseWrap@toString():String" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="wait():Unit"></a>
@@ -532,9 +608,13 @@ Any error message is ignored.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">wait</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">wait</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.ParseWrap@wait():Unit" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">(<span>
       
@@ -551,9 +631,13 @@ Any error message is ignored.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>, <span name="arg1">arg1: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.Long" class="extype" target="_top">Long</a></span>, <span name="arg1">arg1: <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.Int" class="extype" target="_top">Int</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.ParseWrap@wait(x$1:Long,x$2:Int):Unit" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">(<span>
       
@@ -570,9 +654,13 @@ Any error message is ignored.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.Long" class="extype" target="_top">Long</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.ParseWrap@wait(x$1:Long):Unit" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">(<span>
       
@@ -590,9 +678,9 @@ Any error message is ignored.
 
         <div id="inheritedMembers">
         <div class="parent" name="scala.AnyRef">
-              <h3>Inherited from <span class="extype" name="scala.AnyRef">AnyRef</span></h3>
+              <h3>Inherited from <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></h3>
             </div><div class="parent" name="scala.Any">
-              <h3>Inherited from <span class="extype" name="scala.Any">Any</span></h3>
+              <h3>Inherited from <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.Any" class="extype" target="_top">Any</a></h3>
             </div>
         
         </div>
@@ -609,6 +697,7 @@ Any error message is ignored.
       <div id="tooltip"></div>
 
       <div id="footer">  </div>
-      <script defer="defer" type="text/javascript" id="jquery-js" src="../lib/jquery.js"></script><script defer="defer" type="text/javascript" id="jquery-ui-js" src="../lib/jquery-ui.js"></script><script defer="defer" type="text/javascript" id="tools-tooltip-js" src="../lib/tools.tooltip.js"></script><script defer="defer" type="text/javascript" id="template-js" src="../lib/template.js"></script>
+
+
     </body>
       </html>

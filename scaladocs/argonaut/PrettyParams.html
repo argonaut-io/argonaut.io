@@ -1,5 +1,4 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<!DOCTYPE html >
 <html>
         <head>
           <title>PrettyParams - argonaut.PrettyParams</title>
@@ -9,6 +8,11 @@
           
       <link href="../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
       <link href="../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../lib/jquery.js" id="jquery-js"></script>
+      <script type="text/javascript" src="../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../lib/template.js"></script>
+      <script type="text/javascript" src="../lib/tools.tooltip.js"></script>
+      
       <script type="text/javascript">
          if(top === self) {
             var url = '../index.html';
@@ -24,25 +28,33 @@
         </head>
         <body class="type">
       <div id="definition">
-        <a href="PrettyParams$.html" title="Go to companion"><img src="../lib/trait_to_object_big.png" /></a>
+        <a href="PrettyParams$.html" title="See companion object"><img alt="Class/Object" src="../lib/class_to_object_big.png" /></a>
         <p id="owner"><a href="package.html" class="extype" name="argonaut">argonaut</a></p>
-        <h1><a href="PrettyParams$.html" title="Go to companion">PrettyParams</a></h1>
+        <h1><a href="PrettyParams$.html" title="See companion object">PrettyParams</a></h1><h3><span class="morelinks"><div>
+            Related Docs:
+            <a href="PrettyParams$.html" title="See companion object">object PrettyParams</a>
+            | <a href="package.html" class="extype" name="argonaut">package argonaut</a>
+          </div></span></h3><span class="permalink">
+      <a href="../index.html#argonaut.PrettyParams" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       </div>
 
       <h4 id="signature" class="signature">
       <span class="modifier_kind">
-        <span class="modifier">sealed </span>
-        <span class="kind">trait</span>
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <span class="name">PrettyParams</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+        <span class="name">PrettyParams</span><span class="params">(<span name="indent">indent: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="lbraceLeft">lbraceLeft: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="lbraceRight">lbraceRight: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="rbraceLeft">rbraceLeft: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="rbraceRight">rbraceRight: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="lbracketLeft">lbracketLeft: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="lbracketRight">lbracketRight: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="rbracketLeft">rbracketLeft: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="rbracketRight">rbracketRight: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="lrbracketsEmpty">lrbracketsEmpty: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="arrayCommaLeft">arrayCommaLeft: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="arrayCommaRight">arrayCommaRight: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="objectCommaLeft">objectCommaLeft: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="objectCommaRight">objectCommaRight: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="colonLeft">colonLeft: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="colonRight">colonRight: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="preserveOrder">preserveOrder: <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>, <span name="dropNullKeys">dropNullKeys: <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>)</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
       </span>
       </h4>
       
           <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Parameters for pretty-printing a JSON value.
-</p></div><div class="toggleContainer block">
+</p></div><dl class="paramcmts block"><dt class="param">indent</dt><dd class="cmt"><p>The indentation to use if any format strings contain a new line.</p></dd><dt class="param">lbraceLeft</dt><dd class="cmt"><p>Spaces to insert to left of a left brace.</p></dd><dt class="param">lbraceRight</dt><dd class="cmt"><p>Spaces to insert to right of a left brace.</p></dd><dt class="param">rbraceLeft</dt><dd class="cmt"><p>Spaces to insert to left of a right brace.</p></dd><dt class="param">rbraceRight</dt><dd class="cmt"><p>Spaces to insert to right of a right brace.</p></dd><dt class="param">lbracketLeft</dt><dd class="cmt"><p>Spaces to insert to left of a left bracket.</p></dd><dt class="param">lbracketRight</dt><dd class="cmt"><p>Spaces to insert to right of a left bracket.</p></dd><dt class="param">rbracketLeft</dt><dd class="cmt"><p>Spaces to insert to left of a right bracket.</p></dd><dt class="param">rbracketRight</dt><dd class="cmt"><p>Spaces to insert to right of a right bracket.</p></dd><dt class="param">lrbracketsEmpty</dt><dd class="cmt"><p>Spaces to insert for an empty array.</p></dd><dt class="param">arrayCommaLeft</dt><dd class="cmt"><p>Spaces to insert to left of a comma in an array.</p></dd><dt class="param">arrayCommaRight</dt><dd class="cmt"><p>Spaces to insert to right of a comma in an array.</p></dd><dt class="param">objectCommaLeft</dt><dd class="cmt"><p>Spaces to insert to left of a comma in an object.</p></dd><dt class="param">objectCommaRight</dt><dd class="cmt"><p>Spaces to insert to right of a comma in an object.</p></dd><dt class="param">colonLeft</dt><dd class="cmt"><p>Spaces to insert to left of a colon.</p></dd><dt class="param">colonRight</dt><dd class="cmt"><p>Spaces to insert to right of a colon.</p></dd><dt class="param">preserveOrder</dt><dd class="cmt"><p>Determines if field ordering should be preserved.</p></dd><dt class="param">dropNullKeys</dt><dd class="cmt"><p>Determines if object fields with values of null are dropped from the output.</p></dd></dl><dl class="attributes block"> <dt>Source</dt><dd><a href="https://github.com/argonaut-io/argonaut/tree/2c719f155744881d30fc932dcbbf597a9ce8084c/argonaut/shared/src/main/scala/argonaut/PrettyParams.scala" target="_blank">PrettyParams.scala</a></dd></dl><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
-          <div class="superTypes hiddenContent"><span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+          <div class="superTypes hiddenContent"><a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.Serializable" class="extype" target="_top">Serializable</a>, <span class="extype" name="java.io.Serializable">Serializable</span>, <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.Product" class="extype" target="_top">Product</a>, <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.Equals" class="extype" target="_top">Equals</a>, <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a>, <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.Any" class="extype" target="_top">Any</a></div>
         </div></div>
         
 
@@ -53,22 +65,21 @@
               <ol>
                 
                 <li class="alpha in"><span>Alphabetic</span></li>
-                <li class="inherit out"><span>By inheritance</span></li>
+                <li class="inherit out"><span>By Inheritance</span></li>
               </ol>
             </div>
         <div id="ancestors">
                 <span class="filtertype">Inherited<br />
                 </span>
                 <ol id="linearization">
-                  <li class="in" name="argonaut.PrettyParams"><span>PrettyParams</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                  <li class="in" name="argonaut.PrettyParams"><span>PrettyParams</span></li><li class="in" name="scala.Serializable"><span>Serializable</span></li><li class="in" name="java.io.Serializable"><span>Serializable</span></li><li class="in" name="scala.Product"><span>Product</span></li><li class="in" name="scala.Equals"><span>Equals</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
                 </ol>
               </div><div id="ancestors">
             <span class="filtertype"></span>
             <ol>
               <li class="hideall out"><span>Hide All</span></li>
-              <li class="showall in"><span>Show all</span></li>
+              <li class="showall in"><span>Show All</span></li>
             </ol>
-            <a href="http://docs.scala-lang.org/overviews/scaladoc/usage.html#members" target="_blank">Learn more about member selection</a>
           </div>
         <div id="visbl">
             <span class="filtertype">Visibility</span>
@@ -78,200 +89,35 @@
 
       <div id="template">
         <div id="allMembers">
-        
-
-        
-
-        <div id="values" class="values members">
-              <h3>Abstract Value Members</h3>
-              <ol><li name="argonaut.PrettyParams#colonLeft" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="colonLeft:Int=&gt;String"></a>
-      <a id="colonLeft:(Int)⇒String"></a>
+        <div id="constructors" class="members">
+              <h3>Instance Constructors</h3>
+              <ol><li name="argonaut.PrettyParams#&lt;init&gt;" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="&lt;init&gt;(indent:String,lbraceLeft:String,lbraceRight:String,rbraceLeft:String,rbraceRight:String,lbracketLeft:String,lbracketRight:String,rbracketLeft:String,rbracketRight:String,lrbracketsEmpty:String,arrayCommaLeft:String,arrayCommaRight:String,objectCommaLeft:String,objectCommaRight:String,colonLeft:String,colonRight:String,preserveOrder:Boolean,dropNullKeys:Boolean):argonaut.PrettyParams"></a>
+      <a id="&lt;init&gt;:PrettyParams"></a>
       <h4 class="signature">
       <span class="modifier_kind">
-        <span class="modifier">abstract </span>
-        <span class="kind">val</span>
+        <span class="modifier"></span>
+        <span class="kind">new</span>
       </span>
       <span class="symbol">
-        <span class="name">colonLeft</span><span class="result">: (<span class="extype" name="scala.Int">Int</span>) ⇒ <span class="extype" name="scala.Predef.String">String</span></span>
+        <span class="name">PrettyParams</span><span class="params">(<span name="indent">indent: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="lbraceLeft">lbraceLeft: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="lbraceRight">lbraceRight: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="rbraceLeft">rbraceLeft: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="rbraceRight">rbraceRight: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="lbracketLeft">lbracketLeft: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="lbracketRight">lbracketRight: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="rbracketLeft">rbracketLeft: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="rbracketRight">rbracketRight: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="lrbracketsEmpty">lrbracketsEmpty: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="arrayCommaLeft">arrayCommaLeft: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="arrayCommaRight">arrayCommaRight: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="objectCommaLeft">objectCommaLeft: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="objectCommaRight">objectCommaRight: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="colonLeft">colonLeft: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="colonRight">colonRight: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="preserveOrder">preserveOrder: <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>, <span name="dropNullKeys">dropNullKeys: <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>)</span>
       </span>
-      </h4>
-      <p class="shortcomment cmt">Takes the current depth and returns the spaces to insert to left of a colon.</p>
-    </li><li name="argonaut.PrettyParams#colonRight" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="colonRight:Int=&gt;String"></a>
-      <a id="colonRight:(Int)⇒String"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier">abstract </span>
-        <span class="kind">val</span>
-      </span>
-      <span class="symbol">
-        <span class="name">colonRight</span><span class="result">: (<span class="extype" name="scala.Int">Int</span>) ⇒ <span class="extype" name="scala.Predef.String">String</span></span>
-      </span>
-      </h4>
-      <p class="shortcomment cmt">Takes the current depth and returns the spaces to insert to right of a colon.</p>
-    </li><li name="argonaut.PrettyParams#commaLeft" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="commaLeft:Int=&gt;String"></a>
-      <a id="commaLeft:(Int)⇒String"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier">abstract </span>
-        <span class="kind">val</span>
-      </span>
-      <span class="symbol">
-        <span class="name">commaLeft</span><span class="result">: (<span class="extype" name="scala.Int">Int</span>) ⇒ <span class="extype" name="scala.Predef.String">String</span></span>
-      </span>
-      </h4>
-      <p class="shortcomment cmt">Takes the current depth and returns the spaces to insert to left of a comma.</p>
-    </li><li name="argonaut.PrettyParams#commaRight" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="commaRight:Int=&gt;String"></a>
-      <a id="commaRight:(Int)⇒String"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier">abstract </span>
-        <span class="kind">val</span>
-      </span>
-      <span class="symbol">
-        <span class="name">commaRight</span><span class="result">: (<span class="extype" name="scala.Int">Int</span>) ⇒ <span class="extype" name="scala.Predef.String">String</span></span>
-      </span>
-      </h4>
-      <p class="shortcomment cmt">Takes the current depth and returns the spaces to insert to right of a comma.</p>
-    </li><li name="argonaut.PrettyParams#lbraceLeft" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="lbraceLeft:Int=&gt;String"></a>
-      <a id="lbraceLeft:(Int)⇒String"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier">abstract </span>
-        <span class="kind">val</span>
-      </span>
-      <span class="symbol">
-        <span class="name">lbraceLeft</span><span class="result">: (<span class="extype" name="scala.Int">Int</span>) ⇒ <span class="extype" name="scala.Predef.String">String</span></span>
-      </span>
-      </h4>
-      <p class="shortcomment cmt">Takes the current depth and returns the spaces to insert to left of a left brace.</p>
-    </li><li name="argonaut.PrettyParams#lbraceRight" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="lbraceRight:Int=&gt;String"></a>
-      <a id="lbraceRight:(Int)⇒String"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier">abstract </span>
-        <span class="kind">val</span>
-      </span>
-      <span class="symbol">
-        <span class="name">lbraceRight</span><span class="result">: (<span class="extype" name="scala.Int">Int</span>) ⇒ <span class="extype" name="scala.Predef.String">String</span></span>
-      </span>
-      </h4>
-      <p class="shortcomment cmt">Takes the current depth and returns the spaces to insert to right of a left brace.</p>
-    </li><li name="argonaut.PrettyParams#lbracketLeft" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="lbracketLeft:Int=&gt;String"></a>
-      <a id="lbracketLeft:(Int)⇒String"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier">abstract </span>
-        <span class="kind">val</span>
-      </span>
-      <span class="symbol">
-        <span class="name">lbracketLeft</span><span class="result">: (<span class="extype" name="scala.Int">Int</span>) ⇒ <span class="extype" name="scala.Predef.String">String</span></span>
-      </span>
-      </h4>
-      <p class="shortcomment cmt">Takes the current depth and returns the spaces to insert to left of a left bracket.</p>
-    </li><li name="argonaut.PrettyParams#lbracketRight" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="lbracketRight:Int=&gt;String"></a>
-      <a id="lbracketRight:(Int)⇒String"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier">abstract </span>
-        <span class="kind">val</span>
-      </span>
-      <span class="symbol">
-        <span class="name">lbracketRight</span><span class="result">: (<span class="extype" name="scala.Int">Int</span>) ⇒ <span class="extype" name="scala.Predef.String">String</span></span>
-      </span>
-      </h4>
-      <p class="shortcomment cmt">Takes the current depth and returns the spaces to insert to right of a left bracket.</p>
-    </li><li name="argonaut.PrettyParams#preserveOrder" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="preserveOrder:Boolean"></a>
-      <a id="preserveOrder:Boolean"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier">abstract </span>
-        <span class="kind">val</span>
-      </span>
-      <span class="symbol">
-        <span class="name">preserveOrder</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
-      </span>
-      </h4>
-      <p class="shortcomment cmt">Determines if the field ordering should be preserved.</p>
-    </li><li name="argonaut.PrettyParams#rbraceLeft" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="rbraceLeft:Int=&gt;String"></a>
-      <a id="rbraceLeft:(Int)⇒String"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier">abstract </span>
-        <span class="kind">val</span>
-      </span>
-      <span class="symbol">
-        <span class="name">rbraceLeft</span><span class="result">: (<span class="extype" name="scala.Int">Int</span>) ⇒ <span class="extype" name="scala.Predef.String">String</span></span>
-      </span>
-      </h4>
-      <p class="shortcomment cmt">Takes the current depth and returns the spaces to insert to left of a right brace.</p>
-    </li><li name="argonaut.PrettyParams#rbraceRight" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="rbraceRight:Int=&gt;String"></a>
-      <a id="rbraceRight:(Int)⇒String"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier">abstract </span>
-        <span class="kind">val</span>
-      </span>
-      <span class="symbol">
-        <span class="name">rbraceRight</span><span class="result">: (<span class="extype" name="scala.Int">Int</span>) ⇒ <span class="extype" name="scala.Predef.String">String</span></span>
-      </span>
-      </h4>
-      <p class="shortcomment cmt">Takes the current depth and returns the spaces to insert to right of a right brace.</p>
-    </li><li name="argonaut.PrettyParams#rbracketLeft" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="rbracketLeft:Int=&gt;String"></a>
-      <a id="rbracketLeft:(Int)⇒String"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier">abstract </span>
-        <span class="kind">val</span>
-      </span>
-      <span class="symbol">
-        <span class="name">rbracketLeft</span><span class="result">: (<span class="extype" name="scala.Int">Int</span>) ⇒ <span class="extype" name="scala.Predef.String">String</span></span>
-      </span>
-      </h4>
-      <p class="shortcomment cmt">Takes the current depth and returns the spaces to insert to left of a right bracket.</p>
-    </li><li name="argonaut.PrettyParams#rbracketRight" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="rbracketRight:Int=&gt;String"></a>
-      <a id="rbracketRight:(Int)⇒String"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier">abstract </span>
-        <span class="kind">val</span>
-      </span>
-      <span class="symbol">
-        <span class="name">rbracketRight</span><span class="result">: (<span class="extype" name="scala.Int">Int</span>) ⇒ <span class="extype" name="scala.Predef.String">String</span></span>
-      </span>
-      </h4>
-      <p class="shortcomment cmt">Takes the current depth and returns the spaces to insert to right of a right bracket.</p>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.PrettyParams@&lt;init&gt;(indent:String,lbraceLeft:String,lbraceRight:String,rbraceLeft:String,rbraceRight:String,lbracketLeft:String,lbracketRight:String,rbracketLeft:String,rbracketRight:String,lrbracketsEmpty:String,arrayCommaLeft:String,arrayCommaRight:String,objectCommaLeft:String,objectCommaRight:String,colonLeft:String,colonRight:String,preserveOrder:Boolean,dropNullKeys:Boolean):argonaut.PrettyParams" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt class="param">indent</dt><dd class="cmt"><p>The indentation to use if any format strings contain a new line.</p></dd><dt class="param">lbraceLeft</dt><dd class="cmt"><p>Spaces to insert to left of a left brace.</p></dd><dt class="param">lbraceRight</dt><dd class="cmt"><p>Spaces to insert to right of a left brace.</p></dd><dt class="param">rbraceLeft</dt><dd class="cmt"><p>Spaces to insert to left of a right brace.</p></dd><dt class="param">rbraceRight</dt><dd class="cmt"><p>Spaces to insert to right of a right brace.</p></dd><dt class="param">lbracketLeft</dt><dd class="cmt"><p>Spaces to insert to left of a left bracket.</p></dd><dt class="param">lbracketRight</dt><dd class="cmt"><p>Spaces to insert to right of a left bracket.</p></dd><dt class="param">rbracketLeft</dt><dd class="cmt"><p>Spaces to insert to left of a right bracket.</p></dd><dt class="param">rbracketRight</dt><dd class="cmt"><p>Spaces to insert to right of a right bracket.</p></dd><dt class="param">lrbracketsEmpty</dt><dd class="cmt"><p>Spaces to insert for an empty array.</p></dd><dt class="param">arrayCommaLeft</dt><dd class="cmt"><p>Spaces to insert to left of a comma in an array.</p></dd><dt class="param">arrayCommaRight</dt><dd class="cmt"><p>Spaces to insert to right of a comma in an array.</p></dd><dt class="param">objectCommaLeft</dt><dd class="cmt"><p>Spaces to insert to left of a comma in an object.</p></dd><dt class="param">objectCommaRight</dt><dd class="cmt"><p>Spaces to insert to right of a comma in an object.</p></dd><dt class="param">colonLeft</dt><dd class="cmt"><p>Spaces to insert to left of a colon.</p></dd><dt class="param">colonRight</dt><dd class="cmt"><p>Spaces to insert to right of a colon.</p></dd><dt class="param">preserveOrder</dt><dd class="cmt"><p>Determines if field ordering should be preserved.</p></dd><dt class="param">dropNullKeys</dt><dd class="cmt"><p>Determines if object fields with values of null are dropped from the output.</p></dd></dl></div>
     </li></ol>
             </div>
 
+        
+
+        
+
         <div id="values" class="values members">
-              <h3>Concrete Value Members</h3>
+              <h3>Value Members</h3>
               <ol><li name="scala.AnyRef#!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="!=(x$1:AnyRef):Boolean"></a>
-      <a id="!=(AnyRef):Boolean"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier">final </span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
-      </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="scala.Any#!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="!=(x$1:Any):Boolean"></a>
       <a id="!=(Any):Boolean"></a>
       <h4 class="signature">
@@ -280,10 +126,14 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.Any" class="extype" target="_top">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
       </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.PrettyParams@!=(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="scala.AnyRef###" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="##():Int"></a>
       <a id="##():Int"></a>
@@ -293,24 +143,15 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+        <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.Int" class="extype" target="_top">Int</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.PrettyParams@##():Int" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="scala.AnyRef#==" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="==(x$1:AnyRef):Boolean"></a>
-      <a id="==(AnyRef):Boolean"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier">final </span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
-      </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="scala.Any#==" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="==(x$1:Any):Boolean"></a>
       <a id="==(Any):Boolean"></a>
       <h4 class="signature">
@@ -319,10 +160,48 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.Any" class="extype" target="_top">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
       </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.PrettyParams@==(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="argonaut.PrettyParams#arrayCommaLeft" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="arrayCommaLeft:String"></a>
+      <a id="arrayCommaLeft:String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">arrayCommaLeft</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.PrettyParams@arrayCommaLeft:String" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Spaces to insert to left of a comma in an array.</p>
+    </li><li name="argonaut.PrettyParams#arrayCommaRight" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="arrayCommaRight:String"></a>
+      <a id="arrayCommaRight:String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">arrayCommaRight</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.PrettyParams@arrayCommaRight:String" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Spaces to insert to right of a comma in an array.</p>
     </li><li name="scala.Any#asInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="asInstanceOf[T0]:T0"></a>
       <a id="asInstanceOf[T0]:T0"></a>
@@ -334,7 +213,11 @@
       <span class="symbol">
         <span class="name">asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Any.asInstanceOf.T0">T0</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.PrettyParams@asInstanceOf[T0]:T0" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
     </li><li name="scala.AnyRef#clone" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="clone():Object"></a>
@@ -345,9 +228,13 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">clone</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+        <span class="name">clone</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.PrettyParams@clone():Object" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">(<span>
       
@@ -355,6 +242,57 @@
     </span>)</span>
               
         </dd></dl></div>
+    </li><li name="argonaut.PrettyParams#colonLeft" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="colonLeft:String"></a>
+      <a id="colonLeft:String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">colonLeft</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.PrettyParams@colonLeft:String" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Spaces to insert to left of a colon.</p>
+    </li><li name="argonaut.PrettyParams#colonRight" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="colonRight:String"></a>
+      <a id="colonRight:String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">colonRight</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.PrettyParams@colonRight:String" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Spaces to insert to right of a colon.</p>
+    </li><li name="argonaut.PrettyParams#dropNullKeys" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="dropNullKeys:Boolean"></a>
+      <a id="dropNullKeys:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">dropNullKeys</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.PrettyParams@dropNullKeys:Boolean" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Determines if object fields with values of null are dropped from the output.</p>
     </li><li name="scala.AnyRef#eq" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="eq(x$1:AnyRef):Boolean"></a>
       <a id="eq(AnyRef):Boolean"></a>
@@ -364,23 +302,14 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.PrettyParams@eq(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="scala.AnyRef#equals" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="equals(x$1:Any):Boolean"></a>
-      <a id="equals(Any):Boolean"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
-      </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="scala.AnyRef#finalize" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="finalize():Unit"></a>
       <a id="finalize():Unit"></a>
@@ -390,9 +319,13 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">finalize</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.PrettyParams@finalize():Unit" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">(<span>
       
@@ -411,21 +344,29 @@
       <span class="symbol">
         <span class="name">getClass</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.Class">Class</span>[_]</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.PrettyParams@getClass():Class[_]" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li name="scala.AnyRef#hashCode" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="hashCode():Int"></a>
-      <a id="hashCode():Int"></a>
+    </li><li name="argonaut.PrettyParams#indent" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="indent:String"></a>
+      <a id="indent:String"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
-        <span class="kind">def</span>
+        <span class="kind">val</span>
       </span>
       <span class="symbol">
-        <span class="name">hashCode</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+        <span class="name">indent</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.PrettyParams@indent:String" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">The indentation to use if any format strings contain a new line.</p>
     </li><li name="scala.Any#isInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="isInstanceOf[T0]:Boolean"></a>
       <a id="isInstanceOf[T0]:Boolean"></a>
@@ -435,10 +376,82 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.PrettyParams@isInstanceOf[T0]:Boolean" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="argonaut.PrettyParams#lbraceLeft" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="lbraceLeft:String"></a>
+      <a id="lbraceLeft:String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">lbraceLeft</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.PrettyParams@lbraceLeft:String" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Spaces to insert to left of a left brace.</p>
+    </li><li name="argonaut.PrettyParams#lbraceRight" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="lbraceRight:String"></a>
+      <a id="lbraceRight:String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">lbraceRight</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.PrettyParams@lbraceRight:String" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Spaces to insert to right of a left brace.</p>
+    </li><li name="argonaut.PrettyParams#lbracketLeft" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="lbracketLeft:String"></a>
+      <a id="lbracketLeft:String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">lbracketLeft</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.PrettyParams@lbracketLeft:String" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Spaces to insert to left of a left bracket.</p>
+    </li><li name="argonaut.PrettyParams#lbracketRight" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="lbracketRight:String"></a>
+      <a id="lbracketRight:String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">lbracketRight</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.PrettyParams@lbracketRight:String" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Spaces to insert to right of a left bracket.</p>
     </li><li name="argonaut.PrettyParams#lpretty" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="lpretty(j:argonaut.Json):Vector[Char]"></a>
       <a id="lpretty(Json):Vector[Char]"></a>
@@ -448,10 +461,31 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">lpretty</span><span class="params">(<span name="j">j: <a href="Json.html" class="extype" name="argonaut.Json">Json</a></span>)</span><span class="result">: <span class="extype" name="scala.Vector">Vector</span>[<span class="extype" name="scala.Char">Char</span>]</span>
+        <span class="name">lpretty</span><span class="params">(<span name="j">j: <a href="Json.html" class="extype" name="argonaut.Json">Json</a></span>)</span><span class="result">: <span class="extype" name="scala.Vector">Vector</span>[<a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.Char" class="extype" target="_top">Char</a>]</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.PrettyParams@lpretty(j:argonaut.Json):Vector[Char]" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       <p class="shortcomment cmt">Returns a <code>Vector[Char]</code> representation of a pretty-printed JSON value.</p>
+    </li><li name="argonaut.PrettyParams#lrbracketsEmpty" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="lrbracketsEmpty:String"></a>
+      <a id="lrbracketsEmpty:String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">lrbracketsEmpty</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.PrettyParams@lrbracketsEmpty:String" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Spaces to insert for an empty array.</p>
     </li><li name="scala.AnyRef#ne" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="ne(x$1:AnyRef):Boolean"></a>
       <a id="ne(AnyRef):Boolean"></a>
@@ -461,9 +495,13 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.PrettyParams@ne(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li name="scala.AnyRef#notify" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="notify():Unit"></a>
@@ -474,9 +512,13 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">notify</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">notify</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.PrettyParams@notify():Unit" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li name="scala.AnyRef#notifyAll" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="notifyAll():Unit"></a>
@@ -487,10 +529,65 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.PrettyParams@notifyAll():Unit" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="argonaut.PrettyParams#objectCommaLeft" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="objectCommaLeft:String"></a>
+      <a id="objectCommaLeft:String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">objectCommaLeft</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.PrettyParams@objectCommaLeft:String" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Spaces to insert to left of a comma in an object.</p>
+    </li><li name="argonaut.PrettyParams#objectCommaRight" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="objectCommaRight:String"></a>
+      <a id="objectCommaRight:String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">objectCommaRight</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.PrettyParams@objectCommaRight:String" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Spaces to insert to right of a comma in an object.</p>
+    </li><li name="argonaut.PrettyParams#preserveOrder" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="preserveOrder:Boolean"></a>
+      <a id="preserveOrder:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">preserveOrder</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.PrettyParams@preserveOrder:Boolean" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Determines if field ordering should be preserved.</p>
     </li><li name="argonaut.PrettyParams#pretty" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="pretty(j:argonaut.Json):String"></a>
       <a id="pretty(Json):String"></a>
@@ -502,8 +599,80 @@
       <span class="symbol">
         <span class="name">pretty</span><span class="params">(<span name="j">j: <a href="Json.html" class="extype" name="argonaut.Json">Json</a></span>)</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.PrettyParams@pretty(j:argonaut.Json):String" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       <p class="shortcomment cmt">Returns a string representation of a pretty-printed JSON value.</p>
+    </li><li name="argonaut.PrettyParams#rbraceLeft" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="rbraceLeft:String"></a>
+      <a id="rbraceLeft:String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">rbraceLeft</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.PrettyParams@rbraceLeft:String" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Spaces to insert to left of a right brace.</p>
+    </li><li name="argonaut.PrettyParams#rbraceRight" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="rbraceRight:String"></a>
+      <a id="rbraceRight:String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">rbraceRight</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.PrettyParams@rbraceRight:String" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Spaces to insert to right of a right brace.</p>
+    </li><li name="argonaut.PrettyParams#rbracketLeft" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="rbracketLeft:String"></a>
+      <a id="rbracketLeft:String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">rbracketLeft</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.PrettyParams@rbracketLeft:String" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Spaces to insert to left of a right bracket.</p>
+    </li><li name="argonaut.PrettyParams#rbracketRight" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="rbracketRight:String"></a>
+      <a id="rbracketRight:String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">rbracketRight</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.PrettyParams@rbracketRight:String" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Spaces to insert to right of a right bracket.</p>
     </li><li name="scala.AnyRef#synchronized" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="synchronized[T0](x$1:=&gt;T0):T0"></a>
       <a id="synchronized[T0](⇒T0):T0"></a>
@@ -515,21 +684,12 @@
       <span class="symbol">
         <span class="name">synchronized</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">(<span name="arg0">arg0: ⇒ <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>)</span><span class="result">: <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.PrettyParams@synchronized[T0](x$1:=&gt;T0):T0" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="scala.AnyRef#toString" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="toString():String"></a>
-      <a id="toString():String"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">toString</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
-      </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="wait():Unit"></a>
       <a id="wait():Unit"></a>
@@ -539,9 +699,13 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">wait</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">wait</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.PrettyParams@wait():Unit" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">(<span>
       
@@ -558,9 +722,13 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>, <span name="arg1">arg1: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.Long" class="extype" target="_top">Long</a></span>, <span name="arg1">arg1: <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.Int" class="extype" target="_top">Int</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.PrettyParams@wait(x$1:Long,x$2:Int):Unit" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">(<span>
       
@@ -577,9 +745,13 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.Long" class="extype" target="_top">Long</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.PrettyParams@wait(x$1:Long):Unit" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">(<span>
       
@@ -596,10 +768,18 @@
         </div>
 
         <div id="inheritedMembers">
-        <div class="parent" name="scala.AnyRef">
-              <h3>Inherited from <span class="extype" name="scala.AnyRef">AnyRef</span></h3>
+        <div class="parent" name="scala.Serializable">
+              <h3>Inherited from <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></h3>
+            </div><div class="parent" name="java.io.Serializable">
+              <h3>Inherited from <span class="extype" name="java.io.Serializable">Serializable</span></h3>
+            </div><div class="parent" name="scala.Product">
+              <h3>Inherited from <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.Product" class="extype" target="_top">Product</a></h3>
+            </div><div class="parent" name="scala.Equals">
+              <h3>Inherited from <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.Equals" class="extype" target="_top">Equals</a></h3>
+            </div><div class="parent" name="scala.AnyRef">
+              <h3>Inherited from <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></h3>
             </div><div class="parent" name="scala.Any">
-              <h3>Inherited from <span class="extype" name="scala.Any">Any</span></h3>
+              <h3>Inherited from <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.Any" class="extype" target="_top">Any</a></h3>
             </div>
         
         </div>
@@ -616,6 +796,7 @@
       <div id="tooltip"></div>
 
       <div id="footer">  </div>
-      <script defer="defer" type="text/javascript" id="jquery-js" src="../lib/jquery.js"></script><script defer="defer" type="text/javascript" id="jquery-ui-js" src="../lib/jquery-ui.js"></script><script defer="defer" type="text/javascript" id="tools-tooltip-js" src="../lib/tools.tooltip.js"></script><script defer="defer" type="text/javascript" id="template-js" src="../lib/template.js"></script>
+
+
     </body>
       </html>

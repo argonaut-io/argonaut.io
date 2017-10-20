@@ -1,5 +1,4 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<!DOCTYPE html >
 <html>
         <head>
           <title>Json - argonaut.Json</title>
@@ -9,6 +8,11 @@
           
       <link href="../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
       <link href="../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../lib/jquery.js" id="jquery-js"></script>
+      <script type="text/javascript" src="../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../lib/template.js"></script>
+      <script type="text/javascript" src="../lib/tools.tooltip.js"></script>
+      
       <script type="text/javascript">
          if(top === self) {
             var url = '../index.html';
@@ -24,9 +28,17 @@
         </head>
         <body class="value">
       <div id="definition">
-        <a href="Json.html" title="Go to companion"><img src="../lib/object_to_trait_big.png" /></a>
+        <a href="Json.html" title="See companion class"><img alt="Object/Class" src="../lib/object_to_class_big.png" /></a>
         <p id="owner"><a href="package.html" class="extype" name="argonaut">argonaut</a></p>
-        <h1><a href="Json.html" title="Go to companion">Json</a></h1>
+        <h1><a href="Json.html" title="See companion class">Json</a></h1><h3><span class="morelinks"><div>
+            Related Docs:
+            <a href="Json.html" title="See companion class">class Json</a>
+            | <a href="package.html" class="extype" name="argonaut">package argonaut</a>
+          </div></span></h3><span class="permalink">
+      <a href="../index.html#argonaut.Json$" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       </div>
 
       <h4 id="signature" class="signature">
@@ -35,13 +47,13 @@
         <span class="kind">object</span>
       </span>
       <span class="symbol">
-        <span class="name">Json</span><span class="result"> extends <a href="Jsons.html" class="extype" name="argonaut.Jsons">Jsons</a></span>
+        <span class="name">Json</span><span class="result"> extends <a href="Jsons.html" class="extype" name="argonaut.Jsons">Jsons</a> with <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
       </span>
       </h4>
       
-          <div id="comment" class="fullcommenttop"><div class="toggleContainer block">
+          <div id="comment" class="fullcommenttop"><dl class="attributes block"> <dt>Source</dt><dd><a href="https://github.com/argonaut-io/argonaut/tree/2c719f155744881d30fc932dcbbf597a9ce8084c/argonaut/shared/src/main/scala/argonaut/Json.scala" target="_blank">Json.scala</a></dd></dl><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
-          <div class="superTypes hiddenContent"><a href="Jsons.html" class="extype" name="argonaut.Jsons">Jsons</a>, <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+          <div class="superTypes hiddenContent"><a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.Serializable" class="extype" target="_top">Serializable</a>, <span class="extype" name="java.io.Serializable">Serializable</span>, <a href="Jsons.html" class="extype" name="argonaut.Jsons">Jsons</a>, <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a>, <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.Any" class="extype" target="_top">Any</a></div>
         </div></div>
         
 
@@ -52,22 +64,21 @@
               <ol>
                 
                 <li class="alpha in"><span>Alphabetic</span></li>
-                <li class="inherit out"><span>By inheritance</span></li>
+                <li class="inherit out"><span>By Inheritance</span></li>
               </ol>
             </div>
         <div id="ancestors">
                 <span class="filtertype">Inherited<br />
                 </span>
                 <ol id="linearization">
-                  <li class="in" name="argonaut.Json"><span>Json</span></li><li class="in" name="argonaut.Jsons"><span>Jsons</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                  <li class="in" name="argonaut.Json"><span>Json</span></li><li class="in" name="scala.Serializable"><span>Serializable</span></li><li class="in" name="java.io.Serializable"><span>Serializable</span></li><li class="in" name="argonaut.Jsons"><span>Jsons</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
                 </ol>
               </div><div id="ancestors">
             <span class="filtertype"></span>
             <ol>
               <li class="hideall out"><span>Hide All</span></li>
-              <li class="showall in"><span>Show all</span></li>
+              <li class="showall in"><span>Show All</span></li>
             </ol>
-            <a href="http://docs.scala-lang.org/overviews/scaladoc/usage.html#members" target="_blank">Learn more about member selection</a>
           </div>
         <div id="visbl">
             <span class="filtertype">Visibility</span>
@@ -90,13 +101,17 @@
         <span class="kind">type</span>
       </span>
       <span class="symbol">
-        <span class="name">JsonArray</span><span class="result"> = <span class="extype" name="scala.collection.immutable.List">List</span>[<a href="Json.html" class="extype" name="argonaut.Json">Json</a>]</span>
+        <span class="name">JsonArray</span><span class="result"> = <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.collection.immutable.List" class="extype" target="_top">List</a>[<a href="Json.html" class="extype" name="argonaut.Json">Json</a>]</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.Json$@JsonArray=List[argonaut.Json]" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Jsons.html" class="extype" name="argonaut.Jsons">Jsons</a></dd></dl></div>
     </li><li name="argonaut.Jsons.JsonAssoc" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="JsonAssoc=(Jsons.this.JsonField,argonaut.Json)"></a>
-      <a id="JsonAssoc:(JsonField,Json)"></a>
+      <a id="JsonAssoc:JsonAssoc"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
@@ -105,7 +120,28 @@
       <span class="symbol">
         <span class="name">JsonAssoc</span><span class="result"> = (<a href="#JsonField=String" class="extmbr" name="argonaut.Json.JsonField">JsonField</a>, <a href="Json.html" class="extype" name="argonaut.Json">Json</a>)</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.Json$@JsonAssoc=(Jsons.this.JsonField,argonaut.Json)" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Jsons.html" class="extype" name="argonaut.Jsons">Jsons</a></dd></dl></div>
+    </li><li name="argonaut.Jsons.JsonAssocList" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="JsonAssocList=List[Jsons.this.JsonAssoc]"></a>
+      <a id="JsonAssocList:JsonAssocList"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">type</span>
+      </span>
+      <span class="symbol">
+        <span class="name">JsonAssocList</span><span class="result"> = <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.collection.immutable.List" class="extype" target="_top">List</a>[<a href="#JsonAssoc=(Jsons.this.JsonField,argonaut.Json)" class="extmbr" name="argonaut.Json.JsonAssoc">JsonAssoc</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.Json$@JsonAssocList=List[Jsons.this.JsonAssoc]" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Jsons.html" class="extype" name="argonaut.Jsons">Jsons</a></dd></dl></div>
     </li><li name="argonaut.Jsons.JsonBoolean" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="JsonBoolean=Boolean"></a>
@@ -116,9 +152,13 @@
         <span class="kind">type</span>
       </span>
       <span class="symbol">
-        <span class="name">JsonBoolean</span><span class="result"> = <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">JsonBoolean</span><span class="result"> = <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.Json$@JsonBoolean=Boolean" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Jsons.html" class="extype" name="argonaut.Jsons">Jsons</a></dd></dl></div>
     </li><li name="argonaut.Jsons.JsonField" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="JsonField=String"></a>
@@ -131,33 +171,11 @@
       <span class="symbol">
         <span class="name">JsonField</span><span class="result"> = <span class="extype" name="java.lang.String">String</span></span>
       </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Jsons.html" class="extype" name="argonaut.Jsons">Jsons</a></dd></dl></div>
-    </li><li name="argonaut.Jsons.JsonNumber" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="JsonNumber=Double"></a>
-      <a id="JsonNumber:JsonNumber"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">type</span>
-      </span>
-      <span class="symbol">
-        <span class="name">JsonNumber</span><span class="result"> = <span class="extype" name="scala.Double">Double</span></span>
-      </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Jsons.html" class="extype" name="argonaut.Jsons">Jsons</a></dd></dl></div>
-    </li><li name="argonaut.Jsons.JsonObjectMap" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="JsonObjectMap=scalaz.InsertionMap[Jsons.this.JsonField,argonaut.Json]"></a>
-      <a id="JsonObjectMap:JsonObjectMap"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">type</span>
-      </span>
-      <span class="symbol">
-        <span class="name">JsonObjectMap</span><span class="result"> = <span class="extype" name="scalaz.InsertionMap">InsertionMap</span>[<a href="#JsonField=String" class="extmbr" name="argonaut.Json.JsonField">JsonField</a>, <a href="Json.html" class="extype" name="argonaut.Json">Json</a>]</span>
-      </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.Json$@JsonField=String" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Jsons.html" class="extype" name="argonaut.Jsons">Jsons</a></dd></dl></div>
     </li><li name="argonaut.Jsons.JsonString" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="JsonString=String"></a>
@@ -170,7 +188,11 @@
       <span class="symbol">
         <span class="name">JsonString</span><span class="result"> = <span class="extype" name="java.lang.String">String</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.Json$@JsonString=String" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Jsons.html" class="extype" name="argonaut.Jsons">Jsons</a></dd></dl></div>
     </li></ol>
             </div>
@@ -180,19 +202,6 @@
         <div id="values" class="values members">
               <h3>Value Members</h3>
               <ol><li name="scala.AnyRef#!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="!=(x$1:AnyRef):Boolean"></a>
-      <a id="!=(AnyRef):Boolean"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier">final </span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
-      </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="scala.Any#!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="!=(x$1:Any):Boolean"></a>
       <a id="!=(Any):Boolean"></a>
       <h4 class="signature">
@@ -201,10 +210,14 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.Any" class="extype" target="_top">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
       </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.Json$@!=(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="scala.AnyRef###" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="##():Int"></a>
       <a id="##():Int"></a>
@@ -214,24 +227,15 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+        <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.Int" class="extype" target="_top">Int</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.Json$@##():Int" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="scala.AnyRef#==" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="==(x$1:AnyRef):Boolean"></a>
-      <a id="==(AnyRef):Boolean"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier">final </span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
-      </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="scala.Any#==" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="==(x$1:Any):Boolean"></a>
       <a id="==(Any):Boolean"></a>
       <h4 class="signature">
@@ -240,23 +244,14 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.Any" class="extype" target="_top">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
       </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
-    </li><li name="argonaut.Jsons#JsonInstances" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="JsonInstances:scalaz.Equal[argonaut.Json]withscalaz.Show[argonaut.Json]"></a>
-      <a id="JsonInstances:Equal[Json]withShow[Json]"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier">implicit </span>
-        <span class="kind">val</span>
-      </span>
-      <span class="symbol">
-        <span class="name">JsonInstances</span><span class="result">: <span class="extype" name="scalaz.Equal">Equal</span>[<a href="Json.html" class="extype" name="argonaut.Json">Json</a>] with <span class="extype" name="scalaz.Show">Show</span>[<a href="Json.html" class="extype" name="argonaut.Json">Json</a>]</span>
-      </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Jsons.html" class="extype" name="argonaut.Jsons">Jsons</a></dd></dl></div>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.Json$@==(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="argonaut.Json#apply" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="apply(fields:(argonaut.Json.JsonField,argonaut.Json)*):argonaut.Json"></a>
       <a id="apply((JsonField,Json)*):Json"></a>
@@ -268,7 +263,11 @@
       <span class="symbol">
         <span class="name">apply</span><span class="params">(<span name="fields">fields: (<a href="#JsonField=String" class="extmbr" name="argonaut.Json.JsonField">JsonField</a>, <a href="Json.html" class="extype" name="argonaut.Json">Json</a>)*</span>)</span><span class="result">: <a href="Json.html" class="extype" name="argonaut.Json">Json</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.Json$@apply(fields:(argonaut.Json.JsonField,argonaut.Json)*):argonaut.Json" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       
     </li><li name="argonaut.Json#array" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="array(elements:argonaut.Json*):argonaut.Json"></a>
@@ -281,7 +280,11 @@
       <span class="symbol">
         <span class="name">array</span><span class="params">(<span name="elements">elements: <a href="Json.html" class="extype" name="argonaut.Json">Json</a>*</span>)</span><span class="result">: <a href="Json.html" class="extype" name="argonaut.Json">Json</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.Json$@array(elements:argonaut.Json*):argonaut.Json" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       
     </li><li name="scala.Any#asInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="asInstanceOf[T0]:T0"></a>
@@ -294,7 +297,11 @@
       <span class="symbol">
         <span class="name">asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Any.asInstanceOf.T0">T0</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.Json$@asInstanceOf[T0]:T0" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
     </li><li name="scala.AnyRef#clone" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="clone():Object"></a>
@@ -305,9 +312,13 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">clone</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+        <span class="name">clone</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.Json$@clone():Object" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">(<span>
       
@@ -324,9 +335,13 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.Json$@eq(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li name="scala.AnyRef#equals" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="equals(x$1:Any):Boolean"></a>
@@ -337,9 +352,13 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.Any" class="extype" target="_top">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.Json$@equals(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="scala.AnyRef#finalize" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="finalize():Unit"></a>
@@ -350,9 +369,13 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">finalize</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.Json$@finalize():Unit" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">(<span>
       
@@ -371,7 +394,11 @@
       <span class="symbol">
         <span class="name">getClass</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.Class">Class</span>[_]</span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.Json$@getClass():Class[_]" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="scala.AnyRef#hashCode" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="hashCode():Int"></a>
@@ -382,9 +409,13 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">hashCode</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+        <span class="name">hashCode</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.Int" class="extype" target="_top">Int</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.Json$@hashCode():Int" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="scala.Any#isInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="isInstanceOf[T0]:Boolean"></a>
@@ -395,9 +426,13 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.Json$@isInstanceOf[T0]:Boolean" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
     </li><li name="argonaut.Jsons#jArray" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="jArray:Jsons.this.JsonArray=&gt;argonaut.Json"></a>
@@ -410,7 +445,11 @@
       <span class="symbol">
         <span class="name">jArray</span><span class="result">: (<a href="#JsonArray=List[argonaut.Json]" class="extmbr" name="argonaut.Json.JsonArray">JsonArray</a>) ⇒ <a href="Json.html" class="extype" name="argonaut.Json">Json</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.Json$@jArray:Jsons.this.JsonArray=&gt;argonaut.Json" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       <p class="shortcomment cmt">Construct a JSON value that is an array.</p><div class="fullcomment"><div class="comment cmt"><p>Construct a JSON value that is an array.
 </p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Jsons.html" class="extype" name="argonaut.Jsons">Jsons</a></dd></dl></div>
     </li><li name="argonaut.Jsons#jArrayElements" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -424,36 +463,12 @@
       <span class="symbol">
         <span class="name">jArrayElements</span><span class="params">(<span name="elements">elements: <a href="Json.html" class="extype" name="argonaut.Json">Json</a>*</span>)</span><span class="result">: <a href="Json.html" class="extype" name="argonaut.Json">Json</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.Json$@jArrayElements(elements:argonaut.Json*):argonaut.Json" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       <p class="shortcomment cmt">Construct a JSON value that is an array from a list of elements (var args).</p><div class="fullcomment"><div class="comment cmt"><p>Construct a JSON value that is an array from a list of elements (var args).
-</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Jsons.html" class="extype" name="argonaut.Jsons">Jsons</a></dd></dl></div>
-    </li><li name="argonaut.Jsons#jArrayPL" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="jArrayPL:scalaz.@?&gt;[argonaut.Json,Jsons.this.JsonArray]"></a>
-      <a id="jArrayPL:@?&gt;[Json,JsonArray]"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">jArrayPL</span><span class="result">: <a href="../scalaz/package.html#@?&gt;[A,B]=scalaz.package.PLens[A,B]" class="extmbr" name="scalaz.@?&gt;">@?&gt;</a>[<a href="Json.html" class="extype" name="argonaut.Json">Json</a>, <a href="#JsonArray=List[argonaut.Json]" class="extmbr" name="argonaut.Json.JsonArray">JsonArray</a>]</span>
-      </span>
-      </h4>
-      <p class="shortcomment cmt">A partial lens for JSON array values.</p><div class="fullcomment"><div class="comment cmt"><p>A partial lens for JSON array values.
-</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Jsons.html" class="extype" name="argonaut.Jsons">Jsons</a></dd></dl></div>
-    </li><li name="argonaut.Jsons#jArrayPrism" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="jArrayPrism:monocle.SimplePrism[argonaut.Json,Jsons.this.JsonArray]"></a>
-      <a id="jArrayPrism:SimplePrism[Json,JsonArray]"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">jArrayPrism</span><span class="result">: <span class="extype" name="monocle.SimplePrism">SimplePrism</span>[<a href="Json.html" class="extype" name="argonaut.Json">Json</a>, <a href="#JsonArray=List[argonaut.Json]" class="extmbr" name="argonaut.Json.JsonArray">JsonArray</a>]</span>
-      </span>
-      </h4>
-      <p class="shortcomment cmt">A Prism for JSON array values.</p><div class="fullcomment"><div class="comment cmt"><p>A Prism for JSON array values.
 </p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Jsons.html" class="extype" name="argonaut.Jsons">Jsons</a></dd></dl></div>
     </li><li name="argonaut.Jsons#jBool" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="jBool:Boolean=&gt;argonaut.Json"></a>
@@ -464,53 +479,14 @@
         <span class="kind">val</span>
       </span>
       <span class="symbol">
-        <span class="name">jBool</span><span class="result">: (<span class="extype" name="scala.Boolean">Boolean</span>) ⇒ <a href="Json.html" class="extype" name="argonaut.Json">Json</a></span>
+        <span class="name">jBool</span><span class="result">: (<a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.Boolean" class="extype" target="_top">Boolean</a>) ⇒ <a href="Json.html" class="extype" name="argonaut.Json">Json</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.Json$@jBool:Boolean=&gt;argonaut.Json" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       <p class="shortcomment cmt">Construct a JSON value that is a boolean.</p><div class="fullcomment"><div class="comment cmt"><p>Construct a JSON value that is a boolean.
-</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Jsons.html" class="extype" name="argonaut.Jsons">Jsons</a></dd></dl></div>
-    </li><li name="argonaut.Jsons#jBoolPL" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="jBoolPL:scalaz.@?&gt;[argonaut.Json,Boolean]"></a>
-      <a id="jBoolPL:@?&gt;[Json,Boolean]"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">jBoolPL</span><span class="result">: <a href="../scalaz/package.html#@?&gt;[A,B]=scalaz.package.PLens[A,B]" class="extmbr" name="scalaz.@?&gt;">@?&gt;</a>[<a href="Json.html" class="extype" name="argonaut.Json">Json</a>, <span class="extype" name="scala.Boolean">Boolean</span>]</span>
-      </span>
-      </h4>
-      <p class="shortcomment cmt">A partial lens for JSON boolean values.</p><div class="fullcomment"><div class="comment cmt"><p>A partial lens for JSON boolean values.
-</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Jsons.html" class="extype" name="argonaut.Jsons">Jsons</a></dd></dl></div>
-    </li><li name="argonaut.Jsons#jBoolPrism" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="jBoolPrism:monocle.SimplePrism[argonaut.Json,Boolean]"></a>
-      <a id="jBoolPrism:SimplePrism[Json,Boolean]"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">jBoolPrism</span><span class="result">: <span class="extype" name="monocle.SimplePrism">SimplePrism</span>[<a href="Json.html" class="extype" name="argonaut.Json">Json</a>, <span class="extype" name="scala.Boolean">Boolean</span>]</span>
-      </span>
-      </h4>
-      <p class="shortcomment cmt">A Prism for JSON boolean values.</p><div class="fullcomment"><div class="comment cmt"><p>A Prism for JSON boolean values.
-</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Jsons.html" class="extype" name="argonaut.Jsons">Jsons</a></dd></dl></div>
-    </li><li name="argonaut.Jsons#jDoublePrism" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="jDoublePrism:monocle.SimplePrism[argonaut.Json,Double]"></a>
-      <a id="jDoublePrism:SimplePrism[Json,Double]"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">jDoublePrism</span><span class="result">: <span class="extype" name="monocle.SimplePrism">SimplePrism</span>[<a href="Json.html" class="extype" name="argonaut.Json">Json</a>, <span class="extype" name="scala.Double">Double</span>]</span>
-      </span>
-      </h4>
-      <p class="shortcomment cmt">A Prism for JSON number values.</p><div class="fullcomment"><div class="comment cmt"><p>A Prism for JSON number values.
-Note: It is an invalid Prism for NaN, +Infinity and -Infinity as they are not valid json.
 </p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Jsons.html" class="extype" name="argonaut.Jsons">Jsons</a></dd></dl></div>
     </li><li name="argonaut.Jsons#jEmptyArray" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="jEmptyArray:argonaut.Json"></a>
@@ -523,7 +499,11 @@ Note: It is an invalid Prism for NaN, +Infinity and -Infinity as they are not va
       <span class="symbol">
         <span class="name">jEmptyArray</span><span class="result">: <a href="Json.html" class="extype" name="argonaut.Json">Json</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.Json$@jEmptyArray:argonaut.Json" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       <p class="shortcomment cmt">A JSON value that is an empty array.</p><div class="fullcomment"><div class="comment cmt"><p>A JSON value that is an empty array.
 </p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Jsons.html" class="extype" name="argonaut.Jsons">Jsons</a></dd></dl></div>
     </li><li name="argonaut.Jsons#jEmptyObject" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -537,7 +517,11 @@ Note: It is an invalid Prism for NaN, +Infinity and -Infinity as they are not va
       <span class="symbol">
         <span class="name">jEmptyObject</span><span class="result">: <a href="Json.html" class="extype" name="argonaut.Json">Json</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.Json$@jEmptyObject:argonaut.Json" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       <p class="shortcomment cmt">A JSON value that is an empty object.</p><div class="fullcomment"><div class="comment cmt"><p>A JSON value that is an empty object.
 </p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Jsons.html" class="extype" name="argonaut.Jsons">Jsons</a></dd></dl></div>
     </li><li name="argonaut.Jsons#jEmptyString" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -551,7 +535,11 @@ Note: It is an invalid Prism for NaN, +Infinity and -Infinity as they are not va
       <span class="symbol">
         <span class="name">jEmptyString</span><span class="result">: <a href="Json.html" class="extype" name="argonaut.Json">Json</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.Json$@jEmptyString:argonaut.Json" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       <p class="shortcomment cmt">A JSON value that is an empty string.</p><div class="fullcomment"><div class="comment cmt"><p>A JSON value that is an empty string.
 </p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Jsons.html" class="extype" name="argonaut.Jsons">Jsons</a></dd></dl></div>
     </li><li name="argonaut.Jsons#jFalse" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -565,7 +553,11 @@ Note: It is an invalid Prism for NaN, +Infinity and -Infinity as they are not va
       <span class="symbol">
         <span class="name">jFalse</span><span class="result">: <a href="Json.html" class="extype" name="argonaut.Json">Json</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.Json$@jFalse:argonaut.Json" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       <p class="shortcomment cmt">Construct a JSON boolean value of <code>false</code>.</p><div class="fullcomment"><div class="comment cmt"><p>Construct a JSON boolean value of <code>false</code>.
 </p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Jsons.html" class="extype" name="argonaut.Jsons">Jsons</a></dd></dl></div>
     </li><li name="argonaut.Jsons#jNull" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -579,71 +571,206 @@ Note: It is an invalid Prism for NaN, +Infinity and -Infinity as they are not va
       <span class="symbol">
         <span class="name">jNull</span><span class="result">: <a href="Json.html" class="extype" name="argonaut.Json">Json</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.Json$@jNull:argonaut.Json" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       <p class="shortcomment cmt">Construct a JSON value that is <code>null</code>.</p><div class="fullcomment"><div class="comment cmt"><p>Construct a JSON value that is <code>null</code>.
 </p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Jsons.html" class="extype" name="argonaut.Jsons">Jsons</a></dd></dl></div>
     </li><li name="argonaut.Jsons#jNumber" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="jNumber:Jsons.this.JsonNumber=&gt;Option[argonaut.Json]"></a>
-      <a id="jNumber:(JsonNumber)⇒Option[Json]"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">val</span>
-      </span>
-      <span class="symbol">
-        <span class="name">jNumber</span><span class="result">: (<a href="#JsonNumber=Double" class="extmbr" name="argonaut.Json.JsonNumber">JsonNumber</a>) ⇒ <span class="extype" name="scala.Option">Option</span>[<a href="Json.html" class="extype" name="argonaut.Json">Json</a>]</span>
-      </span>
-      </h4>
-      <p class="shortcomment cmt">Construct a JSON value that is a number.</p><div class="fullcomment"><div class="comment cmt"><p>Construct a JSON value that is a number.</p><p>Note: NaN, +Infinity and -Infinity are not valid json.
-</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Jsons.html" class="extype" name="argonaut.Jsons">Jsons</a></dd></dl></div>
-    </li><li name="argonaut.Jsons#jNumberOrNull" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="jNumberOrNull:Jsons.this.JsonNumber=&gt;argonaut.Json"></a>
-      <a id="jNumberOrNull:(JsonNumber)⇒Json"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">val</span>
-      </span>
-      <span class="symbol">
-        <span class="name">jNumberOrNull</span><span class="result">: (<a href="#JsonNumber=Double" class="extmbr" name="argonaut.Json.JsonNumber">JsonNumber</a>) ⇒ <a href="Json.html" class="extype" name="argonaut.Json">Json</a></span>
-      </span>
-      </h4>
-      <p class="shortcomment cmt">Construct a JSON value that is a number.</p><div class="fullcomment"><div class="comment cmt"><p>Construct a JSON value that is a number. Transforming
-NaN, +Infinity and -Infinity to jNull. This matches
-the behaviour of most browsers, but is a lossy operation
-as you can no longer distinguish between NaN and Infinity.
-</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Jsons.html" class="extype" name="argonaut.Jsons">Jsons</a></dd></dl></div>
-    </li><li name="argonaut.Jsons#jNumberOrString" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="jNumberOrString:Jsons.this.JsonNumber=&gt;argonaut.Json"></a>
-      <a id="jNumberOrString:(JsonNumber)⇒Json"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">val</span>
-      </span>
-      <span class="symbol">
-        <span class="name">jNumberOrString</span><span class="result">: (<a href="#JsonNumber=Double" class="extmbr" name="argonaut.Json.JsonNumber">JsonNumber</a>) ⇒ <a href="Json.html" class="extype" name="argonaut.Json">Json</a></span>
-      </span>
-      </h4>
-      <p class="shortcomment cmt">Construct a JSON value that is a number.</p><div class="fullcomment"><div class="comment cmt"><p>Construct a JSON value that is a number. Transforming
-NaN, +Infinity and -Infinity to their string implementations.</p><p>This is an argonaut specific transformation that allows all
-doubles to be encoded without losing information, but aware
-interoperability is unlikely without custom handling of
-these values. See also <code>jNumber</code> and <code>jNumberOrNull</code>.
-</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Jsons.html" class="extype" name="argonaut.Jsons">Jsons</a></dd></dl></div>
-    </li><li name="argonaut.Jsons#jNumberPL" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="jNumberPL:scalaz.@?&gt;[argonaut.Json,Jsons.this.JsonNumber]"></a>
-      <a id="jNumberPL:@?&gt;[Json,JsonNumber]"></a>
+      <a id="jNumber(n:String):Option[argonaut.Json]"></a>
+      <a id="jNumber(String):Option[Json]"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">jNumberPL</span><span class="result">: <a href="../scalaz/package.html#@?&gt;[A,B]=scalaz.package.PLens[A,B]" class="extmbr" name="scalaz.@?&gt;">@?&gt;</a>[<a href="Json.html" class="extype" name="argonaut.Json">Json</a>, <a href="#JsonNumber=Double" class="extmbr" name="argonaut.Json.JsonNumber">JsonNumber</a>]</span>
+        <span class="name">jNumber</span><span class="params">(<span name="n">n: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.Option" class="extype" target="_top">Option</a>[<a href="Json.html" class="extype" name="argonaut.Json">Json</a>]</span>
       </span>
-      </h4>
-      <p class="shortcomment cmt">A partial lens for JSON number values.</p><div class="fullcomment"><div class="comment cmt"><p>A partial lens for JSON number values.
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.Json$@jNumber(n:String):Option[argonaut.Json]" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Construct a JSON value that is a number.</p><div class="fullcomment"><div class="comment cmt"><p>Construct a JSON value that is a number.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Jsons.html" class="extype" name="argonaut.Jsons">Jsons</a></dd></dl></div>
+    </li><li name="argonaut.Jsons#jNumber" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="jNumber(n:BigDecimal):argonaut.Json"></a>
+      <a id="jNumber(BigDecimal):Json"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">jNumber</span><span class="params">(<span name="n">n: <span class="extype" name="scala.BigDecimal">BigDecimal</span></span>)</span><span class="result">: <a href="Json.html" class="extype" name="argonaut.Json">Json</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.Json$@jNumber(n:BigDecimal):argonaut.Json" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Construct a JSON value that is a number.</p><div class="fullcomment"><div class="comment cmt"><p>Construct a JSON value that is a number.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Jsons.html" class="extype" name="argonaut.Jsons">Jsons</a></dd></dl></div>
+    </li><li name="argonaut.Jsons#jNumber" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="jNumber(n:Double):Option[argonaut.Json]"></a>
+      <a id="jNumber(Double):Option[Json]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">jNumber</span><span class="params">(<span name="n">n: <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.Double" class="extype" target="_top">Double</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.Option" class="extype" target="_top">Option</a>[<a href="Json.html" class="extype" name="argonaut.Json">Json</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.Json$@jNumber(n:Double):Option[argonaut.Json]" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Construct a JSON value that is a number.</p><div class="fullcomment"><div class="comment cmt"><p>Construct a JSON value that is a number.</p><p>Note: NaN, +Infinity and -Infinity are not valid json.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Jsons.html" class="extype" name="argonaut.Jsons">Jsons</a></dd></dl></div>
+    </li><li name="argonaut.Jsons#jNumber" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="jNumber(n:Long):argonaut.Json"></a>
+      <a id="jNumber(Long):Json"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">jNumber</span><span class="params">(<span name="n">n: <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.Long" class="extype" target="_top">Long</a></span>)</span><span class="result">: <a href="Json.html" class="extype" name="argonaut.Json">Json</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.Json$@jNumber(n:Long):argonaut.Json" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Construct a JSON value that is a number.</p><div class="fullcomment"><div class="comment cmt"><p>Construct a JSON value that is a number.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Jsons.html" class="extype" name="argonaut.Jsons">Jsons</a></dd></dl></div>
+    </li><li name="argonaut.Jsons#jNumber" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="jNumber(n:Int):argonaut.Json"></a>
+      <a id="jNumber(Int):Json"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">jNumber</span><span class="params">(<span name="n">n: <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.Int" class="extype" target="_top">Int</a></span>)</span><span class="result">: <a href="Json.html" class="extype" name="argonaut.Json">Json</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.Json$@jNumber(n:Int):argonaut.Json" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Construct a JSON value that is a number.</p><div class="fullcomment"><div class="comment cmt"><p>Construct a JSON value that is a number.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Jsons.html" class="extype" name="argonaut.Jsons">Jsons</a></dd></dl></div>
+    </li><li name="argonaut.Jsons#jNumber" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="jNumber(n:argonaut.JsonNumber):argonaut.Json"></a>
+      <a id="jNumber(JsonNumber):Json"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">jNumber</span><span class="params">(<span name="n">n: <a href="JsonNumber.html" class="extype" name="argonaut.JsonNumber">JsonNumber</a></span>)</span><span class="result">: <a href="Json.html" class="extype" name="argonaut.Json">Json</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.Json$@jNumber(n:argonaut.JsonNumber):argonaut.Json" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Construct a JSON value that is a number.</p><div class="fullcomment"><div class="comment cmt"><p>Construct a JSON value that is a number.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Jsons.html" class="extype" name="argonaut.Jsons">Jsons</a></dd></dl></div>
+    </li><li name="argonaut.Jsons#jNumberOrNull" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="jNumberOrNull(n:String):Option[argonaut.Json]"></a>
+      <a id="jNumberOrNull(String):Option[Json]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">jNumberOrNull</span><span class="params">(<span name="n">n: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.Option" class="extype" target="_top">Option</a>[<a href="Json.html" class="extype" name="argonaut.Json">Json</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.Json$@jNumberOrNull(n:String):Option[argonaut.Json]" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Construct a JSON value that is a number.</p><div class="fullcomment"><div class="comment cmt"><p>Construct a JSON value that is a number. Transforming the Strings &quot;NaN&quot;,
+&quot;Infinity&quot;, &quot;+Infinity&quot; and &quot;-Infinity&quot; to jNull. This matches the
+behaviour of most browsers, but is a lossy operation as you can no longer
+distinguish between NaN and Infinity.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Jsons.html" class="extype" name="argonaut.Jsons">Jsons</a></dd></dl></div>
+    </li><li name="argonaut.Jsons#jNumberOrNull" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="jNumberOrNull(n:Double):argonaut.Json"></a>
+      <a id="jNumberOrNull(Double):Json"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">jNumberOrNull</span><span class="params">(<span name="n">n: <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.Double" class="extype" target="_top">Double</a></span>)</span><span class="result">: <a href="Json.html" class="extype" name="argonaut.Json">Json</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.Json$@jNumberOrNull(n:Double):argonaut.Json" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Construct a JSON value that is a number.</p><div class="fullcomment"><div class="comment cmt"><p>Construct a JSON value that is a number. Transforming
+NaN, +Infinity and -Infinity to jNull. This matches
+the behaviour of most browsers, but is a lossy operation
+as you can no longer distinguish between NaN and Infinity.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Jsons.html" class="extype" name="argonaut.Jsons">Jsons</a></dd></dl></div>
+    </li><li name="argonaut.Jsons#jNumberOrString" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="jNumberOrString(n:String):Option[argonaut.Json]"></a>
+      <a id="jNumberOrString(String):Option[Json]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">jNumberOrString</span><span class="params">(<span name="n">n: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.Option" class="extype" target="_top">Option</a>[<a href="Json.html" class="extype" name="argonaut.Json">Json</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.Json$@jNumberOrString(n:String):Option[argonaut.Json]" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Construct a JSON value that is a number.</p><div class="fullcomment"><div class="comment cmt"><p>Construct a JSON value that is a number. Transforming the Strings &quot;NaN&quot;,
+&quot;Infinity&quot;, &quot;+Infinity&quot; and &quot;-Infinity&quot; to their string implementations.</p><p>This is an argonaut specific transformation that allows all
+doubles to be encoded without losing information, but aware
+interoperability is unlikely without custom handling of
+these values. See also <code>jNumber</code> and <code>jNumberOrNull</code>.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Jsons.html" class="extype" name="argonaut.Jsons">Jsons</a></dd></dl></div>
+    </li><li name="argonaut.Jsons#jNumberOrString" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="jNumberOrString(n:Double):argonaut.Json"></a>
+      <a id="jNumberOrString(Double):Json"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">jNumberOrString</span><span class="params">(<span name="n">n: <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.Double" class="extype" target="_top">Double</a></span>)</span><span class="result">: <a href="Json.html" class="extype" name="argonaut.Json">Json</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.Json$@jNumberOrString(n:Double):argonaut.Json" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Construct a JSON value that is a number.</p><div class="fullcomment"><div class="comment cmt"><p>Construct a JSON value that is a number. Transforming
+NaN, +Infinity and -Infinity to their string implementations.</p><p>This is an argonaut specific transformation that allows all
+doubles to be encoded without losing information, but aware
+interoperability is unlikely without custom handling of
+these values. See also <code>jNumber</code> and <code>jNumberOrNull</code>.
 </p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Jsons.html" class="extype" name="argonaut.Jsons">Jsons</a></dd></dl></div>
     </li><li name="argonaut.Jsons#jObject" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="jObject:argonaut.JsonObject=&gt;argonaut.Json"></a>
@@ -656,49 +783,31 @@ these values. See also <code>jNumber</code> and <code>jNumberOrNull</code>.
       <span class="symbol">
         <span class="name">jObject</span><span class="result">: (<a href="JsonObject.html" class="extype" name="argonaut.JsonObject">JsonObject</a>) ⇒ <a href="Json.html" class="extype" name="argonaut.Json">Json</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.Json$@jObject:argonaut.JsonObject=&gt;argonaut.Json" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       <p class="shortcomment cmt">Construct a JSON value that is an object.</p><div class="fullcomment"><div class="comment cmt"><p>Construct a JSON value that is an object.
 </p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Jsons.html" class="extype" name="argonaut.Jsons">Jsons</a></dd></dl></div>
     </li><li name="argonaut.Jsons#jObjectAssocList" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="jObjectAssocList(x:List[(Jsons.this.JsonField,argonaut.Json)]):argonaut.Json"></a>
-      <a id="jObjectAssocList(List[(JsonField,Json)]):Json"></a>
+      <a id="jObjectAssocList(x:Jsons.this.JsonAssocList):argonaut.Json"></a>
+      <a id="jObjectAssocList(JsonAssocList):Json"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">jObjectAssocList</span><span class="params">(<span name="x">x: <span class="extype" name="scala.List">List</span>[(<a href="#JsonField=String" class="extmbr" name="argonaut.Json.JsonField">JsonField</a>, <a href="Json.html" class="extype" name="argonaut.Json">Json</a>)]</span>)</span><span class="result">: <a href="Json.html" class="extype" name="argonaut.Json">Json</a></span>
+        <span class="name">jObjectAssocList</span><span class="params">(<span name="x">x: <a href="#JsonAssocList=List[Jsons.this.JsonAssoc]" class="extmbr" name="argonaut.Json.JsonAssocList">JsonAssocList</a></span>)</span><span class="result">: <a href="Json.html" class="extype" name="argonaut.Json">Json</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.Json$@jObjectAssocList(x:Jsons.this.JsonAssocList):argonaut.Json" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       <p class="shortcomment cmt">Construct a JSON value that is an object from an association list.</p><div class="fullcomment"><div class="comment cmt"><p>Construct a JSON value that is an object from an association list.
 </p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Jsons.html" class="extype" name="argonaut.Jsons">Jsons</a></dd></dl></div>
-    </li><li name="argonaut.Jsons#jObjectAt" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="jObjectAt:monocle.function.At[argonaut.JsonObject,Jsons.this.JsonField,argonaut.Json]"></a>
-      <a id="jObjectAt:At[JsonObject,JsonField,Json]"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier">implicit </span>
-        <span class="kind">val</span>
-      </span>
-      <span class="symbol">
-        <span class="name">jObjectAt</span><span class="result">: <span class="extype" name="monocle.function.At">At</span>[<a href="JsonObject.html" class="extype" name="argonaut.JsonObject">JsonObject</a>, <a href="#JsonField=String" class="extmbr" name="argonaut.Json.JsonField">JsonField</a>, <a href="Json.html" class="extype" name="argonaut.Json">Json</a>]</span>
-      </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Jsons.html" class="extype" name="argonaut.Jsons">Jsons</a></dd></dl></div>
-    </li><li name="argonaut.Jsons#jObjectEach" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="jObjectEach:monocle.function.Each[argonaut.JsonObject,argonaut.Json]"></a>
-      <a id="jObjectEach:Each[JsonObject,Json]"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier">implicit </span>
-        <span class="kind">val</span>
-      </span>
-      <span class="symbol">
-        <span class="name">jObjectEach</span><span class="result">: <span class="extype" name="monocle.function.Each">Each</span>[<a href="JsonObject.html" class="extype" name="argonaut.JsonObject">JsonObject</a>, <a href="Json.html" class="extype" name="argonaut.Json">Json</a>]</span>
-      </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Jsons.html" class="extype" name="argonaut.Jsons">Jsons</a></dd></dl></div>
     </li><li name="argonaut.Jsons#jObjectFields" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="jObjectFields(x:(Jsons.this.JsonField,argonaut.Json)*):argonaut.Json"></a>
       <a id="jObjectFields((JsonField,Json)*):Json"></a>
@@ -710,76 +819,12 @@ these values. See also <code>jNumber</code> and <code>jNumberOrNull</code>.
       <span class="symbol">
         <span class="name">jObjectFields</span><span class="params">(<span name="x">x: (<a href="#JsonField=String" class="extmbr" name="argonaut.Json.JsonField">JsonField</a>, <a href="Json.html" class="extype" name="argonaut.Json">Json</a>)*</span>)</span><span class="result">: <a href="Json.html" class="extype" name="argonaut.Json">Json</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.Json$@jObjectFields(x:(Jsons.this.JsonField,argonaut.Json)*):argonaut.Json" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       <p class="shortcomment cmt">Construct a JSON value that is an object from an association list (var args).</p><div class="fullcomment"><div class="comment cmt"><p>Construct a JSON value that is an object from an association list (var args).
-</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Jsons.html" class="extype" name="argonaut.Jsons">Jsons</a></dd></dl></div>
-    </li><li name="argonaut.Jsons#jObjectFilterIndex" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="jObjectFilterIndex:monocle.function.FilterIndex[argonaut.JsonObject,Jsons.this.JsonField,argonaut.Json]"></a>
-      <a id="jObjectFilterIndex:FilterIndex[JsonObject,JsonField,Json]"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier">implicit </span>
-        <span class="kind">val</span>
-      </span>
-      <span class="symbol">
-        <span class="name">jObjectFilterIndex</span><span class="result">: <span class="extype" name="monocle.function.FilterIndex">FilterIndex</span>[<a href="JsonObject.html" class="extype" name="argonaut.JsonObject">JsonObject</a>, <a href="#JsonField=String" class="extmbr" name="argonaut.Json.JsonField">JsonField</a>, <a href="Json.html" class="extype" name="argonaut.Json">Json</a>]</span>
-      </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Jsons.html" class="extype" name="argonaut.Jsons">Jsons</a></dd></dl></div>
-    </li><li name="argonaut.Jsons#jObjectIndex" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="jObjectIndex:monocle.function.Index[argonaut.JsonObject,Jsons.this.JsonField,argonaut.Json]"></a>
-      <a id="jObjectIndex:Index[JsonObject,JsonField,Json]"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier">implicit </span>
-        <span class="kind">val</span>
-      </span>
-      <span class="symbol">
-        <span class="name">jObjectIndex</span><span class="result">: <span class="extype" name="monocle.function.Index">Index</span>[<a href="JsonObject.html" class="extype" name="argonaut.JsonObject">JsonObject</a>, <a href="#JsonField=String" class="extmbr" name="argonaut.Json.JsonField">JsonField</a>, <a href="Json.html" class="extype" name="argonaut.Json">Json</a>]</span>
-      </span>
-      </h4>
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Jsons.html" class="extype" name="argonaut.Jsons">Jsons</a></dd></dl></div>
-    </li><li name="argonaut.Jsons#jObjectMap" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="jObjectMap(x:Jsons.this.JsonObjectMap):argonaut.Json"></a>
-      <a id="jObjectMap(JsonObjectMap):Json"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">jObjectMap</span><span class="params">(<span name="x">x: <a href="#JsonObjectMap=scalaz.InsertionMap[Jsons.this.JsonField,argonaut.Json]" class="extmbr" name="argonaut.Json.JsonObjectMap">JsonObjectMap</a></span>)</span><span class="result">: <a href="Json.html" class="extype" name="argonaut.Json">Json</a></span>
-      </span>
-      </h4>
-      <p class="shortcomment cmt">Construct a JSON value that is an object from an index.</p><div class="fullcomment"><div class="comment cmt"><p>Construct a JSON value that is an object from an index.
-</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Jsons.html" class="extype" name="argonaut.Jsons">Jsons</a></dd></dl></div>
-    </li><li name="argonaut.Jsons#jObjectPL" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="jObjectPL:scalaz.@?&gt;[argonaut.Json,argonaut.JsonObject]"></a>
-      <a id="jObjectPL:@?&gt;[Json,JsonObject]"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">jObjectPL</span><span class="result">: <a href="../scalaz/package.html#@?&gt;[A,B]=scalaz.package.PLens[A,B]" class="extmbr" name="scalaz.@?&gt;">@?&gt;</a>[<a href="Json.html" class="extype" name="argonaut.Json">Json</a>, <a href="JsonObject.html" class="extype" name="argonaut.JsonObject">JsonObject</a>]</span>
-      </span>
-      </h4>
-      <p class="shortcomment cmt">A partial lens for JSON object values.</p><div class="fullcomment"><div class="comment cmt"><p>A partial lens for JSON object values.
-</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Jsons.html" class="extype" name="argonaut.Jsons">Jsons</a></dd></dl></div>
-    </li><li name="argonaut.Jsons#jObjectPrism" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="jObjectPrism:monocle.SimplePrism[argonaut.Json,argonaut.JsonObject]"></a>
-      <a id="jObjectPrism:SimplePrism[Json,JsonObject]"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">jObjectPrism</span><span class="result">: <span class="extype" name="monocle.SimplePrism">SimplePrism</span>[<a href="Json.html" class="extype" name="argonaut.Json">Json</a>, <a href="JsonObject.html" class="extype" name="argonaut.JsonObject">JsonObject</a>]</span>
-      </span>
-      </h4>
-      <p class="shortcomment cmt">A Prism for JSON object values.</p><div class="fullcomment"><div class="comment cmt"><p>A Prism for JSON object values.
 </p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Jsons.html" class="extype" name="argonaut.Jsons">Jsons</a></dd></dl></div>
     </li><li name="argonaut.Jsons#jSingleArray" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="jSingleArray(j:argonaut.Json):argonaut.Json"></a>
@@ -792,7 +837,11 @@ these values. See also <code>jNumber</code> and <code>jNumberOrNull</code>.
       <span class="symbol">
         <span class="name">jSingleArray</span><span class="params">(<span name="j">j: <a href="Json.html" class="extype" name="argonaut.Json">Json</a></span>)</span><span class="result">: <a href="Json.html" class="extype" name="argonaut.Json">Json</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.Json$@jSingleArray(j:argonaut.Json):argonaut.Json" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       <p class="shortcomment cmt">Returns a function that takes a single value and produces a JSON array that contains only that value.</p><div class="fullcomment"><div class="comment cmt"><p>Returns a function that takes a single value and produces a JSON array that contains only that value.
 </p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Jsons.html" class="extype" name="argonaut.Jsons">Jsons</a></dd></dl></div>
     </li><li name="argonaut.Jsons#jSingleObject" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -806,7 +855,11 @@ these values. See also <code>jNumber</code> and <code>jNumberOrNull</code>.
       <span class="symbol">
         <span class="name">jSingleObject</span><span class="params">(<span name="k">k: <a href="#JsonField=String" class="extmbr" name="argonaut.Json.JsonField">JsonField</a></span>, <span name="v">v: <a href="Json.html" class="extype" name="argonaut.Json">Json</a></span>)</span><span class="result">: <a href="Json.html" class="extype" name="argonaut.Json">Json</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.Json$@jSingleObject(k:Jsons.this.JsonField,v:argonaut.Json):argonaut.Json" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       <p class="shortcomment cmt">Returns a function that takes an association value and produces a JSON object that contains only that value.</p><div class="fullcomment"><div class="comment cmt"><p>Returns a function that takes an association value and produces a JSON object that contains only that value.
 </p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Jsons.html" class="extype" name="argonaut.Jsons">Jsons</a></dd></dl></div>
     </li><li name="argonaut.Jsons#jString" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -820,36 +873,12 @@ these values. See also <code>jNumber</code> and <code>jNumberOrNull</code>.
       <span class="symbol">
         <span class="name">jString</span><span class="result">: (<a href="#JsonString=String" class="extmbr" name="argonaut.Json.JsonString">JsonString</a>) ⇒ <a href="Json.html" class="extype" name="argonaut.Json">Json</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.Json$@jString:Jsons.this.JsonString=&gt;argonaut.Json" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       <p class="shortcomment cmt">Construct a JSON value that is a string.</p><div class="fullcomment"><div class="comment cmt"><p>Construct a JSON value that is a string.
-</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Jsons.html" class="extype" name="argonaut.Jsons">Jsons</a></dd></dl></div>
-    </li><li name="argonaut.Jsons#jStringPL" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="jStringPL:scalaz.@?&gt;[argonaut.Json,Jsons.this.JsonString]"></a>
-      <a id="jStringPL:@?&gt;[Json,JsonString]"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">jStringPL</span><span class="result">: <a href="../scalaz/package.html#@?&gt;[A,B]=scalaz.package.PLens[A,B]" class="extmbr" name="scalaz.@?&gt;">@?&gt;</a>[<a href="Json.html" class="extype" name="argonaut.Json">Json</a>, <a href="#JsonString=String" class="extmbr" name="argonaut.Json.JsonString">JsonString</a>]</span>
-      </span>
-      </h4>
-      <p class="shortcomment cmt">A partial lens for JSON string values.</p><div class="fullcomment"><div class="comment cmt"><p>A partial lens for JSON string values.
-</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Jsons.html" class="extype" name="argonaut.Jsons">Jsons</a></dd></dl></div>
-    </li><li name="argonaut.Jsons#jStringPrism" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="jStringPrism:monocle.SimplePrism[argonaut.Json,Jsons.this.JsonString]"></a>
-      <a id="jStringPrism:SimplePrism[Json,JsonString]"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">jStringPrism</span><span class="result">: <span class="extype" name="monocle.SimplePrism">SimplePrism</span>[<a href="Json.html" class="extype" name="argonaut.Json">Json</a>, <a href="#JsonString=String" class="extmbr" name="argonaut.Json.JsonString">JsonString</a>]</span>
-      </span>
-      </h4>
-      <p class="shortcomment cmt">A Prism for JSON string values.</p><div class="fullcomment"><div class="comment cmt"><p>A Prism for JSON string values.
 </p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Jsons.html" class="extype" name="argonaut.Jsons">Jsons</a></dd></dl></div>
     </li><li name="argonaut.Jsons#jTrue" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="jTrue:argonaut.Json"></a>
@@ -862,7 +891,11 @@ these values. See also <code>jNumber</code> and <code>jNumberOrNull</code>.
       <span class="symbol">
         <span class="name">jTrue</span><span class="result">: <a href="Json.html" class="extype" name="argonaut.Json">Json</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.Json$@jTrue:argonaut.Json" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       <p class="shortcomment cmt">Construct a JSON boolean value of <code>true</code>.</p><div class="fullcomment"><div class="comment cmt"><p>Construct a JSON boolean value of <code>true</code>.
 </p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Jsons.html" class="extype" name="argonaut.Jsons">Jsons</a></dd></dl></div>
     </li><li name="argonaut.Jsons#jZero" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -876,22 +909,12 @@ these values. See also <code>jNumber</code> and <code>jNumberOrNull</code>.
       <span class="symbol">
         <span class="name">jZero</span><span class="result">: <a href="Json.html" class="extype" name="argonaut.Json">Json</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.Json$@jZero:argonaut.Json" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       <p class="shortcomment cmt">A JSON value that is a zero number.</p><div class="fullcomment"><div class="comment cmt"><p>A JSON value that is a zero number.
-</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Jsons.html" class="extype" name="argonaut.Jsons">Jsons</a></dd></dl></div>
-    </li><li name="argonaut.Jsons#jsonArrayPL" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="jsonArrayPL(n:Int):scalaz.@?&gt;[Jsons.this.JsonArray,argonaut.Json]"></a>
-      <a id="jsonArrayPL(Int):@?&gt;[JsonArray,Json]"></a>
-      <h4 class="signature">
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">jsonArrayPL</span><span class="params">(<span name="n">n: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <a href="../scalaz/package.html#@?&gt;[A,B]=scalaz.package.PLens[A,B]" class="extmbr" name="scalaz.@?&gt;">@?&gt;</a>[<a href="#JsonArray=List[argonaut.Json]" class="extmbr" name="argonaut.Json.JsonArray">JsonArray</a>, <a href="Json.html" class="extype" name="argonaut.Json">Json</a>]</span>
-      </span>
-      </h4>
-      <p class="shortcomment cmt">A partial lens for element of JSON array.</p><div class="fullcomment"><div class="comment cmt"><p>A partial lens for element of JSON array.
 </p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Jsons.html" class="extype" name="argonaut.Jsons">Jsons</a></dd></dl></div>
     </li><li name="scala.AnyRef#ne" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="ne(x$1:AnyRef):Boolean"></a>
@@ -902,9 +925,13 @@ these values. See also <code>jNumber</code> and <code>jNumberOrNull</code>.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.Json$@ne(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li name="scala.AnyRef#notify" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="notify():Unit"></a>
@@ -915,9 +942,13 @@ these values. See also <code>jNumber</code> and <code>jNumberOrNull</code>.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">notify</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">notify</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.Json$@notify():Unit" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li name="scala.AnyRef#notifyAll" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="notifyAll():Unit"></a>
@@ -928,9 +959,13 @@ these values. See also <code>jNumber</code> and <code>jNumberOrNull</code>.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.Json$@notifyAll():Unit" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li name="argonaut.Json#obj" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="obj(fields:(argonaut.Json.JsonField,argonaut.Json)*):argonaut.Json"></a>
@@ -943,7 +978,11 @@ these values. See also <code>jNumber</code> and <code>jNumberOrNull</code>.
       <span class="symbol">
         <span class="name">obj</span><span class="params">(<span name="fields">fields: (<a href="#JsonField=String" class="extmbr" name="argonaut.Json.JsonField">JsonField</a>, <a href="Json.html" class="extype" name="argonaut.Json">Json</a>)*</span>)</span><span class="result">: <a href="Json.html" class="extype" name="argonaut.Json">Json</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.Json$@obj(fields:(argonaut.Json.JsonField,argonaut.Json)*):argonaut.Json" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       
     </li><li name="scala.AnyRef#synchronized" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="synchronized[T0](x$1:=&gt;T0):T0"></a>
@@ -956,7 +995,11 @@ these values. See also <code>jNumber</code> and <code>jNumberOrNull</code>.
       <span class="symbol">
         <span class="name">synchronized</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">(<span name="arg0">arg0: ⇒ <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>)</span><span class="result">: <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.Json$@synchronized[T0](x$1:=&gt;T0):T0" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li name="scala.AnyRef#toString" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="toString():String"></a>
@@ -969,7 +1012,11 @@ these values. See also <code>jNumber</code> and <code>jNumberOrNull</code>.
       <span class="symbol">
         <span class="name">toString</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.Json$@toString():String" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="wait():Unit"></a>
@@ -980,9 +1027,13 @@ these values. See also <code>jNumber</code> and <code>jNumberOrNull</code>.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">wait</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">wait</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.Json$@wait():Unit" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">(<span>
       
@@ -999,9 +1050,13 @@ these values. See also <code>jNumber</code> and <code>jNumberOrNull</code>.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>, <span name="arg1">arg1: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.Long" class="extype" target="_top">Long</a></span>, <span name="arg1">arg1: <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.Int" class="extype" target="_top">Int</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.Json$@wait(x$1:Long,x$2:Int):Unit" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">(<span>
       
@@ -1018,9 +1073,13 @@ these values. See also <code>jNumber</code> and <code>jNumberOrNull</code>.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.Long" class="extype" target="_top">Long</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
-      </h4>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.Json$@wait(x$1:Long):Unit" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">(<span>
       
@@ -1037,12 +1096,16 @@ these values. See also <code>jNumber</code> and <code>jNumberOrNull</code>.
         </div>
 
         <div id="inheritedMembers">
-        <div class="parent" name="argonaut.Jsons">
+        <div class="parent" name="scala.Serializable">
+              <h3>Inherited from <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></h3>
+            </div><div class="parent" name="java.io.Serializable">
+              <h3>Inherited from <span class="extype" name="java.io.Serializable">Serializable</span></h3>
+            </div><div class="parent" name="argonaut.Jsons">
               <h3>Inherited from <a href="Jsons.html" class="extype" name="argonaut.Jsons">Jsons</a></h3>
             </div><div class="parent" name="scala.AnyRef">
-              <h3>Inherited from <span class="extype" name="scala.AnyRef">AnyRef</span></h3>
+              <h3>Inherited from <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></h3>
             </div><div class="parent" name="scala.Any">
-              <h3>Inherited from <span class="extype" name="scala.Any">Any</span></h3>
+              <h3>Inherited from <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.Any" class="extype" target="_top">Any</a></h3>
             </div>
         
         </div>
@@ -1059,6 +1122,7 @@ these values. See also <code>jNumber</code> and <code>jNumberOrNull</code>.
       <div id="tooltip"></div>
 
       <div id="footer">  </div>
-      <script defer="defer" type="text/javascript" id="jquery-js" src="../lib/jquery.js"></script><script defer="defer" type="text/javascript" id="jquery-ui-js" src="../lib/jquery-ui.js"></script><script defer="defer" type="text/javascript" id="tools-tooltip-js" src="../lib/tools.tooltip.js"></script><script defer="defer" type="text/javascript" id="template-js" src="../lib/template.js"></script>
+
+
     </body>
       </html>

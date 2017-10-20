@@ -31,7 +31,7 @@ object JsonCombinators extends App {
   val arrayAccess: Option[List[Json]] =
     jSingleArray(jTrue).array
 
-  // get the value if, and only if, the json is an array
+  // get the value if, and only if, the json is an object
   val objectAccess: Option[JsonObject] =
     jSingleObject("field", jTrue).obj
 
@@ -41,6 +41,5 @@ object JsonCombinators extends App {
       jSingleObject("nested", jTrue)) -|| List("field", "nested")
 
   // Many more in Json.scala -->
-  //    https://github.com/markhibberd/argonaut/blob/master/src/main/scala/argonaut/Json.scala
-
+  //    https://github.com/argonaut-io/argonaut/blob/master/argonaut/src/main/scala/argonaut/Json.scala
 }

@@ -1,0 +1,826 @@
+<!DOCTYPE html >
+<html>
+        <head>
+          <title>JsonDecimal - argonaut.JsonDecimal</title>
+          <meta name="description" content="JsonDecimal - argonaut.JsonDecimal" />
+          <meta name="keywords" content="JsonDecimal argonaut.JsonDecimal" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../lib/jquery.js" id="jquery-js"></script>
+      <script type="text/javascript" src="../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../lib/template.js"></script>
+      <script type="text/javascript" src="../lib/tools.tooltip.js"></script>
+      
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../index.html';
+            var hash = 'argonaut.JsonDecimal';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
+    
+        </head>
+        <body class="type">
+      <div id="definition">
+        <img alt="Class" src="../lib/class_big.png" />
+        <p id="owner"><a href="package.html" class="extype" name="argonaut">argonaut</a></p>
+        <h1>JsonDecimal</h1><h3><span class="morelinks"><div>Related Doc:
+            <a href="package.html" class="extype" name="argonaut">package argonaut</a>
+          </div></span></h3><span class="permalink">
+      <a href="../index.html#argonaut.JsonDecimal" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <span class="name">JsonDecimal</span><span class="result"> extends <a href="JsonNumber.html" class="extype" name="argonaut.JsonNumber">JsonNumber</a> with <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+      </span>
+      </h4>
+      
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>A JsonDecimal represents and valid JSON number as a String. Unfortunately,
+there is no type in the Scala standard library which can represent all valid
+JSON decimal numbers, since the exponent may be larger than an <code>Int</code>. Such
+a number can still be round tripped (parser to printer). We lazily parse the
+string to a <code>BigDecimal</code> or a <code>Double</code> on demand.
+</p></div><dl class="attributes block"> <dt>Source</dt><dd><a href="https://github.com/argonaut-io/argonaut/tree/2c719f155744881d30fc932dcbbf597a9ce8084c/argonaut/shared/src/main/scala/argonaut/JsonNumber.scala" target="_blank">JsonNumber.scala</a></dd></dl><div class="toggleContainer block">
+          <span class="toggle">Linear Supertypes</span>
+          <div class="superTypes hiddenContent"><a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.Serializable" class="extype" target="_top">Serializable</a>, <span class="extype" name="java.io.Serializable">Serializable</span>, <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.Product" class="extype" target="_top">Product</a>, <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.Equals" class="extype" target="_top">Equals</a>, <a href="JsonNumber.html" class="extype" name="argonaut.JsonNumber">JsonNumber</a>, <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a>, <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.Any" class="extype" target="_top">Any</a></div>
+        </div></div>
+        
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
+        <div id="order">
+              <span class="filtertype">Ordering</span>
+              <ol>
+                
+                <li class="alpha in"><span>Alphabetic</span></li>
+                <li class="inherit out"><span>By Inheritance</span></li>
+              </ol>
+            </div>
+        <div id="ancestors">
+                <span class="filtertype">Inherited<br />
+                </span>
+                <ol id="linearization">
+                  <li class="in" name="argonaut.JsonDecimal"><span>JsonDecimal</span></li><li class="in" name="scala.Serializable"><span>Serializable</span></li><li class="in" name="java.io.Serializable"><span>Serializable</span></li><li class="in" name="scala.Product"><span>Product</span></li><li class="in" name="scala.Equals"><span>Equals</span></li><li class="in" name="argonaut.JsonNumber"><span>JsonNumber</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                </ol>
+              </div><div id="ancestors">
+            <span class="filtertype"></span>
+            <ol>
+              <li class="hideall out"><span>Hide All</span></li>
+              <li class="showall in"><span>Show All</span></li>
+            </ol>
+          </div>
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        
+
+        
+
+        
+
+        <div id="values" class="values members">
+              <h3>Value Members</h3>
+              <ol><li name="scala.AnyRef#!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="!=(x$1:Any):Boolean"></a>
+      <a id="!=(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.Any" class="extype" target="_top">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.JsonDecimal@!=(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef###" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="##():Int"></a>
+      <a id="##():Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.Int" class="extype" target="_top">Int</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.JsonDecimal@##():Int" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef#==" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="==(x$1:Any):Boolean"></a>
+      <a id="==(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.Any" class="extype" target="_top">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.JsonDecimal@==(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.Any#asInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="asInstanceOf[T0]:T0"></a>
+      <a id="asInstanceOf[T0]:T0"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Any.asInstanceOf.T0">T0</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.JsonDecimal@asInstanceOf[T0]:T0" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="argonaut.JsonNumber#asJson" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="asJson:argonaut.Json"></a>
+      <a id="asJson:Json"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">asJson</span><span class="result">: <a href="Json.html" class="extype" name="argonaut.Json">Json</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.JsonDecimal@asJson:argonaut.Json" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="JsonNumber.html" class="extype" name="argonaut.JsonNumber">JsonNumber</a></dd></dl></div>
+    </li><li name="scala.AnyRef#clone" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="clone():Object"></a>
+      <a id="clone():AnyRef"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">clone</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.JsonDecimal@clone():Object" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.CloneNotSupportedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#eq" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="eq(x$1:AnyRef):Boolean"></a>
+      <a id="eq(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.JsonDecimal@eq(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="argonaut.JsonNumber#equals" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="equals(that:Any):Boolean"></a>
+      <a id="equals(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">equals</span><span class="params">(<span name="that">that: <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.Any" class="extype" target="_top">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.JsonDecimal@equals(that:Any):Boolean" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="JsonNumber.html" class="extype" name="argonaut.JsonNumber">JsonNumber</a> → AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef#finalize" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="finalize():Unit"></a>
+      <a id="finalize():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">finalize</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.JsonDecimal@finalize():Unit" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="symbol">classOf[java.lang.Throwable]</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#getClass" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getClass():Class[_]"></a>
+      <a id="getClass():Class[_]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getClass</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.Class">Class</span>[_]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.JsonDecimal@getClass():Class[_]" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="argonaut.JsonNumber#hashCode" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="hashCode():Int"></a>
+      <a id="hashCode():Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">hashCode</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.Int" class="extype" target="_top">Int</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.JsonDecimal@hashCode():Int" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="JsonNumber.html" class="extype" name="argonaut.JsonNumber">JsonNumber</a> → AnyRef → Any</dd></dl></div>
+    </li><li name="scala.Any#isInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="isInstanceOf[T0]:Boolean"></a>
+      <a id="isInstanceOf[T0]:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.JsonDecimal@isInstanceOf[T0]:Boolean" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="scala.AnyRef#ne" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ne(x$1:AnyRef):Boolean"></a>
+      <a id="ne(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.JsonDecimal@ne(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="argonaut.JsonDecimal#normalized" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="normalized:(BigInt,BigDecimal)"></a>
+      <a id="normalized:(BigInt,BigDecimal)"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">normalized</span><span class="result">: (<span class="extype" name="scala.BigInt">BigInt</span>, <span class="extype" name="scala.BigDecimal">BigDecimal</span>)</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.JsonDecimal@normalized:(BigInt,BigDecimal)" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Returns a *normalized* version of this Decimal number.</p><div class="fullcomment"><div class="comment cmt"><p>Returns a *normalized* version of this Decimal number. Since BigDecimal
+cannot represent all valid JSON value exactly, due to the exponent being
+limited to an <code>Int</code>, this method let's us get a normalized number that
+can be used to compare for equality.</p><p>The 1st value (BigInt) is the exponent used to scale the 2nd value
+(BigDecimal) back to the original value represented by this number.  The
+2nd BigDecimal will always either be 0 or a number with exactly 1 decimal
+digit to the right of the decimal point.  If the 2nd value is 0, then the
+exponent will always be 0 as well.
+</p></div></div>
+    </li><li name="scala.AnyRef#notify" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notify():Unit"></a>
+      <a id="notify():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notify</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.JsonDecimal@notify():Unit" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#notifyAll" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notifyAll():Unit"></a>
+      <a id="notifyAll():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.JsonDecimal@notifyAll():Unit" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#synchronized" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="synchronized[T0](x$1:=&gt;T0):T0"></a>
+      <a id="synchronized[T0](⇒T0):T0"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">synchronized</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">(<span name="arg0">arg0: ⇒ <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>)</span><span class="result">: <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.JsonDecimal@synchronized[T0](x$1:=&gt;T0):T0" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="argonaut.JsonDecimal#toBigDecimal" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="toBigDecimal:BigDecimal"></a>
+      <a id="toBigDecimal:BigDecimal"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">lazy val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">toBigDecimal</span><span class="result">: <span class="extype" name="scala.BigDecimal">BigDecimal</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.JsonDecimal@toBigDecimal:BigDecimal" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Returns this number as a <code>BigDecimal</code>.</p><div class="fullcomment"><div class="comment cmt"><p>Returns this number as a <code>BigDecimal</code>.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="argonaut.JsonDecimal">JsonDecimal</a> → <a href="JsonNumber.html" class="extype" name="argonaut.JsonNumber">JsonNumber</a></dd></dl></div>
+    </li><li name="argonaut.JsonNumber#toBigInt" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="toBigInt:Option[BigInt]"></a>
+      <a id="toBigInt:Option[BigInt]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">toBigInt</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.Option" class="extype" target="_top">Option</a>[<span class="extype" name="scala.BigInt">BigInt</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.JsonDecimal@toBigInt:Option[BigInt]" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Returns this number as a <code>BigInt</code>, only if this number is an integer.</p><div class="fullcomment"><div class="comment cmt"><p>Returns this number as a <code>BigInt</code>, only if this number is an integer.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="JsonNumber.html" class="extype" name="argonaut.JsonNumber">JsonNumber</a></dd></dl></div>
+    </li><li name="argonaut.JsonNumber#toByte" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="toByte:Option[Byte]"></a>
+      <a id="toByte:Option[Byte]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">toByte</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.Option" class="extype" target="_top">Option</a>[<a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.Byte" class="extype" target="_top">Byte</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.JsonDecimal@toByte:Option[Byte]" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Returns this number as a <code>Byte</code>, only if this number is a valid <code>Byte</code>.</p><div class="fullcomment"><div class="comment cmt"><p>Returns this number as a <code>Byte</code>, only if this number is a valid <code>Byte</code>.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="JsonNumber.html" class="extype" name="argonaut.JsonNumber">JsonNumber</a></dd></dl></div>
+    </li><li name="argonaut.JsonNumber#toDouble" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="toDouble:Option[Double]"></a>
+      <a id="toDouble:Option[Double]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">lazy val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">toDouble</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.Option" class="extype" target="_top">Option</a>[<a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.Double" class="extype" target="_top">Double</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.JsonDecimal@toDouble:Option[Double]" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Returns this number as a <code>Double</code>, only if this number can be represented as a <code>Double</code>.</p><div class="fullcomment"><div class="comment cmt"><p>Returns this number as a <code>Double</code>, only if this number can be represented as a <code>Double</code>.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="JsonNumber.html" class="extype" name="argonaut.JsonNumber">JsonNumber</a></dd></dl></div>
+    </li><li name="argonaut.JsonNumber#toFloat" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="toFloat:Option[Float]"></a>
+      <a id="toFloat:Option[Float]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">lazy val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">toFloat</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.Option" class="extype" target="_top">Option</a>[<a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.Float" class="extype" target="_top">Float</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.JsonDecimal@toFloat:Option[Float]" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Returns this number as a <code>Float</code>, only if this number can be represented as a <code>Float</code>.</p><div class="fullcomment"><div class="comment cmt"><p>Returns this number as a <code>Float</code>, only if this number can be represented as a <code>Float</code>.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="JsonNumber.html" class="extype" name="argonaut.JsonNumber">JsonNumber</a></dd></dl></div>
+    </li><li name="argonaut.JsonNumber#toInt" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="toInt:Option[Int]"></a>
+      <a id="toInt:Option[Int]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">toInt</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.Option" class="extype" target="_top">Option</a>[<a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.Int" class="extype" target="_top">Int</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.JsonDecimal@toInt:Option[Int]" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Returns this number as a <code>Int</code>, only if this number is a valid <code>Int</code>.</p><div class="fullcomment"><div class="comment cmt"><p>Returns this number as a <code>Int</code>, only if this number is a valid <code>Int</code>.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="JsonNumber.html" class="extype" name="argonaut.JsonNumber">JsonNumber</a></dd></dl></div>
+    </li><li name="argonaut.JsonDecimal#toLong" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="toLong:Option[Long]"></a>
+      <a id="toLong:Option[Long]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">toLong</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.Option" class="extype" target="_top">Option</a>[<a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.Long" class="extype" target="_top">Long</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.JsonDecimal@toLong:Option[Long]" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Returns this number as a <code>Long</code>, only if this number is a valid <code>Long</code>.</p><div class="fullcomment"><div class="comment cmt"><p>Returns this number as a <code>Long</code>, only if this number is a valid <code>Long</code>.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="argonaut.JsonDecimal">JsonDecimal</a> → <a href="JsonNumber.html" class="extype" name="argonaut.JsonNumber">JsonNumber</a></dd></dl></div>
+    </li><li name="argonaut.JsonNumber#toShort" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="toShort:Option[Short]"></a>
+      <a id="toShort:Option[Short]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">toShort</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.Option" class="extype" target="_top">Option</a>[<a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.Short" class="extype" target="_top">Short</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.JsonDecimal@toShort:Option[Short]" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Returns this number as a <code>Short</code>, only if this number is a valid <code>Short</code>.</p><div class="fullcomment"><div class="comment cmt"><p>Returns this number as a <code>Short</code>, only if this number is a valid <code>Short</code>.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="JsonNumber.html" class="extype" name="argonaut.JsonNumber">JsonNumber</a></dd></dl></div>
+    </li><li name="argonaut.JsonNumber#truncateToBigInt" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="truncateToBigInt:Option[BigInt]"></a>
+      <a id="truncateToBigInt:Option[BigInt]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">truncateToBigInt</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.Option" class="extype" target="_top">Option</a>[<span class="extype" name="scala.BigInt">BigInt</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.JsonDecimal@truncateToBigInt:Option[BigInt]" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Truncates the number to a BigInt.</p><div class="fullcomment"><div class="comment cmt"><p>Truncates the number to a BigInt. Truncation means that we round the real
+number towards 0 to the closest BigInt.</p><p>Truncation fails for numbers whose decimal representation contains more
+than 2 ^ 18 digits, since creating <code>BigInt</code> values for these numbers is
+computationally expensive.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="JsonNumber.html" class="extype" name="argonaut.JsonNumber">JsonNumber</a></dd></dl></div>
+    </li><li name="argonaut.JsonNumber#truncateToByte" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="truncateToByte:Byte"></a>
+      <a id="truncateToByte:Byte"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">truncateToByte</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.Byte" class="extype" target="_top">Byte</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.JsonDecimal@truncateToByte:Byte" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Truncates the number to a Byte.</p><div class="fullcomment"><div class="comment cmt"><p>Truncates the number to a Byte. Truncation means that we round the real
+number towards 0 to the closest, valid Byte. So, if the number is 1e99,
+then this will return <code>Byte.MaxValue</code>.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="JsonNumber.html" class="extype" name="argonaut.JsonNumber">JsonNumber</a></dd></dl></div>
+    </li><li name="argonaut.JsonNumber#truncateToDouble" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="truncateToDouble:Double"></a>
+      <a id="truncateToDouble:Double"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">truncateToDouble</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.Double" class="extype" target="_top">Double</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.JsonDecimal@truncateToDouble:Double" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Truncates this number to the best <code>Double</code> approximation to this number.</p><div class="fullcomment"><div class="comment cmt"><p>Truncates this number to the best <code>Double</code> approximation to this number.
+Anything over <code>Double.MaxValue</code> gets rounded to <code>Double.PositiveInfinity</code>
+and anything below <code>Double.MinValue</code> gets rounded to
+<code>Double.NegativeInfinity</code>.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="JsonNumber.html" class="extype" name="argonaut.JsonNumber">JsonNumber</a></dd></dl></div>
+    </li><li name="argonaut.JsonNumber#truncateToFloat" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="truncateToFloat:Float"></a>
+      <a id="truncateToFloat:Float"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">truncateToFloat</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.Float" class="extype" target="_top">Float</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.JsonDecimal@truncateToFloat:Float" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Truncates this number to the best <code>Float</code> approximation to this number.</p><div class="fullcomment"><div class="comment cmt"><p>Truncates this number to the best <code>Float</code> approximation to this number.
+Anything over <code>Float.MaxValue</code> gets rounded to <code>Float.PositiveInfinity</code>
+and anything below <code>Float.MinValue</code> gets rounded to
+<code>Float.NegativeInfinity</code>.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="JsonNumber.html" class="extype" name="argonaut.JsonNumber">JsonNumber</a></dd></dl></div>
+    </li><li name="argonaut.JsonNumber#truncateToInt" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="truncateToInt:Int"></a>
+      <a id="truncateToInt:Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">truncateToInt</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.Int" class="extype" target="_top">Int</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.JsonDecimal@truncateToInt:Int" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Truncates the number to a Int.</p><div class="fullcomment"><div class="comment cmt"><p>Truncates the number to a Int. Truncation means that we round the real
+number towards 0 to the closest, valid Int. So, if the number is 1e99,
+then this will return <code>Int.MaxValue</code>.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="JsonNumber.html" class="extype" name="argonaut.JsonNumber">JsonNumber</a></dd></dl></div>
+    </li><li name="argonaut.JsonNumber#truncateToLong" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="truncateToLong:Long"></a>
+      <a id="truncateToLong:Long"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">truncateToLong</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.Long" class="extype" target="_top">Long</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.JsonDecimal@truncateToLong:Long" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Truncates the number to a Long.</p><div class="fullcomment"><div class="comment cmt"><p>Truncates the number to a Long. Truncation means that we round the real
+number towards 0 to the closest, valid Long. So, if the number is 1e99,
+then this will return <code>Long.MaxValue</code>.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="JsonNumber.html" class="extype" name="argonaut.JsonNumber">JsonNumber</a></dd></dl></div>
+    </li><li name="argonaut.JsonNumber#truncateToShort" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="truncateToShort:Short"></a>
+      <a id="truncateToShort:Short"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">truncateToShort</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.Short" class="extype" target="_top">Short</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.JsonDecimal@truncateToShort:Short" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Truncates the number to a Short.</p><div class="fullcomment"><div class="comment cmt"><p>Truncates the number to a Short. Truncation means that we round the real
+number towards 0 to the closest, valid Short. So, if the number is 1e99,
+then this will return <code>Short.MaxValue</code>.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="JsonNumber.html" class="extype" name="argonaut.JsonNumber">JsonNumber</a></dd></dl></div>
+    </li><li name="argonaut.JsonDecimal#value" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="value:String"></a>
+      <a id="value:String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">value</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.JsonDecimal@value:String" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait():Unit"></a>
+      <a id="wait():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.JsonDecimal@wait():Unit" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long,x$2:Int):Unit"></a>
+      <a id="wait(Long,Int):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.Long" class="extype" target="_top">Long</a></span>, <span name="arg1">arg1: <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.Int" class="extype" target="_top">Int</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.JsonDecimal@wait(x$1:Long,x$2:Int):Unit" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long):Unit"></a>
+      <a id="wait(Long):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.Long" class="extype" target="_top">Long</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../index.html#argonaut.JsonDecimal@wait(x$1:Long):Unit" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li></ol>
+            </div>
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        <div class="parent" name="scala.Serializable">
+              <h3>Inherited from <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></h3>
+            </div><div class="parent" name="java.io.Serializable">
+              <h3>Inherited from <span class="extype" name="java.io.Serializable">Serializable</span></h3>
+            </div><div class="parent" name="scala.Product">
+              <h3>Inherited from <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.Product" class="extype" target="_top">Product</a></h3>
+            </div><div class="parent" name="scala.Equals">
+              <h3>Inherited from <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.Equals" class="extype" target="_top">Equals</a></h3>
+            </div><div class="parent" name="argonaut.JsonNumber">
+              <h3>Inherited from <a href="JsonNumber.html" class="extype" name="argonaut.JsonNumber">JsonNumber</a></h3>
+            </div><div class="parent" name="scala.AnyRef">
+              <h3>Inherited from <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></h3>
+            </div><div class="parent" name="scala.Any">
+              <h3>Inherited from <a href="http://www.scala-lang.org/api/2.11.11/index.html#scala.Any" class="extype" target="_top">Any</a></h3>
+            </div>
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+
+
+    </body>
+      </html>
