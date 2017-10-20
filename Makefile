@@ -19,7 +19,7 @@ publish: clean gen scaladocs
 	git pull origin master
 	(cd gen && git clone git://github.com/argonaut-io/argonaut.git)
 	(cd gen/argonaut && sbt '; ++2.11.11 ; doc')
-	rsync -aH gen/argonaut/jvm/target/scala-2.11/api/* scaladocs/.
+	rsync -aH gen/argonaut/argonaut/jvm/target/scala-2.11/api/* scaladocs/.
 	rm -rf gen
 	git add scaladocs
 	git commit -m "Latest docs." || true
