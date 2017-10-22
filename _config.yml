@@ -4,4 +4,4 @@ development: 6.2
 milestone: 6.2
 notes: ['6.0', '6.0.1', '6.0.2', '6.0.3', '6.0.4', '6.1-M1', '6.1-M2', '6.1-M3', '6.1-M4', '6.1-M5', '6.1-M6', '6.1', '6.2-M1', '6.2']
 markdown: kramdown
-exclude: ['*.sublime-*', 'Gemfile', 'Makefile', 'shell.nix', 'src', 'build.sbt', 'project']
+exclude: ['*.sublime-*', 'Gemfile', 'Makefile', 'shell.nix', 'build.sbt', 'project']
