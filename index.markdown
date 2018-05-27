@@ -168,14 +168,14 @@ val updated =
           <div>
             <h6>Tony Morris</h6>
             <p>
-              <a href="https://twitter.com/dibblego">@dibblego</a></br>
+              <a href="https://twitter.com/dibblego">@dibblego</a><br />
               <a href="http://tmorris.net">http://tmorris.net</a>
             </p>
           </div>
           <div>
             <h6>Sean Parsons</h6>
             <p>
-              <a href="https://twitter.com/seanparsons">@seanparsons</a></br>
+              <a href="https://twitter.com/seanparsons">@seanparsons</a>
             </p>
           </div>
         </div>
