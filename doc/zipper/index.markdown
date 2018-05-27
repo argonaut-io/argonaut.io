@@ -25,6 +25,10 @@ title: argonaut
     </p>
 
     <p>
+      Lenses are provided in the <code>argonaut-monocle</code> package.
+    </p>
+
+    <p>
       Note that Json is an immutable data type modification using lenses produces new values each time.
     </p>
 
