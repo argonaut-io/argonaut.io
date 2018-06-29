@@ -41,5 +41,5 @@ object JsonCombinators extends App {
       jSingleObject("nested", jTrue)) -|| List("field", "nested")
 
   // Many more in Json.scala -->
-  //    https://github.com/argonaut-io/argonaut/blob/master/argonaut/src/main/scala/argonaut/Json.scala
+  // https://github.com/argonaut-io/argonaut/blob/v6.2.2/argonaut/shared/src/main/scala/argonaut/Json.scala
 }
