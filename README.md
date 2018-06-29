@@ -1,11 +1,11 @@
 Argonaut Documentation Project
 ------------------------------
 
-[![Build Status](https://travis-ci.org/argonaut-io/argonaut.io.png)](https://travis-ci.org/argonaut-io/argonaut.io)
+[![Build Status](https://travis-ci.org/argonaut-io/argonaut.io.svg?branch=gh-pages)](https://travis-ci.org/argonaut-io/argonaut.io)
 
 ### What is Argonaut?
 
-See <argonaut.io>
+See <http://argonaut.io>
 
 
 ### How to work with this project?
