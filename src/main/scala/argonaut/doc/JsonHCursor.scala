@@ -2,6 +2,7 @@ package argonaut.doc
 
 import scalaz._, Scalaz._
 import argonaut._, Argonaut._
+import ArgonautScalaz._
 
 object JsonHCursor extends App {
   // Create a two level nested object.

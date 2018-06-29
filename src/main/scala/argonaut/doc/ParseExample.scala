@@ -1,7 +1,6 @@
 package argonaut.doc
 
-import scalaz._, Scalaz._
-import argonaut._, Argonaut._
+import argonaut._
 
 object ParseExample extends App {
 
@@ -10,7 +9,7 @@ object ParseExample extends App {
   """
 
   // Parse getting either error message or json
-  val result: String \/ Json =
+  val result: Either[String, Json] =
     Parse.parse(json)
 
   // Parse ignoring error messages

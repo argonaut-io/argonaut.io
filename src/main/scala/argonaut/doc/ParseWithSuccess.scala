@@ -1,6 +1,6 @@
 package argonaut.doc
 
-import argonaut._, Argonaut._
+import argonaut._
 
 object ParseWithSuccess extends App {
 

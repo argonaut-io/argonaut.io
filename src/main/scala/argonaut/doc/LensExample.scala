@@ -1,6 +1,7 @@
 package argonaut.doc
 
 import argonaut._, Argonaut._
+import ArgonautScalaz._
 
 object LensExample extends App {
   val jsonString: Json = jString("JSON!")

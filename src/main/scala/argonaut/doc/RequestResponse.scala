@@ -1,6 +1,5 @@
 package argonaut.doc
 
-import scalaz._, Scalaz._
 import argonaut._, Argonaut._
 
 object RequestResponse extends App {

@@ -1,9 +1,12 @@
 language: scala
 sudo: false
-scala:
-   - 2.10.6
-   - 2.11.8
-jdk:
-  - oraclejdk7
-  - openjdk6
-  - openjdk7
+matrix:
+  include:
+  - scala: 2.11.12
+    jdk: openjdk7
+  - scala: 2.12.6
+    jdk: oraclejdk8
+branches:
+  only:
+  - gh-pages
+  - /^.*$/ # test every branches

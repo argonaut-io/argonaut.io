@@ -2,6 +2,7 @@ package argonaut.doc
 
 import scalaz._, Scalaz._
 import argonaut._, Argonaut._
+import ArgonautScalaz._
 
 object DecodeExample extends App {
   case class Person(name: String, age: Int, greeting: String)
@@ -19,15 +20,11 @@ object DecodeExample extends App {
     Parse.decodeOption[Person](json)
 
   // Decode getting either error message or value (ignoring if it was parse or decode error)
-  val result1: String \/ Person =
+  val result1: Either[String, Person] =
     Parse.decodeEither[Person](json)
 
-  // Decode getting validation of error message or value
-  val result2: Validation[String, Person] =
-    Parse.decodeValidation[Person](json)
-
   // Decode getting either parse error message or decode error message with history or value
-  val result3: (String \/ (String, CursorHistory)) \/ Person =
+  val result2: Either[Either[String, (String, CursorHistory)], Person] =
     Parse.decode[Person](json)
 
   // decode handling success and parse failure and decode failure with functions
@@ -43,8 +40,8 @@ object DecodeExample extends App {
     Parse.decodeWithEither[String, Person](json,
       _.greeting,
       {
-        case -\/(msg) => "got an error parsing: " + msg
-        case \/-((msg, history)) => "got an error decoding: " + msg + " - " + history.shows
+        case Left(msg) => "got an error parsing: " + msg
+        case Right((msg, history)) => "got an error decoding: " + msg + " - " + history.shows
       }
     )
 
